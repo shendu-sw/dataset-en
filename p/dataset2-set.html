@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  
+  <title>温度场重构数据集 | Dataset</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="数据集下载地址：https:&#x2F;&#x2F;pan.baidu.com&#x2F;s&#x2F;14BipTer1fkilbRjrQNbKiQ，密码：tfrd。 任务 构建本数据集是为评价热源系统温度场重建方法提供参考。本数据集中，热源系统区域为$0.1m \times 0.1m$的矩形。该矩形区域划分为$200 \times 200$​​​的网格进行离散化表示，且组件也采用离散化形式放置在网格中。 （1）边界条件。根据实际工程">
+<meta property="og:type" content="article">
+<meta property="og:title" content="温度场重构数据集">
+<meta property="og:url" content="https://shendu-sw.github.io/dataset/p/dataset2-set.html">
+<meta property="og:site_name" content="Dataset">
+<meta property="og:description" content="数据集下载地址：https:&#x2F;&#x2F;pan.baidu.com&#x2F;s&#x2F;14BipTer1fkilbRjrQNbKiQ，密码：tfrd。 任务 构建本数据集是为评价热源系统温度场重建方法提供参考。本数据集中，热源系统区域为$0.1m \times 0.1m$的矩形。该矩形区域划分为$200 \times 200$​​​的网格进行离散化表示，且组件也采用离散化形式放置在网格中。 （1）边界条件。根据实际工程">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://shendu-sw.github.io/dataset/images/figure/散热器.png">
+<meta property="og:image" content="https://shendu-sw.github.io/dataset/images/figure/元件形状.png">
+<meta property="og:image" content="https://shendu-sw.github.io/dataset/images/figure/point.jpg">
+<meta property="og:image" content="https://shendu-sw.github.io/dataset/images/figure/vector.jpg">
+<meta property="og:image" content="https://shendu-sw.github.io/dataset/images/figure/image.jpg">
+<meta property="og:image" content="https://shendu-sw.github.io/dataset/images/figure/graph.jpg">
+<meta property="og:image" content="https://shendu-sw.github.io/dataset/images/figure/HSink1.jpg">
+<meta property="og:image" content="https://shendu-sw.github.io/dataset/images/figure/HSink2.jpg">
+<meta property="og:image" content="https://shendu-sw.github.io/dataset/images/figure/ADlet1.jpg">
+<meta property="og:image" content="https://shendu-sw.github.io/dataset/images/figure/ADlet2.jpg">
+<meta property="og:image" content="https://shendu-sw.github.io/dataset/images/figure/DSine1.jpg">
+<meta property="og:image" content="https://shendu-sw.github.io/dataset/images/figure/DSine2.jpg">
+<meta property="og:image" content="https://shendu-sw.github.io/dataset/images/figure/0.jpg">
+<meta property="og:image" content="https://shendu-sw.github.io/dataset/images/figure/1.jpg">
+<meta property="og:image" content="https://shendu-sw.github.io/dataset/images/figure/2.jpg">
+<meta property="og:image" content="https://shendu-sw.github.io/dataset/images/figure/3.jpg">
+<meta property="og:image" content="https://shendu-sw.github.io/dataset/images/figure/4.jpg">
+<meta property="og:image" content="https://shendu-sw.github.io/dataset/images/figure/5.jpg">
+<meta property="article:published_time" content="2021-09-10T03:08:00.000Z">
+<meta property="article:modified_time" content="2021-09-10T03:08:31.810Z">
+<meta property="article:author" content="IDRL">
+<meta property="article:tag" content="数据集">
+<meta property="article:tag" content="hide">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://shendu-sw.github.io/dataset/images/figure/散热器.png">
+  
+  <link rel="alternate" href="/atom.xml" title="Dataset" type="application/atom+xml">
+  
+  
+  <link rel="icon" href="/favicon.png">
+  
+  
+  <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/dataset/css/tocas.css">
+
+  
+<link rel="stylesheet" href="/dataset/css/animate.css">
+
+  
+<link rel="stylesheet" href="/dataset/css/style.css">
+
+  
+<link rel="stylesheet" href="/dataset/css/custom.css">
+
+  <style type="text/css">
+    a.title-link:hover {
+      color: #34b2db !important;
+    }
+
+    a.title-link:active {
+      color: #2075c1 !important;
+    }
+
+    #menu-color-id {
+      background: #f7f7f7;
+    }
+
+    #menu-color-id a {
+      color: #5a5a5a;
+    }
+  </style>
+  
+<script src="/dataset/js/tocas.js"></script>
+
+  
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+
+
+    <!-- big bang title -->
+    <div class="ts padded horizontally fitted fluid slate"
+        style="background: #f7f7f7;background-size: 100% auto;background-position: center;background-repeat: no-repeat;">
+        <!-- ejs : align to post page or index page -->
+        
+            <div class="ts very narrow container pages_adjust">
+                
+                <!-- Title -->
+                <h1 class="ts eleven wide column header be-center-h1">
+                    <!-- 如果添加 id="big-title"， 会在标题后面附带 #-tag  -->
+                    
+                    <span style="color: #404040;" >Dataset</span>
+                    <div class="sub header" id="slogan-bar" style=" margin-top: 15px; color: #404040;">
+                        用Hexo框架搭建的文章阅读页</div>
+                </h1>
+                <!-- the end of title -->
+            </div>
+        </div>
+    </div>
+    <!-- the end of big bang title -->
+
+    <!-- navigation -->
+
+    <div class="ts fluid basic link big menu" id="menu-color-id">
+
+        <!-- ejs : align to post page or index page -->
+        
+            <div class="ts very narrow container">
+                
+
+                
+                <a class="item" href="/dataset/">首页</a>
+                
+                <a class="item" href="/dataset/archives">数据集</a>
+                
+                <a class="item" href="/dataset/publish">出版物</a>
+                
+            </div>
+        </div>
+    </div>
+    <!-- the end of navigation -->
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+
+
+
+<!-- main section -->
+<div class="ts text container">
+    <!-- left section -->
+    <div class="column" style=" padding: 35px; ">
+        
+
+
+        <!-- <div class="divider"></div> -->
+
+        <!-- Articles -->
+        
+        <h1 class="ts header">
+            <span style="color: #333;">温度场重构数据集</span>
+            <div class="sub header" style="color: #808080;">发布时间:
+                2021/9/10
+                 &nbsp;&nbsp;
+                <!-- filter tag 'hide' -->
+                
+                <ul class="unstyled radius-tag -list" itemprop="keywords"><li class="unstyled radius-tag -list-item"><a class="unstyled radius-tag -list-link" href="/dataset/tags/%E6%95%B0%E6%8D%AE%E9%9B%86/" rel="tag">数据集</a></li></ul>
+                
+            </div>
+        </h1>
+
+        <!-- Menus -->
+        
+            <div class="post-menu">
+                
+                
+                <div class="post-item">
+                    <a href="/dataset/p/dataset2-index ">主页</a>
+                </div>
+                
+                
+                <div class="post-item">
+                    <a href="/dataset/p/dataset2-set ">数据集</a>
+                </div>
+                
+                
+                <div class="post-item">
+                    <a href="/dataset/p/dataset2-result ">结果</a>
+                </div>
+                
+                
+                <div class="post-item">
+                    <a href="/dataset/p/dataset2-publication ">出版物</a>
+                </div>
+                
+            </div>
+            <hr />
+        
+        <!-- / the end of Menus -->
+        <p>数据集下载地址：<a target="_blank" rel="noopener" href="https://pan.baidu.com/s/14BipTer1fkilbRjrQNbKiQ">https://pan.baidu.com/s/14BipTer1fkilbRjrQNbKiQ</a>，密码：tfrd。</p>
+<p><strong>任务</strong></p>
+<p>构建本数据集是为评价热源系统温度场重建方法提供参考。本数据集中，热源系统区域为$0.1m \times 0.1m$的矩形。该矩形区域划分为$200 \times 200$​​​的网格进行离散化表示，且组件也采用离散化形式放置在网格中。</p>
+<p>（1）边界条件。根据实际工程要求和任务的通用性，选取散热器和正弦波分布边界作为具有代表性的边界条件</p>
+<p>散热器是一种被动热交换器，它将电子或机械设备产生的热量转移到流体介质（例如空气或液体冷却剂），设备产生的热量从散热器出消散，从而允许调节设备的温度。散热器广泛应用于电子领域，已成为现代微电子学的重要组成部分。下图展示了典型的散热器，散热器上的温度恒定，为$T_0$。</p>
+<p><img src="/dataset/images/figure/散热器.png" alt="散热器"></p>
+<p>为了提高数据集的通用性，考虑了带有温度分布的边界条件。分布可以是恒温的，也可以是更复杂的，本数据集采用正弦波分布作为代表。这种边界条件被称为正弦函数边界条件，是热分析研究中另一种典型的狄利克雷边界条件。边界上的温度值可以表示为：</p>
+<script type="math/tex; mode=display">
+T(x) = {T_m}\sin \left( {\frac{ {\pi x} }{L} } \right) + {T_0}</script><p>$T_m$是边界上正弦波分布的振幅。</p>
+<p>（2）元件（热源）。数据集考虑了热源在区域内的形状和功率分布。如图所示，主要有矩形、胶囊状和圆形三种不同形状的组件。</p>
+<p><img src="/dataset/images/figure/元件形状.png" alt="元件形状"></p>
+<p>数据集考虑了元件的功率分布。在工程中采用了均匀分布和非均匀分布两种典型分布。</p>
+<ul>
+<li>均匀分布热源。一般来说，每个电源上的功率应该遵循相同的功率，可以表示为</li>
+</ul>
+<script type="math/tex; mode=display">
+{\phi _i}(x,y) = \left\{ {\begin{array}{*{20}{c} }
+{ {Q_i},}&{(x,y) \in {\Omega _i} }\\
+{0,}&{(x,y) \notin {\Omega _i} }
+\end{array} } \right.</script><p>$Q_i$是固定的热源强度。</p>
+<ul>
+<li>非均匀分布热源。不失一般性，本数据集以具有高斯分布热功率密度的高斯热源为代表。对于高斯热源，最大功率发生在热源中心，功率强度随环境而减小。功率分布可以描述为</li>
+</ul>
+<script type="math/tex; mode=display">
+{\phi _i}(x,y) = \left\{ {\begin{array}{*{20}{c} }
+{ {Q_i}{e^{\frac{ { - \lambda ({ {(x - {x_0})}^2} + { {(y - {y_0})}^2})} }{ {r_n^2} }} },}&{(x,y) \in {\Omega _i} }\\
+{0,}&{(x,y) \notin {\Omega _i} }
+\end{array} } \right.</script><p>$\lambda$​​为偏差系数，$r_n$​​​为高斯热源半径。</p>
+<p>考虑热源的形状和功率分布，数据集中包含三种类型的热源布局信息，分别为A类、B类、C类。‘U’和‘N’分别表示均匀分布热源和非均匀分布热源。’r’为矩形，’p’为胶囊，’c’为圆。所有的热源都是水平放置的，这些表格中的长度和宽度分别表示水平和垂直方向的边长。</p>
+<p>A 类热源元件布局信息及特点</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:center">编号</th>
+<th style="text-align:center">类型</th>
+<th style="text-align:center">长度（m）</th>
+<th style="text-align:center">宽度（m）</th>
+<th style="text-align:center">位置</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">Ur</td>
+<td style="text-align:center">0.012</td>
+<td style="text-align:center">0.012</td>
+<td style="text-align:center">（0.019,0.0915）</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">Ur</td>
+<td style="text-align:center">0.016</td>
+<td style="text-align:center">0.03</td>
+<td style="text-align:center">（0.0875,0.079）</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">Ur</td>
+<td style="text-align:center">0.015</td>
+<td style="text-align:center">0.015</td>
+<td style="text-align:center">（0.045,0.0145）</td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center">Ur</td>
+<td style="text-align:center">0.03</td>
+<td style="text-align:center">0.03</td>
+<td style="text-align:center">（0.08,0.025）</td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:center">Ur</td>
+<td style="text-align:center">0.02</td>
+<td style="text-align:center">0.02</td>
+<td style="text-align:center">（0.0685,0.0885）</td>
+</tr>
+<tr>
+<td style="text-align:center">6</td>
+<td style="text-align:center">Up</td>
+<td style="text-align:center">0.03</td>
+<td style="text-align:center">0.015</td>
+<td style="text-align:center">（0.036,0.0335）</td>
+</tr>
+<tr>
+<td style="text-align:center">7</td>
+<td style="text-align:center">Up</td>
+<td style="text-align:center">0.02</td>
+<td style="text-align:center">0.04</td>
+<td style="text-align:center">（0.021,0.0655）</td>
+</tr>
+<tr>
+<td style="text-align:center">8</td>
+<td style="text-align:center">Up</td>
+<td style="text-align:center">0.015</td>
+<td style="text-align:center">0.03</td>
+<td style="text-align:center">（0.0425,0.0795）</td>
+</tr>
+<tr>
+<td style="text-align:center">9</td>
+<td style="text-align:center">Up</td>
+<td style="text-align:center">0.02</td>
+<td style="text-align:center">0.03</td>
+<td style="text-align:center">（0.06,0.055）</td>
+</tr>
+<tr>
+<td style="text-align:center">10</td>
+<td style="text-align:center">Up</td>
+<td style="text-align:center">0.03</td>
+<td style="text-align:center">0.02</td>
+<td style="text-align:center">（0.022,0.014）</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>B 类热源元件布局信息及特点</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:center">编号</th>
+<th style="text-align:center">类型</th>
+<th style="text-align:center">长度（m）</th>
+<th style="text-align:center">宽度（m）</th>
+<th style="text-align:center">位置</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">Ur</td>
+<td style="text-align:center">0.015</td>
+<td style="text-align:center">0.015</td>
+<td style="text-align:center">（0.016,0.0915）</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">Ur</td>
+<td style="text-align:center">0.01</td>
+<td style="text-align:center">0.02</td>
+<td style="text-align:center">（0.0925,0.079）</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">Ur</td>
+<td style="text-align:center">0.02</td>
+<td style="text-align:center">0.03</td>
+<td style="text-align:center">（0.0825,0.025）</td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center">Up</td>
+<td style="text-align:center">0.015</td>
+<td style="text-align:center">0.02</td>
+<td style="text-align:center">（0.0725,0.0835）</td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:center">Up</td>
+<td style="text-align:center">0.015</td>
+<td style="text-align:center">0.03</td>
+<td style="text-align:center">（0.036,0.0335）</td>
+</tr>
+<tr>
+<td style="text-align:center">6</td>
+<td style="text-align:center">Up</td>
+<td style="text-align:center">0.03</td>
+<td style="text-align:center">0.015</td>
+<td style="text-align:center">（0.021,0.0655）</td>
+</tr>
+<tr>
+<td style="text-align:center">7</td>
+<td style="text-align:center">Nc</td>
+<td style="text-align:center">0.02</td>
+<td style="text-align:center">0.02</td>
+<td style="text-align:center">（0.0465,0.0795）</td>
+</tr>
+<tr>
+<td style="text-align:center">8</td>
+<td style="text-align:center">Nc</td>
+<td style="text-align:center">0.028</td>
+<td style="text-align:center">0.028</td>
+<td style="text-align:center">（0.06,0.055）</td>
+</tr>
+<tr>
+<td style="text-align:center">9</td>
+<td style="text-align:center">Nc</td>
+<td style="text-align:center">0.02</td>
+<td style="text-align:center">0.02</td>
+<td style="text-align:center">（0.017,0.014）</td>
+</tr>
+<tr>
+<td style="text-align:center">10</td>
+<td style="text-align:center">Nc</td>
+<td style="text-align:center">0.024</td>
+<td style="text-align:center">0.024</td>
+<td style="text-align:center">（0.055,0.014）</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>C 类热源元件布局信息及特点</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:center">编号</th>
+<th style="text-align:center">类型</th>
+<th style="text-align:center">长度（m）</th>
+<th style="text-align:center">宽度（m）</th>
+<th style="text-align:center">位置</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">Nr</td>
+<td style="text-align:center">0.016</td>
+<td style="text-align:center">0.012</td>
+<td style="text-align:center">（0.019,0.0915）</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">Nr</td>
+<td style="text-align:center">0.012</td>
+<td style="text-align:center">0.015</td>
+<td style="text-align:center">（0.0875,0.079）</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">Nr</td>
+<td style="text-align:center">0.024</td>
+<td style="text-align:center">0.024</td>
+<td style="text-align:center">（0.045,0.0145）</td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center">Nr</td>
+<td style="text-align:center">0.012</td>
+<td style="text-align:center">0.024</td>
+<td style="text-align:center">（0.08,0.025）</td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:center">Nr</td>
+<td style="text-align:center">0.015</td>
+<td style="text-align:center">0.012</td>
+<td style="text-align:center">（0.0685,0.0885）</td>
+</tr>
+<tr>
+<td style="text-align:center">6</td>
+<td style="text-align:center">Nr</td>
+<td style="text-align:center">0.012</td>
+<td style="text-align:center">0.024</td>
+<td style="text-align:center">（0.036,0.04）</td>
+</tr>
+<tr>
+<td style="text-align:center">7</td>
+<td style="text-align:center">Nr</td>
+<td style="text-align:center">0.018</td>
+<td style="text-align:center">0.018</td>
+<td style="text-align:center">（0.015,0.0655）</td>
+</tr>
+<tr>
+<td style="text-align:center">8</td>
+<td style="text-align:center">Nr</td>
+<td style="text-align:center">0.024</td>
+<td style="text-align:center">0.012</td>
+<td style="text-align:center">（0.0425,0.0795）</td>
+</tr>
+<tr>
+<td style="text-align:center">9</td>
+<td style="text-align:center">Nr</td>
+<td style="text-align:center">0.012</td>
+<td style="text-align:center">0.012</td>
+<td style="text-align:center">（0.06,0.055）</td>
+</tr>
+<tr>
+<td style="text-align:center">10</td>
+<td style="text-align:center">Nr</td>
+<td style="text-align:center">0.018</td>
+<td style="text-align:center">0.018</td>
+<td style="text-align:center">（0.017,0.014）</td>
+</tr>
+<tr>
+<td style="text-align:center">11</td>
+<td style="text-align:center">Nr</td>
+<td style="text-align:center">0.018</td>
+<td style="text-align:center">0.012</td>
+<td style="text-align:center">（0.036,0.061）</td>
+</tr>
+<tr>
+<td style="text-align:center">12</td>
+<td style="text-align:center">Nr</td>
+<td style="text-align:center">0.018</td>
+<td style="text-align:center">0.009</td>
+<td style="text-align:center">（0.061,0.04）</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>（3）观测点。监测点根据所处位置可分为边界上监测点、构件上监测点和构件间监测点（未设置热源的区域）三类。在本数据集中，对于组件，在组件的中心放置一个监视点，每个边界有 3 个监测点，另外 10 个监视点放在组件之间的区域上。监测点数量如表所示。</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:center">位置</th>
+<th style="text-align:center">HSink</th>
+<th style="text-align:center">ADlet</th>
+<th style="text-align:center">DSine</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">边界</td>
+<td style="text-align:center">3x4</td>
+<td style="text-align:center">3x4</td>
+<td style="text-align:center">3x4</td>
+</tr>
+<tr>
+<td style="text-align:center">组件之间</td>
+<td style="text-align:center">10</td>
+<td style="text-align:center">10</td>
+<td style="text-align:center">10</td>
+</tr>
+<tr>
+<td style="text-align:center">组件中心</td>
+<td style="text-align:center">1x10</td>
+<td style="text-align:center">1x10</td>
+<td style="text-align:center">1x12</td>
+</tr>
+<tr>
+<td style="text-align:center">总数</td>
+<td style="text-align:center">32</td>
+<td style="text-align:center">32</td>
+<td style="text-align:center">34</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>综上，本数据集考虑三个具有代表性的案例：HSink、ADlet 和 DSine。</p>
+<ul>
+<li>案例 1：HSink。带有散热片的热源系统，散热器$\delta$​ 的宽度设置为 0.01m，恒温值$T_0$为 298K （Dirichlet 边界），其他边界是绝热的（Neumann 边界）。内部热源采用 A 型配置。</li>
+<li>案例 2：ADlet。具有不同 Dirichlet 边界条件的热源系统，其中一个边界上温度设为正波分布，其他边界为恒温值$T_0$​​=298K。内部热源采用 B 型配置。</li>
+<li>案例 3：DSine。具有一个正弦波分布边界的热源系统。其他三个边界都是绝热的（NeumannBC），内部热源采用 C 型配置。</li>
+</ul>
+<p>系统中每个热源的功率强度（或高斯功率分布下的最大功率强度）为$0 \sim 30000W/{m^2}$​。</p>
+<p>我们将任务分为以下四种：</p>
+<p>（1）Point-based Methods。基于点的温度场重建方法以某热源系统为例进行研究，这些方法试图学习从某一点坐标到相应温度值的映射函数。对于每个实例，将系统域划分为PoIs和监测点，其中监测点用作训练样本，PoIs用作测试样本。</p>
+<p><img src="/dataset/images/figure/point.jpg" alt="point"></p>
+<p>（2）Vector-based Methods。尽管基于点的方法很容易实现，但它只执行一个实例一个任务，而另一个实例必须解决其他实例的优化问题。这将大大增加重建过程的成本时间。为此，Vector-based目标是学习一类样本的温度场重建，这类方法学习监测点的温度向量与PoIs的温度向量之间的映射关系。</p>
+<p><img src="/dataset/images/figure/vector.jpg" alt="vector"></p>
+<p>（3）Image-based Methods。基于矢量的方法是实现一类任务最简单的方法，通常忽略了点和监测点之间的物理和空间相关性。通过域离散化，可以将温度场重建任务计算为一个图像到图像的回归问题。它学习了监测点的温度矩阵与域整体温度场的映射关系。一般采用基于图像的深度回归模型。</p>
+<p><img src="/dataset/images/figure/image.jpg" alt="image"></p>
+<p>（4）Graph-based Methods。基于图的方法是利用系统的物理和空间相关性的另一种方法，利用图来描述监测点与PoIs之间的关系。</p>
+<p><img src="/dataset/images/figure/graph.jpg" alt="graph"></p>
+<p><strong>数据集文件说明</strong></p>
+<ul>
+<li><p>TFRD // TFRD的一般列表</p>
+<ul>
+<li><p>HSink // Data for HSink sub-task</p>
+<ul>
+<li><p>train // 训练数据</p>
+<blockquote>
+<p>训练过程从’ train_val.txt ‘中读取训练样本，并在’ train/ ‘中找到相应的样本。</p>
+</blockquote>
+<ul>
+<li>train // 训练样本</li>
+<li>train_val.txt // 训练样本列表</li>
+</ul>
+</li>
+<li><p>test</p>
+<blockquote>
+<p>每个测试包含六个测试集:</p>
+<p><code>test 0</code> 代表一般测试样本</p>
+<p><code>test 1</code> 描述所有组件共享相同功率密度的测试集</p>
+<p><code>test 2</code> 描述1/4的热源为零功率强度，其余为随机选择的功率强度的测试集。</p>
+<p><code>test 3</code> 描述一半热源具有零功率强度，一半热源具有随机选择的功率强度的测试集。</p>
+<p><code>test 4</code> 描述其中3/4的热源为零功率强度，其余为随机选择的功率强度的测试集。</p>
+<p><code>test 5</code> 描述只有一个热源具有随机选择的强度，其余均为零功率强度的测试集。</p>
+</blockquote>
+<ul>
+<li>test_0 // test 0</li>
+<li>test_0.txt // test 0 样本列表</li>
+<li>test_1 // 特殊测试集 test 1</li>
+<li>test_1.txt // test 1 样本列表</li>
+<li>test_2 // 特殊测试集 test 2</li>
+<li>test_2.txt // test 2 样本列表</li>
+<li>test_3 // 特殊测试集 test 3</li>
+<li>test_3.txt // test 3 样本列表</li>
+<li>test_4 // 特殊测试集 test 4</li>
+<li>test_4.txt // test 4 样本列表</li>
+<li>test_5 // 特殊测试集 test 5</li>
+<li>test_5.txt // test 5 样本列表</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>ADlet // Data for ADlet sub-task</p>
+<ul>
+<li>train<ul>
+<li>train</li>
+<li>train_val.txt</li>
+</ul>
+</li>
+<li>test<ul>
+<li>test_0</li>
+<li>test_0.txt</li>
+<li>test_1</li>
+<li>test_1.txt</li>
+<li>test_2</li>
+<li>test_2.txt</li>
+<li>test_3</li>
+<li>test_3.txt</li>
+<li>test_4</li>
+<li>test_4.txt</li>
+<li>test_5</li>
+<li>test_5.txt</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>DSine // Data for DSine sub-task</p>
+<ul>
+<li>train<ul>
+<li>train</li>
+<li>train_val.txt</li>
+</ul>
+</li>
+<li>test<ul>
+<li>test_0</li>
+<li>test_0.txt</li>
+<li>test_1</li>
+<li>test_1.txt</li>
+<li>test_2</li>
+<li>test_2.txt</li>
+<li>test_3</li>
+<li>test_3.txt</li>
+<li>test_4</li>
+<li>test_4.txt</li>
+<li>test_5</li>
+<li>test_5.txt</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>训练数据说明</strong></p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:center">数据</th>
+<th style="text-align:center">数量</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">HSink</td>
+<td style="text-align:center">10000</td>
+</tr>
+<tr>
+<td style="text-align:center">ADlet</td>
+<td style="text-align:center">10000</td>
+</tr>
+<tr>
+<td style="text-align:center">DSine</td>
+<td style="text-align:center">10000</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>三种不同案例示意图：</p>
+<ul>
+<li>HSink。</li>
+</ul>
+<p><img src="/dataset/images/figure/HSink1.jpg" alt="HSink1"></p>
+<p><img src="/dataset/images/figure/HSink2.jpg" alt="HSink2"></p>
+<ul>
+<li>ADlet。</li>
+</ul>
+<p><img src="/dataset/images/figure/ADlet1.jpg" alt="ADlet1"></p>
+<p><img src="/dataset/images/figure/ADlet2.jpg" alt="ADlet2"></p>
+<ul>
+<li>DSine。</li>
+</ul>
+<p><img src="/dataset/images/figure/DSine1.jpg" alt="DSine1"></p>
+<p><img src="/dataset/images/figure/DSine2.jpg" alt="DSine2"></p>
+<p>数据采用mat文件格式存储，每个mat文件包含以下内容：</p>
+<ul>
+<li><code>F</code>: 组件信息，包括功率密度、位置和形状</li>
+<li><code>u</code>: <code>F</code>在<code>200*200</code>离散矩阵中的实际温度场</li>
+<li><code>u_obs</code>: 测点的温度值</li>
+<li>u_pos: <code>200*200</code>离散矩阵中测点位置（1表示区域监测点，0表示无监测点）</li>
+<li><code>xs</code>, <code>ys</code>, <code>zs</code>: <code>200*200</code>离散矩阵的对应坐标</li>
+</ul>
+<p><strong>测试数据说明</strong></p>
+<p>随着功率强度的变化，随机生成不同的样本。理论上，可以产生任何可行功率强度的热源系统。然而，仍有较低的概率产生某些特定的样本，如一个或多个零功率强度的样本。为了充分验证重构性能，数据集提出几种特殊规则生成一些特殊的样本，形成了多样化的测试数据。</p>
+<p>数据集包含两类特殊样本，即功率一致性样本和零功率样本。功率一致性样本为尽可能使所有热源具有相同功率强度的样本。零功率样品表示部分热源为零功率强度的样品。在这里，我们构建了特殊的样本，其中分别有1/4,1/2,3/4，除1个热源外其他所有热源为零功率强度。6个测试集设置分别如下：</p>
+<ul>
+<li>Test 0：所有样本的热源强度采用随机采样。</li>
+</ul>
+<p><img src="/dataset/images/figure/0.jpg" alt="0"></p>
+<ul>
+<li>Test 1：所有样本的热源强度相同。</li>
+</ul>
+<p><img src="/dataset/images/figure/1.jpg" alt="1"></p>
+<ul>
+<li>Test 2：1/4的热源为0功率热源，其余为功率随机采样热源。</li>
+</ul>
+<p><img src="/dataset/images/figure/2.jpg" alt="2"></p>
+<ul>
+<li>Test 3：2/4的热源为0功率热源，其余为功率随机采样热源。</li>
+</ul>
+<p><img src="/dataset/images/figure/3.jpg" alt="3"></p>
+<ul>
+<li>Test 4：3/4的热源为0功率热源，其余为功率随机采样热源。</li>
+</ul>
+<p><img src="/dataset/images/figure/4.jpg" alt="4"></p>
+<ul>
+<li>Test 5：其中一个热源的功率采用随机采样，其余热源的功率为0。</li>
+</ul>
+<p><img src="/dataset/images/figure/5.jpg" alt="5"></p>
+<p>不同测试集样本数量设置如下：</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:center">数据</th>
+<th style="text-align:center">Test 0</th>
+<th style="text-align:center">Test 1</th>
+<th style="text-align:center">Test 2</th>
+<th style="text-align:center">Test 3</th>
+<th style="text-align:center">Test 4</th>
+<th style="text-align:center">Test 5</th>
+<th style="text-align:center">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">HSink</td>
+<td style="text-align:center">10000</td>
+<td style="text-align:center">2000</td>
+<td style="text-align:center">2000</td>
+<td style="text-align:center">2000</td>
+<td style="text-align:center">2000</td>
+<td style="text-align:center">2000</td>
+<td style="text-align:center">20000</td>
+</tr>
+<tr>
+<td style="text-align:center">ADlet</td>
+<td style="text-align:center">10000</td>
+<td style="text-align:center">2000</td>
+<td style="text-align:center">2000</td>
+<td style="text-align:center">2000</td>
+<td style="text-align:center">2000</td>
+<td style="text-align:center">2000</td>
+<td style="text-align:center">20000</td>
+</tr>
+<tr>
+<td style="text-align:center">DSine</td>
+<td style="text-align:center">10000</td>
+<td style="text-align:center">2000</td>
+<td style="text-align:center">2000</td>
+<td style="text-align:center">2000</td>
+<td style="text-align:center">2000</td>
+<td style="text-align:center">2000</td>
+<td style="text-align:center">20000</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>评价准则</strong></p>
+<ul>
+<li>平均绝对误差（MAE）。预测温度场绝对误差的平均值。</li>
+</ul>
+<script type="math/tex; mode=display">
+{E_{MAE} } = \frac{1}{ {\left| \Omega  \right|} }\sum\limits_{({x_i},{y_j}) \in \Omega } {\left| {T({x_i},{y_j}) - T'({x_i},{y_j})} \right|}</script><ul>
+<li>绝对误差最大值（MaxAE）。预测温度场的最大绝对误差。</li>
+</ul>
+<script type="math/tex; mode=display">
+{E_{MaxAE} } = \mathop {\max }\limits_{({x_i},{y_j}) \in \Omega } \left| {T({x_i},{y_j}) - T'({x_i},{y_j})} \right|</script><ul>
+<li>组件区域平均绝对误差（CMAE）。热源组件上温度绝对误差的平均值。</li>
+</ul>
+<script type="math/tex; mode=display">
+{E_{CMAE} } = \frac{1}{ {\left| { {\Omega _c} } \right|} }\sum\limits_{({x_i},{y_j}) \in {\Omega _c} } {\left| {T({x_i},{y_j}) - T'({x_i},{y_j})} \right|}</script><ul>
+<li>组件区域绝对误差最大值（MCAE）。热源组件上温度绝对误差的最大值。</li>
+</ul>
+<script type="math/tex; mode=display">
+{E_{CMAE} } = \mathop {\max }\limits_{({x_i},{y_j}) \in {\Omega _c} } \left| {T({x_i},{y_j}) - T'({x_i},{y_j})} \right|</script><ul>
+<li>边界上平均绝对误差（BMAE）。边界上温度绝对误差的平均值。</li>
+</ul>
+<script type="math/tex; mode=display">
+{E_{BMAE} } = \frac{1}{ {\left| { {\Omega _b} } \right|} }\sum\limits_{({x_i},{y_j}) \in {\Omega _b} } {\left| {T({x_i},{y_j}) - T'({x_i},{y_j})} \right|}</script>
+        <!-- / the end of articles -->
+    </div>
+    <!-- / left section -->
+
+    
+
+    <!-- Next Post and Prev Post -->
+    
+    <hr />
+    <div class="next-prev-post-section">
+        <script>
+            function goBack() {
+                window.history.go(-1)
+            }
+        </script>
+        <a href="javascript:void(0)" onclick="goBack()" class="styled-border">
+            ←返回
+        </a>
+        <a href="#"></a>
+        <!-- 
+        <a href="/dataset/p/dataset2-index.html" class="styled-border">
+            
+            温度场重构数据集
+            
+        </a>
+        
+        
+        <a href="/dataset/p/dataset2-result.html" class="styled-border">
+            
+            温度场重构数据集
+            →
+        </a>
+         -->
+    </div>
+    
+</div>
+<script type="text/javascript">
+    let img = document.getElementsByTagName("img");
+    for (let i = 0; i < img.length; i++) {
+        img[i].className += " ts fluid image";
+    }
+</script>
+<!-- / main section -->
+
+<!-- copyright -->
+<!-- <div class="ts attached secondary segment">
+    <div class="ts narrow container">
+        <br>
+        <div class="ts large center aligned header">
+            Powered by Hexo, Theme designs by @hpcslag.
+            <div class="smaller sub header">
+                Style-Framework Tocas-UI designs by @yamioldmel
+            </div>
+        </div>
+        <br>
+    </div>
+</div> -->
+<!-- / copyright -->
+<script type="text/javascript">
+    
+    const slogans = ["用Hexo框架搭建的文章阅读页"];
+</script>
+
+<script src="/dataset/js/script.js"></script>
+
+</body>
+</html>
+
+
+    <!-- mathjax config similar to math.stackexchange -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ['$','$'], ["\(","\)"] ],
+        processEscapes: true
+      }
+    });
+  </script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+  </script>
+
+
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+          var all = MathJax.Hub.getAllJax(), i;
+          for(i=0; i < all.length; i += 1) {
+              all[i].SourceElement().parentNode.className += ' has-jax';
+          }
+      });
+  </script>
+
+
+
+<script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+ 
