@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>温度场重建基准</title>
+      <link href="/dataset/p/dataset2-index.html"/>
+      <url>/dataset/p/dataset2-index.html</url>
+      
+        <content type="html"><![CDATA[<p>欢迎来到温度场重建数据集（Temperature Field Reconstruction Dataset，TFRD）主页。</p><h1 id="热源系统温度场重建任务"><a href="#热源系统温度场重建任务" class="headerlink" title="热源系统温度场重建任务"></a>热源系统温度场重建任务</h1><blockquote><p>温度场重建数据集面向电子设备热管理模块，解决由有限监测位置温度监控感兴趣位置（PoIs）温度，最终实现电子设备健康实时检测。</p></blockquote><h4 id="One-instance-one-task"><a href="#One-instance-one-task" class="headerlink" title="One instance one task"></a>One instance one task</h4><ul><li>基于点的建模<blockquote><p>学习点坐标到温度值的预测</p></blockquote></li></ul><p><img src="/dataset/images/figure/point.jpg" alt="point"></p><h4 id="One-family-one-task"><a href="#One-family-one-task" class="headerlink" title="One family one task"></a>One family one task</h4><ul><li>基于向量的建模<blockquote><p>学习监测点温度到PoIs温度映射</p></blockquote></li></ul><p><img src="/dataset/images/figure/vector.jpg" alt="vector"></p><ul><li>基于图像的建模<blockquote><p>学习监测点温度到PoIs温度映射（域离散化）</p></blockquote></li></ul><p><img src="/dataset/images/figure/image.jpg" alt="image"></p><ul><li>基于图关系的建模<blockquote><p>学习监测点温度到PoIs温度映射（构建graph关系）</p></blockquote></li></ul><p><img src="/dataset/images/figure/graph.jpg" alt="graph"></p><h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1> <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">@article&#123;gong_tfrd,</span><br><span class="line">    Author = &#123;Xiaoqian Chen and Zhiqiang Gong and Xiaoyu Zhao and Weien Zhou and Wen Yao&#125;,</span><br><span class="line">    Title = &#123;A Machine Learning Modelling Benchmark for Temperature Field Reconstruction of Heat-Source Systems&#125;,</span><br><span class="line">    Journal = &#123;arXiv preprint arXiv:2108.08298&#125;,</span><br><span class="line">    Year = &#123;2021&#125;</span><br><span class="line">&#125; </span><br><span class="line"></span><br><span class="line">@article&#123;gong_pirl,</span><br><span class="line">    Author = &#123;Zhiqiang Gong and Weien Zhou and Jun Zhang and Wei Peng and Wen Yao&#125;,</span><br><span class="line">    Title = &#123;Physics-Informed Deep Reversible Regression Model for Temperature Field Reconstruction of Heat-Source Systems&#125;,</span><br><span class="line">    Journal = &#123;arXiv preprint arXiv:2106.11929&#125;,</span><br><span class="line">    Year = &#123;2021&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 数据集 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>温度场重建基准</title>
+      <link href="/dataset/p/dataset2-set.html"/>
+      <url>/dataset/p/dataset2-set.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="TFRD数据集"><a href="#TFRD数据集" class="headerlink" title="TFRD数据集"></a>TFRD数据集</h1><p>TFRD数据集由基于<a href="https://fenicsproject.org/">FEniCS</a>的<a href="https://github.com/shendu-sw/recon-data-generator">数据生成器</a>生成，已上传<a href="https://pan.baidu.com/s/14BipTer1fkilbRjrQNbKiQ">百度网盘</a>（密码：tfrd）。</p><p>TFRD数据集描述热源系统区域为$0.1m \times 0.1m$的矩形，且离散化为$200 \times 200$的网格。数据集共提供HSink、ADlet和DSine三个子数据集。每个子数据集含有10000训练样本，20000测试样本（Test 0为随机测试样本，Test 1, 2, 3, 4, 5为特殊测试样本）:</p><ul><li><p><strong>Generality</strong></p><blockquote><p>三种典型热源系统（HSink，ADlet，DSine）</p></blockquote></li><li><p><strong>Reasonability</strong></p><blockquote><p>TFRD数据库设计合理（10000训练样本，20000包含6中不同情况的数据集）</p></blockquote></li><li><strong>Diversity</strong> <blockquote><p>边界条件和组件多样性且提供多样性评价准则</p></blockquote></li></ul><h2 id="HSink子数据集"><a href="#HSink子数据集" class="headerlink" title="HSink子数据集"></a>HSink子数据集</h2><blockquote><p>带有小孔散热片的热源系统，散热器的宽度设置为0.01m，恒温值为298K （Dirichlet边界），其他边界是绝热的（Neumann 边界）</p></blockquote><div class="table-container"><table><thead><tr><th style="text-align:center"><img src="/dataset/images/hsink.png" alt="upload successful"></th><th style="text-align:center"><img src="/dataset/images/hsink1.png" alt="upload successful"></th></tr></thead><tbody><tr><td style="text-align:center"><strong>Training Sample</strong></td><td style="text-align:center"><strong>Training Sample</strong></td></tr></tbody></table></div><div class="table-container"><table><thead><tr><th style="text-align:center"><img src="/dataset/images/figure/0.jpg" alt="0"></th><th style="text-align:center"><img src="/dataset/images/figure/1.jpg" alt="1"></th><th style="text-align:center"><img src="/dataset/images/figure/2.jpg" alt="2"></th></tr></thead><tbody><tr><td style="text-align:center"><strong>Test 0</strong></td><td style="text-align:center"><strong>Test 1</strong></td><td style="text-align:center"><strong>Test 2</strong></td></tr><tr><td style="text-align:center"><img src="/dataset/images/figure/3.jpg" alt="3"></td><td style="text-align:center"><img src="/dataset/images/figure/4.jpg" alt="4"></td><td style="text-align:center"><img src="/dataset/images/figure/5.jpg" alt="5"></td></tr><tr><td style="text-align:center"><strong>Test 3</strong></td><td style="text-align:center"><strong>Test 4</strong></td><td style="text-align:center"><strong>Test 5</strong></td></tr></tbody></table></div><h2 id="ADlet子数据集"><a href="#ADlet子数据集" class="headerlink" title="ADlet子数据集"></a>ADlet子数据集</h2><blockquote><p>四周散热的热源系统，三边恒温为298K，一边为正弦分布散热</p></blockquote><div class="table-container"><table><thead><tr><th style="text-align:center"><img src="/dataset/images/adlet.png" alt="upload successful"></th><th style="text-align:center"><img src="/dataset/images/adlet2.png" alt="upload successful"></th></tr></thead><tbody><tr><td style="text-align:center"><strong>Training Sample</strong></td><td style="text-align:center"><strong>Training Sample</strong></td></tr></tbody></table></div><div class="table-container"><table><thead><tr><th style="text-align:center"><img src="/dataset/images/figure/0.jpg" alt="0"></th><th style="text-align:center"><img src="/dataset/images/figure/1.jpg" alt="1"></th><th style="text-align:center"><img src="/dataset/images/figure/2.jpg" alt="2"></th></tr></thead><tbody><tr><td style="text-align:center"><strong>Test 0</strong></td><td style="text-align:center"><strong>Test 1</strong></td><td style="text-align:center"><strong>Test 2</strong></td></tr><tr><td style="text-align:center"><img src="/dataset/images/figure/3.jpg" alt="3"></td><td style="text-align:center"><img src="/dataset/images/figure/4.jpg" alt="4"></td><td style="text-align:center"><img src="/dataset/images/figure/5.jpg" alt="5"></td></tr><tr><td style="text-align:center"><strong>Test 3</strong></td><td style="text-align:center"><strong>Test 4</strong></td><td style="text-align:center"><strong>Test 5</strong></td></tr></tbody></table></div><h2 id="DSine子数据集"><a href="#DSine子数据集" class="headerlink" title="DSine子数据集"></a>DSine子数据集</h2><blockquote><p>单边散热的热源系统，散热边为正弦分布散热，其他边界是绝热的（Neumann 边界）</p></blockquote><div class="table-container"><table><thead><tr><th style="text-align:center"><img src="/dataset/images/dsine.png" alt="upload successful"></th><th style="text-align:center"><img src="/dataset/images/dsine2.png" alt="upload successful"></th></tr></thead><tbody><tr><td style="text-align:center"><strong>Training Sample</strong></td><td style="text-align:center"><strong>Training Sample</strong></td></tr></tbody></table></div><div class="table-container"><table><thead><tr><th style="text-align:center"><img src="/dataset/images/figure/0.jpg" alt="0"></th><th style="text-align:center"><img src="/dataset/images/figure/1.jpg" alt="1"></th><th style="text-align:center"><img src="/dataset/images/figure/2.jpg" alt="2"></th></tr></thead><tbody><tr><td style="text-align:center"><strong>Test 0</strong></td><td style="text-align:center"><strong>Test 1</strong></td><td style="text-align:center"><strong>Test 2</strong></td></tr><tr><td style="text-align:center"><img src="/dataset/images/figure/3.jpg" alt="3"></td><td style="text-align:center"><img src="/dataset/images/figure/4.jpg" alt="4"></td><td style="text-align:center"><img src="/dataset/images/figure/5.jpg" alt="5"></td></tr><tr><td style="text-align:center"><strong>Test 3</strong></td><td style="text-align:center"><strong>Test 4</strong></td><td style="text-align:center"><strong>Test 5</strong></td></tr></tbody></table></div><h2 id="评价准则"><a href="#评价准则" class="headerlink" title="评价准则"></a>评价准则</h2><h6 id="平均绝对误差（MAE）"><a href="#平均绝对误差（MAE）" class="headerlink" title="平均绝对误差（MAE）"></a>平均绝对误差（MAE）</h6><blockquote><p>预测温度场绝对误差的平均值</p></blockquote><script type="math/tex; mode=display">{E_{MAE} } = \frac{1}{ {\left| \Omega  \right|} }\sum\limits_{({x_i},{y_j}) \in \Omega } {\left| {T({x_i},{y_j}) - T'({x_i},{y_j})} \right|}</script><h6 id="绝对误差最大值（MaxAE）"><a href="#绝对误差最大值（MaxAE）" class="headerlink" title="绝对误差最大值（MaxAE）"></a>绝对误差最大值（MaxAE）</h6><blockquote><p>预测温度场的最大绝对误差</p></blockquote><script type="math/tex; mode=display">{E_{MaxAE} } = \mathop {\max }\limits_{({x_i},{y_j}) \in \Omega } \left| {T({x_i},{y_j}) - T'({x_i},{y_j})} \right|</script><h6 id="组件区域平均绝对误差（CMAE）"><a href="#组件区域平均绝对误差（CMAE）" class="headerlink" title="组件区域平均绝对误差（CMAE）"></a>组件区域平均绝对误差（CMAE）</h6><blockquote><p>热源组件上温度绝对误差的平均值</p></blockquote><script type="math/tex; mode=display">{E_{CMAE} } = \frac{1}{ {\left| { {\Omega _c} } \right|} }\sum\limits_{({x_i},{y_j}) \in {\Omega _c} } {\left| {T({x_i},{y_j}) - T'({x_i},{y_j})} \right|}</script><h6 id="组件区域绝对误差最大值（MCAE）"><a href="#组件区域绝对误差最大值（MCAE）" class="headerlink" title="组件区域绝对误差最大值（MCAE）"></a>组件区域绝对误差最大值（MCAE）</h6><blockquote><p>热源组件上温度绝对误差的最大值</p></blockquote><script type="math/tex; mode=display">{E_{CMAE} } = \mathop {\max }\limits_{({x_i},{y_j}) \in {\Omega _c} } \left| {T({x_i},{y_j}) - T'({x_i},{y_j})} \right|</script><h6 id="边界平均绝对误差（BMAE）"><a href="#边界平均绝对误差（BMAE）" class="headerlink" title="边界平均绝对误差（BMAE）"></a>边界平均绝对误差（BMAE）</h6><blockquote><p>边界上温度绝对误差的平均值</p></blockquote><script type="math/tex; mode=display">{E_{BMAE} } = \frac{1}{ {\left| { {\Omega _b} } \right|} }\sum\limits_{({x_i},{y_j}) \in {\Omega _b} } {\left| {T({x_i},{y_j}) - T'({x_i},{y_j})} \right|}</script>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 数据集 </tag>
+            
+            <tag> hide </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>温度场重建基准</title>
+      <link href="/dataset/p/dataset2-publication.html"/>
+      <url>/dataset/p/dataset2-publication.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="论文"><a href="#论文" class="headerlink" title="论文"></a>论文</h1><p>[1] Gong Z, Zhou W, Zhang J, et al. <strong>Physics-Informed Deep Reversible Regression Model for Temperature Field Reconstruction of Heat-Source Systems</strong>[J]. arXiv preprint arXiv:2106.11929, 2021.</p><p>[2] Chen X, Gong Z, Zhao X, et al. <strong>A Machine Learning Modelling Benchmark for Temperature Field Reconstruction of Heat-Source Systems</strong>[J]. arXiv preprint arXiv:2108.08298, 2021.</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 数据集 </tag>
+            
+            <tag> hide </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>温度场重建基准</title>
+      <link href="/dataset/p/dataset2-result.html"/>
+      <url>/dataset/p/dataset2-result.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="部分结果展示"><a href="#部分结果展示" class="headerlink" title="部分结果展示"></a>部分结果展示</h1><h4 id="不同基准方法的MAE结果"><a href="#不同基准方法的MAE结果" class="headerlink" title="不同基准方法的MAE结果"></a>不同基准方法的MAE结果</h4><p><img src="/dataset/images/result1.png" alt="upload successful"></p><p><img src="/dataset/images/result2.png" alt="upload successful"></p><h4 id="不同基准方法重建效果"><a href="#不同基准方法重建效果" class="headerlink" title="不同基准方法重建效果"></a>不同基准方法重建效果</h4><div class="table-container"><table><thead><tr><th style="text-align:center"><img src="/dataset/images/0.png" alt="upload successful"></th><th style="text-align:center"><img src="/dataset/images/1.png" alt="upload successful"></th><th style="text-align:center"><img src="/dataset/images/2.png" alt="upload successful"></th><th style="text-align:center"><img src="/dataset/images/3.png" alt="upload successful"></th></tr></thead><tbody><tr><td style="text-align:center"><strong>System</strong></td><td style="text-align:center"><strong>Groundtruth</strong></td><td style="text-align:center"><strong>KInterpolation （MAE=2.6400）</strong></td><td style="text-align:center"><strong>GInterpolation （MAE=2.4279）</strong></td></tr></tbody></table></div><div class="table-container"><table><thead><tr><th style="text-align:center"><img src="/dataset/images/8.png" alt="upload successful"></th><th style="text-align:center"><img src="/dataset/images/5.png" alt="upload successful"></th><th style="text-align:center"><img src="/dataset/images/6.png" alt="upload successful"></th></tr></thead><tbody><tr><td style="text-align:center"><strong>PR （MAE=3.1794）</strong></td><td style="text-align:center"><strong>RFR （MAE=2.0980）</strong></td><td style="text-align:center"><strong>GPR （MAE=2.4213）</strong></td></tr><tr><td style="text-align:center"><img src="/dataset/images/7.png" alt="upload successful"></td><td style="text-align:center"><img src="/dataset/images/9.png" alt="upload successful"></td><td style="text-align:center"><img src="/dataset/images/10.png" alt="upload successful"></td></tr><tr><td style="text-align:center"><strong>SVR （MAE=4.0458）</strong></td><td style="text-align:center"><strong>MLP-P （MAE=2.1286）</strong></td><td style="text-align:center"><strong>RBM （MAE=3.0837）</strong></td></tr><tr><td style="text-align:center"><img src="/dataset/images/11.png" alt="upload successful"></td><td style="text-align:center"><img src="/dataset/images/12.png" alt="upload successful"></td><td style="text-align:center"><img src="/dataset/images/13.png" alt="upload successful"></td></tr><tr><td style="text-align:center"><strong>DBN （MAE=3.0509）</strong></td><td style="text-align:center"><strong>MLP-V （MAE=0.2904）</strong></td><td style="text-align:center"><strong>CNP （MAE=0.5159）</strong></td></tr><tr><td style="text-align:center"><img src="/dataset/images/14.png" alt="upload successful"></td><td style="text-align:center"><img src="/dataset/images/15.png" alt="upload successful"></td><td style="text-align:center"><img src="/dataset/images/16.png" alt="upload successful"></td></tr><tr><td style="text-align:center"><strong>Transformer （MAE=0.3706）</strong></td><td style="text-align:center"><strong>FCN-1 （MAE=0.0589）</strong></td><td style="text-align:center"><strong>FCN-2 （MAE=0.0318）</strong></td></tr><tr><td style="text-align:center"><img src="/dataset/images/17.png" alt="upload successful"></td><td style="text-align:center"><img src="/dataset/images/18.png" alt="upload successful"></td><td style="text-align:center"><img src="/dataset/images/19.png" alt="upload successful"></td></tr><tr><td style="text-align:center"><strong>FCN-3 （MAE=0.2535）</strong></td><td style="text-align:center"><strong>UNet （MAE=0.0592）</strong></td><td style="text-align:center"><strong>FPN-ResNet18 （MAE=1.4762）</strong></td></tr><tr><td style="text-align:center"><img src="/dataset/images/20.png" alt="upload successful"></td><td style="text-align:center"><img src="/dataset/images/21.png" alt="upload successful"></td><td style="text-align:center"></td></tr><tr><td style="text-align:center"><strong>SegNet-AlexNet （MAE=0.5667）</strong></td><td style="text-align:center"><strong>GCN （MAE=0.9942）</strong></td><td style="text-align:center"></td></tr></tbody></table></div>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 数据集 </tag>
+            
+            <tag> hide </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>温度场预测基准</title>
+      <link href="/dataset/p/dataset1-baseline-method.html"/>
+      <url>/dataset/p/dataset1-baseline-method.html</url>
+      
+        <content type="html"><![CDATA[<p>基准网络主要为计算机视觉中常见的图像到图像网络结构，包括 FCN、SegNet、U-Net 和 FPN，并对比了不同 backbone 对实验结果的影响。其中 backbone 包括 AlexNet、VGG 和 ResNet。</p><p>（1）FCN 网络结构示意图</p><p><img src="/dataset/images/figure/fcn8.png" alt="fcn8"></p><p>（2）SegNet 网络结构示意图</p><p><img src="/dataset/images/figure/segnet.png" alt="segnet"></p><p>（3）U-Net 网络结构示意图</p><p><img src="/dataset/images/figure/unet.png" alt="unet"></p><p>（4）FPN 网络结构示意图</p><p><img src="/dataset/images/figure/fpn.png" alt="fpn"></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 数据集 </tag>
+            
+            <tag> hide </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>温度场预测基准</title>
+      <link href="/dataset/p/dataset1-set.html"/>
+      <url>/dataset/p/dataset1-set.html</url>
+      
+        <content type="html"><![CDATA[<p>数据集下载地址：</p><ul><li><strong>任务</strong></li></ul><p>发热组件的布局是影响系统散热性能的因素之一。为支持组件布局优化，采用数据驱动的方式训练代理模型，实现组件布局到稳态温度场的快速预测。单个布局和温度场数据为 200x200 的二维矩阵，可以看作单通道图像，因此本任务可以看作为单通道图像到单通道图像的回归问题。</p><p>本数据集构建了三种不同边界条件下的复杂热源连续布局问题。</p><p>（1）Case 1。方形区域四周散热问题。0.1mx0.1m 的方形区域，四条边上的温度恒定，为 298K。</p><p><img src="/dataset/images/figure/case1.png" alt="case1" style="zoom: 33%;" /></p><p>（2）Case 2。方形区域单边散热问题。0.1mx0.1m 的方形区域，左边界上的温度恒定，为 298K，其他边界绝热。</p><p><img src="/dataset/images/figure/case2.png" alt="case2" style="zoom: 33%;" /></p><p>（3）Case 3。方形区域小孔散热问题。0.1mx0.1m 的方形区域，底部中间存在 0.001m 的恒温小孔，温度为 298K。其他边界绝热。</p><p><img src="/dataset/images/figure/case3.png" alt="case3" style="zoom:33%;" /></p><p>布局中组件的设置如下：</p><div class="table-container"><table><thead><tr><th style="text-align:center">组件</th><th style="text-align:center">长（$m$）</th><th style="text-align:center">宽（$m$）</th><th style="text-align:center">热源强度（$W/m^2$）</th></tr></thead><tbody><tr><td style="text-align:center">1</td><td style="text-align:center">0.016</td><td style="text-align:center">0.012</td><td style="text-align:center">4000</td></tr><tr><td style="text-align:center">2</td><td style="text-align:center">0.012</td><td style="text-align:center">0.006</td><td style="text-align:center">16000</td></tr><tr><td style="text-align:center">3</td><td style="text-align:center">0.018</td><td style="text-align:center">0.009</td><td style="text-align:center">6000</td></tr><tr><td style="text-align:center">4</td><td style="text-align:center">0.018</td><td style="text-align:center">0.012</td><td style="text-align:center">8000</td></tr><tr><td style="text-align:center">5</td><td style="text-align:center">0.018</td><td style="text-align:center">0.018</td><td style="text-align:center">10000</td></tr><tr><td style="text-align:center">6</td><td style="text-align:center">0.012</td><td style="text-align:center">0.012</td><td style="text-align:center">14000</td></tr><tr><td style="text-align:center">7</td><td style="text-align:center">0.018</td><td style="text-align:center">0.006</td><td style="text-align:center">16000</td></tr><tr><td style="text-align:center">8</td><td style="text-align:center">0.009</td><td style="text-align:center">0.009</td><td style="text-align:center">20000</td></tr><tr><td style="text-align:center">9</td><td style="text-align:center">0.006</td><td style="text-align:center">0.024</td><td style="text-align:center">8000</td></tr><tr><td style="text-align:center">10</td><td style="text-align:center">0.006</td><td style="text-align:center">0.012</td><td style="text-align:center">16000</td></tr><tr><td style="text-align:center">11</td><td style="text-align:center">0.012</td><td style="text-align:center">0.024</td><td style="text-align:center">10000</td></tr><tr><td style="text-align:center">12</td><td style="text-align:center">0.024</td><td style="text-align:center">0.024</td><td style="text-align:center">20000</td></tr></tbody></table></div><ul><li><strong>训练数据说明</strong></li></ul><p>在温度场预测数据集中，每个案例分别包含 2000 个训练样本。每个样本采用.mat 格式存储，mat 文件数据包括：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Example1.mat</span><br><span class="line">&#x27;u&#x27;:&#123;ndarray:(200,200)&#125;,温度场数据，取值范围298-</span><br><span class="line">‘F’:&#123;ndarray:(200,200)&#125;,布局数据，取值范围0-20000</span><br><span class="line">‘xs’:&#123;ndarray:(200,200)&#125;,温度点x轴坐标数据，取值范围0-0.1</span><br><span class="line">&#x27;ys&#x27;:&#123;ndarray:(200,200)&#125;,温度点y轴坐标数据，取值范围0-0.1</span><br></pre></td></tr></table></figure><p>模型的输入和标签分别为布局数据’F’和温度场数据’u’</p><ul><li><strong>测试数据说明</strong></li></ul><p>每个案例包含 9 个测试集。其中每个测试集的采样方法为：</p><p>（1）测试集 1。Sequence layout sampling。</p><p>（2）测试集 2。Gibbs layout sampling。</p><p>（3）测试集 3。Corner samples。Corner 样本定义为面积和热源强度最大的样本。在我们的例子中，组件 12 需要放置在布局域的四个角落，而其他组件可以随机放置。</p><p>（4）测试集 4。Group samples。Group 采样要求具有相同强度的组件紧密地放在一起。</p><p>（5）测试集 5。part-space samples of 200×100。part-space 样本表示紧凑布局方案，其中组件被限制放置在 200×100 布局区域中。</p><p>（6）测试集 6。part-space samples of 100×200。part-space 样本表示紧凑布局方案，其中组件被限制放置在 100×200 布局区域中。</p><p>（7）测试集 7。part-space samples of 140×140。part-space 样本表示紧凑布局方案，其中组件被限制放置在 140×140 布局区域中。</p><p>（8）测试集 8。part-space samples of 120×120。part-space 样本表示紧凑布局方案，其中组件被限制放置在 120×120 布局区域中。</p><p>（9）测试集 9。part-space samples of 100×100。part-space 样本表示紧凑布局方案，其中组件被限制放置在 100×100 布局区域中。</p><p>其中测试集 3-9 的样本展示如下：</p><p><img src="/dataset/images/figure/SpecialSamples.png" alt="SpecialSamples"  /></p><p>9 个测试集中测试样本数量设置如下：</p><div class="table-container"><table><thead><tr><th style="text-align:center">测试集</th><th style="text-align:center">1</th><th style="text-align:center">2</th><th style="text-align:center">3</th><th style="text-align:center">4</th><th style="text-align:center">5</th><th style="text-align:center">6</th><th style="text-align:center">7</th><th style="text-align:center">8</th><th style="text-align:center">9</th></tr></thead><tbody><tr><td style="text-align:center">数量</td><td style="text-align:center">10000</td><td style="text-align:center">10000</td><td style="text-align:center">1000</td><td style="text-align:center">1000x4</td><td style="text-align:center">1000x6</td><td style="text-align:center">1000x6</td><td style="text-align:center">1000</td><td style="text-align:center">1000</td><td style="text-align:center">1000</td></tr></tbody></table></div><ul><li><strong>评价准则</strong></li></ul><p>（1）The Absolute Error of the Maximum Temperature(MT-AE)。最高温度的绝对误差。</p><script type="math/tex; mode=display">\text{MT-AE} = |\max(\hat{Y}) - \max(Y)|</script><p>（2）The Position Absolute Error of the Maximum Temperature (MT-PAE)。最高温度位置的绝对误差。</p><script type="math/tex; mode=display">\text{MT-PAE} = \sqrt{(\hat{x} - x)^2 + (\hat{y} - y)^2}</script><p>（3）MAE。平均绝对误差。</p><script type="math/tex; mode=display">\text{MAE} = \frac{1}{N^2} \sum_{i=1}^{N} \sum_{j=1}^{N} |\hat{Y}_{ij} - Y_{ij}|</script><p>（4）Max-AE。最大的绝对误差。</p><script type="math/tex; mode=display">\text{Max AE} = \max_{i,j} |\hat{Y}_{ij} - Y_{ij}|</script><p>（5）Dirichlet Boundary-constrained MAE ($BMAE_D$)。Dirichlet 边界上的平均绝对误差。</p><script type="math/tex; mode=display">\text{BMAE}_D = \frac{1}{sum(M_D)} \sum \left( M_D \otimes |\hat{Y} - Y| \right)</script><p>（6）Neumann Boundary-constrained MAE ($BMAE_B$​)。Neumann 边界上的平均绝对误差。</p><script type="math/tex; mode=display">\text{BMAE}_N = \frac{1}{sum(M_N)} \sum \left( M_N \otimes |\hat{Y} - Y| \right)</script><p>（7）Component-constrained MAE (CMAE)。组件区域上的平均绝对误差。</p><script type="math/tex; mode=display">\text{CMAE}_i = \frac{1}{sum(M_i)} \sum \left( M_i \otimes |\hat{Y} - Y| \right)</script><p>（8）Gradient MAE (G-MAE)。利用沿两个方向(横轴和纵轴)的中心差值计算温度分布梯度场。</p><script type="math/tex; mode=display">\text{G-MAE} = \frac{1}{(N-1)^2} \sum \left (|\hat{G}_{x} - G_{x}| + |\hat{G}_{y} - G_{y}| \right)</script><p>（9）Laplace MAE (Lap-MAE)。对预测温度场的拉普拉斯算子间的 MAE。</p><script type="math/tex; mode=display">\text{Lap-MAE} = \frac{1}{(N-1)^2} \sum |\Delta \hat{Y} - \Delta Y|</script>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 数据集 </tag>
+            
+            <tag> hide </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>温度场预测基准</title>
+      <link href="/dataset/p/dataset1-publication.html"/>
+      <url>/dataset/p/dataset1-publication.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="论文"><a href="#论文" class="headerlink" title="论文"></a>论文</h1><p>[1] Chen, X., Zhao, X. Gong, Z., Zhang，J., Chen, X., Yao, W., (2021) <strong>A Deep Neural Network Surrogate Modeling Benchmark for Temperature Field Prediction of Heat Source Layout</strong>, Science China-Physics, Mechanics &amp; Astronomy.</p><p>[2] Zhao., X, Gong, Z., Zhang, J., Yao, W., Chen, X., (2021). <strong>A surrogate model with data augmentation and deep transfer learning for temperature field prediction of heat source layout</strong>. Structural and Multidisciplinary Optimization.</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 数据集 </tag>
+            
+            <tag> hide </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>温度场预测基准</title>
+      <link href="/dataset/p/dataset1-result.html"/>
+      <url>/dataset/p/dataset1-result.html</url>
+      
+        <content type="html"><![CDATA[<p>部分指标对比结果</p><p>（1）案例 3 MAE 结果对比</p><p><img src="/dataset/images/figure/one_point_mae_global_10.png" alt="one_point_mae_global_10" style="zoom: 33%;" /></p><p>（2）案例 3 Max-AE 结果对比</p><p><img src="/dataset/images/figure/one_point_max_error_10.png" alt="one_point_max_error_10" style="zoom: 33%;" /></p><p>（3）案例 3 MT-AE 结果对比</p><p><img src="/dataset/images/figure/one_point_error_of_maximum_temperature.png" alt="one_point_error_of_maximum_temperature" style="zoom: 33%;" /></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 数据集 </tag>
+            
+            <tag> hide </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>温度场重建基准</title>
+      <link href="/dataset/p/dataset2-baseline-method.html"/>
+      <url>/dataset/p/dataset2-baseline-method.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="基准方法"><a href="#基准方法" class="headerlink" title="基准方法"></a>基准方法</h1><blockquote><p>基准方法通过四种不同技术路线解决温度场重建问题 [<a href="https://github.com/shendu-sw/TFR-HSS-Benchmark">代码</a>]</p></blockquote><p><img src="/dataset/images/figure/TFRD.jpg" alt="TFRD" style="zoom:67%;" /></p><h4 id="基于点的方法"><a href="#基于点的方法" class="headerlink" title="基于点的方法"></a>基于点的方法</h4><ul><li><strong>k近邻非线性插值（KInterpolation）</strong></li><li><strong>全局高斯插值（GInterpolation）</strong></li><li><strong>多项式回归</strong></li><li><strong>随机森林回归</strong></li><li><strong>高斯过程回归</strong></li><li><strong>支持向量回归</strong></li><li><strong>MLP for point-based modelling（MLPP）</strong></li><li><strong>玻尔兹曼机（RBM）</strong></li><li><strong>深度置信网络（DBNs）</strong></li></ul><h4 id="基于向量的方法"><a href="#基于向量的方法" class="headerlink" title="基于向量的方法"></a>基于向量的方法</h4><ul><li><strong>MLP for vector-based modeling （MLPV）</strong></li><li><strong>Conditional Neural Process （CNP）</strong></li><li><strong>Transformer</strong></li></ul><h4 id="基于图像的方法"><a href="#基于图像的方法" class="headerlink" title="基于图像的方法"></a>基于图像的方法</h4><ul><li><strong>Fully convolutional networks （FCN）</strong></li><li><strong>UNet</strong></li><li><strong>SegNet</strong></li><li><strong>FPN</strong></li></ul><h4 id="基于图关系的方法"><a href="#基于图关系的方法" class="headerlink" title="基于图关系的方法"></a>基于图关系的方法</h4><ul><li><strong>Graph convolutional networks (GCNs)</strong></li></ul>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 数据集 </tag>
+            
+            <tag> hide </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>温度场预测基准</title>
+      <link href="/dataset/p/dataset1-index.html"/>
+      <url>/dataset/p/dataset1-index.html</url>
+      
+        <content type="html"><![CDATA[<p>欢迎来到热源布局预测数据集(Heat-Source Layout Dataset)主页。</p><h1 id="热源布局温度场预测任务"><a href="#热源布局温度场预测任务" class="headerlink" title="热源布局温度场预测任务"></a>热源布局温度场预测任务</h1><blockquote><p>热源布局温度场预测任务是对于给定热源组件布局以及边界条件，预测其整体温度场，为优化卫星舱内热源组件布局服务。</p></blockquote><div class="table-container"><table><thead><tr><th style="text-align:center"><img src="/dataset/images/layout.png" alt="upload successful"></th><th style="text-align:center"><img src="/dataset/images/boundary.png" alt="upload successful"></th><th style="text-align:center"><img src="/dataset/images/field.png" alt="upload successful"></th></tr></thead><tbody><tr><td style="text-align:center"><strong>热源布局模型</strong></td><td style="text-align:center"><strong>边界条件</strong></td><td style="text-align:center"><strong>温度场分布</strong></td></tr></tbody></table></div><h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">@article&#123;chen2021,</span><br><span class="line">    Author = &#123;Xianqi Chen and Xiaoyu Zhao and Zhiqiang Gong and Jun Zhang and Xiaoqian Chen and Wen Yao&#125;,</span><br><span class="line">    Title = &#123; A Deep Neural Network Surrogate Modeling Benchmark for Temperature Field Prediction of Heat Source Layout&#125;,</span><br><span class="line">    Journal = &#123;Science China-Physics, Mechanics &amp; Astronomy&#125;,</span><br><span class="line">    Year = &#123;2021&#125;</span><br><span class="line">&#125; </span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 数据集 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>

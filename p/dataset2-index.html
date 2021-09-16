@@ -1,257 +1,370 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   
-  <title>温度场重构数据集 | Dataset</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="在电子设备的热管理模块中，根据有限的传感器监测点重构热源系统整体温度场分布，并对电子设备健康实时检测具有重要意义。然而，现有的常用插值方法往往无法满足重构精度要求。我们开发了一个公共数据集用于研究温度场重建方法，进一步提高重建性能和工程应用。">
+  <title>温度场重建基准 | TAB</title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="shortcut icon" href="/dataset/">
+  <link rel="alternate" href="/dataset/atom.xml" title="TAB" type="application/atom+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="温度场重建基准面向电子设备热管理模块，解决由有限监测位置温度监控感兴趣位置（PoIs）温度，最终实现电子设备健康实时检测。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="温度场重构数据集">
+<meta property="og:title" content="温度场重建基准">
 <meta property="og:url" content="https://shendu-sw.github.io/dataset/p/dataset2-index.html">
-<meta property="og:site_name" content="Dataset">
-<meta property="og:description" content="在电子设备的热管理模块中，根据有限的传感器监测点重构热源系统整体温度场分布，并对电子设备健康实时检测具有重要意义。然而，现有的常用插值方法往往无法满足重构精度要求。我们开发了一个公共数据集用于研究温度场重建方法，进一步提高重建性能和工程应用。">
+<meta property="og:site_name" content="TAB">
+<meta property="og:description" content="温度场重建基准面向电子设备热管理模块，解决由有限监测位置温度监控感兴趣位置（PoIs）温度，最终实现电子设备健康实时检测。">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://shendu-sw.github.io/dataset/images/figure/散热器.png">
 <meta property="og:image" content="https://shendu-sw.github.io/dataset/images/figure/point.jpg">
 <meta property="og:image" content="https://shendu-sw.github.io/dataset/images/figure/vector.jpg">
 <meta property="og:image" content="https://shendu-sw.github.io/dataset/images/figure/image.jpg">
 <meta property="og:image" content="https://shendu-sw.github.io/dataset/images/figure/graph.jpg">
 <meta property="article:published_time" content="2021-09-10T03:08:00.000Z">
-<meta property="article:modified_time" content="2021-09-10T07:17:56.117Z">
+<meta property="article:modified_time" content="2021-09-16T07:19:12.582Z">
 <meta property="article:author" content="IDRL">
 <meta property="article:tag" content="数据集">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://shendu-sw.github.io/dataset/images/figure/散热器.png">
+<meta name="twitter:image" content="https://shendu-sw.github.io/dataset/images/figure/point.jpg">
+    
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata|Titillium+Web" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+  <link href='//cdn.bootcss.com/node-waves/0.7.5/waves.min.css' rel='stylesheet'>
   
-  <link rel="alternate" href="/atom.xml" title="Dataset" type="application/atom+xml">
-  
-  
-  <link rel="icon" href="/favicon.png">
-  
-  
-  <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  
-<link rel="stylesheet" href="/dataset/css/tocas.css">
+<link rel="stylesheet" href="/dataset/style.css">
 
-  
-<link rel="stylesheet" href="/dataset/css/animate.css">
-
-  
-<link rel="stylesheet" href="/dataset/css/style.css">
-
-  
-<link rel="stylesheet" href="/dataset/css/custom.css">
-
-  <style type="text/css">
-    a.title-link:hover {
-      color: #34b2db !important;
+  <script>
+    function setLoadingBarProgress(num) {
+      document.getElementById('loading-bar').style.width=num+"%";
     }
-
-    a.title-link:active {
-      color: #2075c1 !important;
-    }
-
-    #menu-color-id {
-      background: #f7f7f7;
-    }
-
-    #menu-color-id a {
-      color: #5a5a5a;
-    }
-  </style>
-  
-<script src="/dataset/js/tocas.js"></script>
-
-  
-
+  </script>
 <meta name="generator" content="Hexo 5.4.0"></head>
 
+
 <body>
-
-
-    <!-- big bang title -->
-    <div class="ts padded horizontally fitted fluid slate"
-        style="background: #f7f7f7;background-size: 100% auto;background-position: center;background-repeat: no-repeat;">
-        <!-- ejs : align to post page or index page -->
-        
-            <div class="ts very narrow container pages_adjust">
-                
-                <!-- Title -->
-                <h1 class="ts eleven wide column header be-center-h1">
-                    <!-- 如果添加 id="big-title"， 会在标题后面附带 #-tag  -->
-                    
-                    <span style="color: #404040;" >Dataset</span>
-                    <div class="sub header" id="slogan-bar" style=" margin-top: 15px; color: #404040;">
-                        用Hexo框架搭建的文章阅读页</div>
-                </h1>
-                <!-- the end of title -->
-            </div>
-        </div>
-    </div>
-    <!-- the end of big bang title -->
-
-    <!-- navigation -->
-
-    <div class="ts fluid basic link big menu" id="menu-color-id">
-
-        <!-- ejs : align to post page or index page -->
-        
-            <div class="ts very narrow container">
-                
-
-                
-                <a class="item" href="/dataset/">首页</a>
-                
-                <a class="item" href="/dataset/archives">数据集</a>
-                
-                <a class="item" href="/dataset/publish">出版物</a>
-                
-            </div>
-        </div>
-    </div>
-    <!-- the end of navigation -->
-
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
-
-
-
-<!-- main section -->
-<div class="ts text container">
-    <!-- left section -->
-    <div class="column" style=" padding: 35px; ">
-        
-
-
-        <!-- <div class="divider"></div> -->
-
-        <!-- Articles -->
-        
-        <h1 class="ts header">
-            <span style="color: #333;">温度场重构数据集</span>
-            <div class="sub header" style="color: #808080;">发布时间:
-                2021/9/10
-                 &nbsp;&nbsp;
-                <!-- filter tag 'hide' -->
-                
-                <ul class="unstyled radius-tag -list" itemprop="keywords"><li class="unstyled radius-tag -list-item"><a class="unstyled radius-tag -list-link" href="/dataset/tags/%E6%95%B0%E6%8D%AE%E9%9B%86/" rel="tag">数据集</a></li></ul>
-                
-            </div>
-        </h1>
-
-        <!-- Menus -->
-        
-            <div class="post-menu">
-                
-                
-                <div class="post-item">
-                    <a href="/dataset/p/dataset2-index ">主页</a>
-                </div>
-                
-                
-                <div class="post-item">
-                    <a href="/dataset/p/dataset2-set ">数据集</a>
-                </div>
-                
-                
-                <div class="post-item">
-                    <a href="/dataset/p/dataset2-result ">结果</a>
-                </div>
-                
-                
-                <div class="post-item">
-                    <a href="/dataset/p/dataset2-publication ">出版物</a>
-                </div>
-                
-            </div>
-            <hr />
-        
-        <!-- / the end of Menus -->
-        <p>欢迎来到温度场重构数据集（Temperature Field Reconstruction Dataset，TFRD）主页。</p>
-<p>在电子设备的热管理模块中，根据有限的传感器监测点重构热源系统整体温度场分布，并对电子设备健康实时检测具有重要意义。然而，现有的常用插值方法往往无法满足重构精度要求。我们开发了一个公共数据集用于研究温度场重建方法，进一步提高重建性能和工程应用。该数据集以插值方法和基于机器学习的方法等常用方法为基线，构建了用于热源系统温度场重建任务的数据集，即温度场重构数据集，以推进温度场重构研究。我们从实际工程问题出发，对热源系统温度场重建任务进行了数学建模，构建了四种类型的数值模型，将问题转化为离散映射形式。此外，我们选取了3个具有不同热源信息和边界条件的典型热源系统重构问题，生成训练和测试样本供进一步研究。最后，对现有的热源系统温度场重建任务方法以及近年来广泛使用的深度学习方法进行了全面回顾，并对典型方法在温度场重构数据集上进行了性能分析，作为基准结果。</p>
-<p>本数据集具有以下3个特点：</p>
-<ul>
-<li>Generality。据我们所知，TFRD是第一个系统研究工程中热源系统温度场重构任务的数据集。TFRD提供了四种不同的计算模型，可适用于不同的方法来解决问题。TFRD由三个典型案例组成，分别是hink、ADlet和DSine子任务。这些任务都是从工程应用中模拟出来的，使得这些方法更具有通用性，可以应用于实际工程问题。此外，热源系统温度场重构任务中热源的形状和功率分布已经足够复杂，这给热源系统温度场重构任务任务带来了更多的挑战，进一步推动了最先进的方法的发展。</li>
-<li>Reasonability。TFRD包含10000个训练样本和20000个测试样本，每个子数据设置10000个特殊样本。TFRD中的训练和测试样本适用于不同的研究。例如，使用更少的训练样本来获得更好的重构性能需要一次学习。为了使模型更适合特殊样本，不平衡学习也是必不可少的。此外，该数据生成器还将促进该领域中减少测点的研究。这些研究课题正是工程界迫切需要解决的问题。</li>
-<li>Diversity。TFRD提供了边界条件和组件多样性，并提供了多样性的测试集实现方法的全面评价。</li>
-</ul>
-<p>本数据集采用FEniCS计算不同热源布局对应的稳态温度场作为参考温度场，评价重建方法的性能。FEniCS是一种流行的求解偏微分方程(PDEs)的开源计算平台。它使用户能够快速地将科学模型转换成有效的有限元代码。本数据集的数据生成器代码是基于FEniCS开发的，发布于<a target="_blank" rel="noopener" href="https://github.com/shendu-sw/recon-data-generator">https://github.com/shendu-sw/recon-data-generator</a>。</p>
-<p>数据生成器支持定制热源，如形状和布置角度，以及边界条件的设计，包括散热片和正弦波分布边界。我们提供了生成数据集的配置文件，如果需要，可以生成更多示例。此外，其他研究人员可以生成更多有趣的其他案例样本，以推进最先进的热源系统温度场重建方法。</p>
-<p>TFDR数据集和方法示意图。</p>
-<p><img src="/dataset/images/figure/散热器.png" alt="散热器"></p>
-<p><img src="/dataset/images/figure/point.jpg" alt="point"></p>
-<p><img src="/dataset/images/figure/vector.jpg" alt="vector"></p>
-<p><img src="/dataset/images/figure/image.jpg" alt="image"></p>
-<p><img src="/dataset/images/figure/graph.jpg" alt="graph"></p>
-<p>如果我们的数据集对您的研究有所帮助，请引用我们的文章。</p>
-<blockquote>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">@article&#123;gong2021,</span><br><span class="line">    Author = &#123;Xiaoqian Chen and Zhiqiang Gong and Xiaoyu Zhao and Wen Yao&#125;,</span><br><span class="line">    Title = &#123;TFRD: A Benchmark Dataset for Research on Temperature Field Reconstruction of Heat-Source Systems&#125;,</span><br><span class="line">    Year = &#123;2021&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</blockquote>
-
-        <!-- / the end of articles -->
-    </div>
-    <!-- / left section -->
-
-    
-
-    <!-- Next Post and Prev Post -->
-    
-    <hr />
-    <div class="next-prev-post-section">
-        <script>
-            function goBack() {
-                window.history.go(-1)
-            }
-        </script>
-        <a href="javascript:void(0)" onclick="goBack()" class="styled-border">
-            ←返回
-        </a>
-        <a href="#"></a>
-        <!-- 
-        <a href="#"></a>
-        
-        
-        <a href="/dataset/p/dataset2-publication.html" class="styled-border">
-            
-            温度场重构数据集
-            →
-        </a>
-         -->
-    </div>
-    
+  <div id="loading-bar-wrapper">
+  <div id="loading-bar"></div>
 </div>
-<script type="text/javascript">
-    let img = document.getElementsByTagName("img");
-    for (let i = 0; i < img.length; i++) {
-        img[i].className += " ts fluid image";
-    }
-</script>
-<!-- / main section -->
 
-<!-- copyright -->
-<!-- <div class="ts attached secondary segment">
-    <div class="ts narrow container">
-        <br>
-        <div class="ts large center aligned header">
-            Powered by Hexo, Theme designs by @hpcslag.
-            <div class="smaller sub header">
-                Style-Framework Tocas-UI designs by @yamioldmel
-            </div>
-        </div>
-        <br>
-    </div>
-</div> -->
-<!-- / copyright -->
-<script type="text/javascript">
+
+  <script>
+    setLoadingBarProgress(20)
+  </script>
+  <header class="l_header">
+	<div class='wrapper'>
+		<div class="nav-main container container--flex">
+			<a class="logo flat-box dataset-logo" href='/dataset/'>
+				<!-- <div class="dataset-img">
+					<img src="/dataset/images/IDRL logo.png" />
+				</div> -->
+				<div class="dataset-title">
+					<div class="big-title">TAB</div>
+					<div class="subtitle">Thermal analysis benchmarks</div>
+				</div>
+			</a>
+			<div class='menu'>
+				<ul class='h-list'>
+					
+					<li>
+						<a class='flat-box nav-home' href='/dataset/main'>
+							首页
+						</a>
+					</li>
+					
+					<li>
+						<a class='flat-box nav-benchmark' href='/dataset/#data'>
+							基准
+						</a>
+					</li>
+					
+					<li>
+						<a class='flat-box nav-challenge' href='/dataset/challenge'>
+							比赛
+						</a>
+					</li>
+					
+					<li>
+						<a class='flat-box nav-support' href='/dataset/support'>
+							文档
+						</a>
+					</li>
+					
+					<li>
+						<a class='flat-box nav-publish' href='/dataset/publish'>
+							相关成果
+						</a>
+					</li>
+					
+				</ul>
+				<div class='underline'></div>
+			</div>
+			
+			<div class="m_search">
+				<form name="searchform" class="form u-search-form">
+					<input type="text" class="input u-search-input" placeholder="搜索" />
+					<span class="icon icon-search"></span>
+				</form>
+			</div>
+			
+			<ul class='switcher h-list'>
+				
+				<li class='s-search'><a href='javascript:void(0)'><span class="icon icon-search flat-box"></span></a>
+				</li>
+				
+				<li class='s-menu'><a href='javascript:void(0)'><span class="icon icon-menu flat-box"></span></a></li>
+			</ul>
+		</div>
+
+		<div class='nav-sub container container--flex'>
+			<a class="logo" class="flat-box" href='javascript:void(0)'>
+				Word of Forks
+			</a>
+
+			<ul class='switcher h-list'>
+				<li class='s-comment'><a href='javascript:void(0)'><span
+							class="icon icon-chat_bubble_outline flat-box"></span></a></li>
+				<li class='s-top'><a href='javascript:void(0)'><span class="icon icon-arrow_upward flat-box"></span></a>
+				</li>
+				<li class='s-toc'><a href='javascript:void(0)'><span
+							class="icon icon-format_list_numbered flat-box"></span></a></li>
+			</ul>
+		</div>
+	</div>
+</header>
+<aside class="menu-phone">
+	<nav>
+		
+		<a href="/dataset/main" class="nav-home nav">
+			home
+		</a>
+		
+		<a href="/dataset/#data" class="nav-benchmark nav">
+			benchmark
+		</a>
+		
+		<a href="/dataset/challenge" class="nav-challenge nav">
+			challenge
+		</a>
+		
+		<a href="/dataset/support" class="nav-support nav">
+			support
+		</a>
+		
+		<a href="/dataset/publish" class="nav-publish nav">
+			publish
+		</a>
+		
+	</nav>
+</aside>
+  <script>
+    setLoadingBarProgress(40);
+  </script>
+  <div class="l_body">
+    <div class='container clearfix'>
+      <div class='l_main'>
+        <article id="post-dataset2/温度场重构数据集-主页" class="post no-shandow white-box article-type-post"
+	itemscope itemprop="blogPost">
+
+
+	<section class='meta'>
+
+		<div class="title-bar">
+			<div class="title post-title">
+				<a href="/dataset/p/dataset2-index.html">
+					温度场重建基准
+				</a>
+			</div>
+			<!-- 菜单 -->
+			
+			<div class="post-menus">
+				
+				<div class="post-menu-item">
+					<a class="" href="dataset2-index">主页 </a>
+				</div>
+				
+				<div class="post-menu-item">
+					<a class="" href="dataset2-set">数据集 </a>
+				</div>
+				
+				<div class="post-menu-item">
+					<a class="" href="dataset2-baseline-method">基准方法 </a>
+				</div>
+				
+				<div class="post-menu-item">
+					<a class="" href="dataset2-result">结果 </a>
+				</div>
+				
+				<div class="post-menu-item">
+					<a class="" href="dataset2-publication">相关成果 </a>
+				</div>
+				
+			</div>
+			
+		</div>
+
+		<!-- 分类，暂时用不到 -->
+		<!--  -->
+	</section>
+	
+	<!-- <section class="toc-wrapper"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%83%AD%E6%BA%90%E7%B3%BB%E7%BB%9F%E6%B8%A9%E5%BA%A6%E5%9C%BA%E9%87%8D%E5%BB%BA%E4%BB%BB%E5%8A%A1"><span class="toc-number">1.</span> <span class="toc-text">热源系统温度场重建任务</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#One-instance-one-task"><span class="toc-number">1.0.0.1.</span> <span class="toc-text">One instance one task</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#One-family-one-task"><span class="toc-number">1.0.0.2.</span> <span class="toc-text">One family one task</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%BC%95%E7%94%A8"><span class="toc-number">2.</span> <span class="toc-text">引用</span></a></li></ol></section> -->
+	
+	<section class="article typo">
+		<div class="article-entry" itemprop="articleBody">
+			<p>欢迎来到温度场重建数据集（Temperature Field Reconstruction Dataset，TFRD）主页。</p>
+<h1 id="热源系统温度场重建任务"><a href="#热源系统温度场重建任务" class="headerlink" title="热源系统温度场重建任务"></a>热源系统温度场重建任务</h1><blockquote>
+<p>温度场重建数据集面向电子设备热管理模块，解决由有限监测位置温度监控感兴趣位置（PoIs）温度，最终实现电子设备健康实时检测。</p>
+</blockquote>
+<h4 id="One-instance-one-task"><a href="#One-instance-one-task" class="headerlink" title="One instance one task"></a>One instance one task</h4><ul>
+<li>基于点的建模<blockquote>
+<p>学习点坐标到温度值的预测</p>
+</blockquote>
+</li>
+</ul>
+<p><img src="/dataset/images/figure/point.jpg" alt="point"></p>
+<h4 id="One-family-one-task"><a href="#One-family-one-task" class="headerlink" title="One family one task"></a>One family one task</h4><ul>
+<li>基于向量的建模<blockquote>
+<p>学习监测点温度到PoIs温度映射</p>
+</blockquote>
+</li>
+</ul>
+<p><img src="/dataset/images/figure/vector.jpg" alt="vector"></p>
+<ul>
+<li>基于图像的建模<blockquote>
+<p>学习监测点温度到PoIs温度映射（域离散化）</p>
+</blockquote>
+</li>
+</ul>
+<p><img src="/dataset/images/figure/image.jpg" alt="image"></p>
+<ul>
+<li>基于图关系的建模<blockquote>
+<p>学习监测点温度到PoIs温度映射（构建graph关系）</p>
+</blockquote>
+</li>
+</ul>
+<p><img src="/dataset/images/figure/graph.jpg" alt="graph"></p>
+<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1> <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">@article&#123;gong_tfrd,</span><br><span class="line">    Author = &#123;Xiaoqian Chen and Zhiqiang Gong and Xiaoyu Zhao and Weien Zhou and Wen Yao&#125;,</span><br><span class="line">    Title = &#123;A Machine Learning Modelling Benchmark for Temperature Field Reconstruction of Heat-Source Systems&#125;,</span><br><span class="line">    Journal = &#123;arXiv preprint arXiv:2108.08298&#125;,</span><br><span class="line">    Year = &#123;2021&#125;</span><br><span class="line">&#125; </span><br><span class="line"></span><br><span class="line">@article&#123;gong_pirl,</span><br><span class="line">    Author = &#123;Zhiqiang Gong and Weien Zhou and Jun Zhang and Wei Peng and Wen Yao&#125;,</span><br><span class="line">    Title = &#123;Physics-Informed Deep Reversible Regression Model for Temperature Field Reconstruction of Heat-Source Systems&#125;,</span><br><span class="line">    Journal = &#123;arXiv preprint arXiv:2106.11929&#125;,</span><br><span class="line">    Year = &#123;2021&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+		</div>
+	</section>
+
+</article>
+<script>
+	window.subData = {
+		title: '温度场重建基准',
+		tools: true
+	}
+</script>
+
+      </div>
+      <aside class='l_side'>
+        
+  <section class='m_widget about'>
     
-    const slogans = ["用Hexo框架搭建的文章阅读页"];
+    <div class='header'>IDRL</div>
+    <div class='content collapsed'>
+        <div class='desc'>国防科技创新研究院无人系统技术研究中心智能设计与鲁棒学习团队致力于人工智能与飞行器设计的基础前沿和交叉研究，面向飞行器多学科高效分析与优化，发展了系列数据和知识混合驱动的深度学习方法，形成了全自主知识产权的智能辅助飞行器设计优化云平台 IDaaS（Intelligent Design as a Service）原型系统，集成卫星组件热布局温度场近实时预测基准工具箱 STEP（Satellite Temperature fiEld Prediction of heat source layout）、内嵌物理知识神经网络算法框架 IDRLNet 等前沿研究成果。近 3 年团队发表相关学术论文 30 余篇，其中高影响因子 SCI 检索 20 篇，申请专利 30 余项。</div>
+        <div class="collapsed-block"></div>
+    </div>
+    <div id="expandbtn" onclick="expand()">
+        展开
+    </div>
+    <div id="collapsebtn" onclick="collapse()">
+        收起
+    </div>
+    <script>
+        function expand() {
+            document.querySelector('.m_widget.about .content').classList.remove('collapsed')
+            document.getElementById('expandbtn').style.display = 'none';
+            // document.getElementById('collapsebtn').style.display = 'block';
+        }
+
+        function collapse() {
+            document.querySelector('.m_widget.about .content').classList.add('collapsed')
+            document.getElementById('expandbtn').style.display = 'block';
+            document.getElementById('collapsebtn').style.display = 'none';
+        }
+    </script>
+</section>
+
+  <section class='m_widget links'>
+<div class='header'>相关链接</div>
+<div class='content'>
+    <ul class="entry">
+    
+        <li><a class="flat-box" target="_blank" href="https://smt.readthedocs.io/en/latest/index.html">
+            <div class='name'>Surrogate Modeling Toolbox</div>
+        </a></li>
+    
+    </ul>
+</div>
+</section>
+
+  
+<div class="m_widget tagcloud">
+    <div class="header">标签</div>
+    <div class='content'>
+        
+        <a href="/dataset/tags/%E6%95%B0%E6%8D%AE%E9%9B%86/" style="font-size: 14px; color: #808080">数据集</a>
+    </div>
+</div>
+
+
+      </aside>
+      <script>
+        setLoadingBarProgress(60);
+      </script>
+    </div>
+  </div>
+ <footer id="footer" class="clearfix">
+
+
+  
+ <div>@Copyright 2021, Zhiqiang Gong, Pengyu Wang. Contact: <a href="mailto:gongzhiqiang13@nudt.edu.cn" class="codename">gongzhiqiang13@nudt.edu.cn</a></div>
+  
+</footer>
+
+
+
+  <script>
+    setLoadingBarProgress(80);
+  </script>
+  
+
+<script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src='//cdn.bootcss.com/node-waves/0.7.5/waves.min.js'></script>
+<script src="//cdn.bootcss.com/scrollReveal.js/3.3.2/scrollreveal.min.js"></script>
+
+<script src="/dataset/js/jquery.fitvids.js"></script>
+
+<script>
+	var GOOGLE_CUSTOM_SEARCH_API_KEY = "";
+	var GOOGLE_CUSTOM_SEARCH_ENGINE_ID = "";
+	var ALGOLIA_API_KEY = "";
+	var ALGOLIA_APP_ID = "";
+	var ALGOLIA_INDEX_NAME = "";
+  var AZURE_SERVICE_NAME = "";
+  var AZURE_INDEX_NAME = "";
+  var AZURE_QUERY_KEY = "";
+  var BAIDU_API_ID = "";
+  var SEARCH_SERVICE = "hexo";
+  var ROOT = "/dataset/"||"/";
+  if(!ROOT.endsWith('/'))ROOT += '/';
 </script>
 
-<script src="/dataset/js/script.js"></script>
+<script src="/dataset/js/search.js"></script>
 
+
+<script src="/dataset/js/app.js"></script>
+
+
+<script src="/dataset/js/custom.js"></script>
+
+
+  <script>
+    setLoadingBarProgress(100);
+  </script>
 </body>
-</html>
 
- 
+</html>

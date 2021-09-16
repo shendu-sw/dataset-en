@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   
-  <title>温度场预测数据集 | Dataset</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>温度场预测基准 | TAB</title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="shortcut icon" href="/dataset/">
+  <link rel="alternate" href="/dataset/atom.xml" title="TAB" type="application/atom+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="数据集下载地址：  任务  发热组件的布局是影响系统散热性能的因素之一。为支持组件布局优化，采用数据驱动的方式训练代理模型，实现组件布局到稳态温度场的快速预测。单个布局和温度场数据为 200x200 的二维矩阵，可以看作单通道图像，因此本任务可以看作为单通道图像到单通道图像的回归问题。 本数据集构建了三种不同边界条件下的复杂热源连续布局问题。 （1）Case 1。方形区域四周散热问题。0.1mx0">
 <meta property="og:type" content="article">
-<meta property="og:title" content="温度场预测数据集">
+<meta property="og:title" content="温度场预测基准">
 <meta property="og:url" content="https://shendu-sw.github.io/dataset/p/dataset1-set.html">
-<meta property="og:site_name" content="Dataset">
+<meta property="og:site_name" content="TAB">
 <meta property="og:description" content="数据集下载地址：  任务  发热组件的布局是影响系统散热性能的因素之一。为支持组件布局优化，采用数据驱动的方式训练代理模型，实现组件布局到稳态温度场的快速预测。单个布局和温度场数据为 200x200 的二维矩阵，可以看作单通道图像，因此本任务可以看作为单通道图像到单通道图像的回归问题。 本数据集构建了三种不同边界条件下的复杂热源连续布局问题。 （1）Case 1。方形区域四周散热问题。0.1mx0">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://shendu-sw.github.io/dataset/images/figure/case1.png">
@@ -18,158 +24,197 @@
 <meta property="og:image" content="https://shendu-sw.github.io/dataset/images/figure/case3.png">
 <meta property="og:image" content="https://shendu-sw.github.io/dataset/images/figure/SpecialSamples.png">
 <meta property="article:published_time" content="2021-09-08T08:13:00.000Z">
-<meta property="article:modified_time" content="2021-09-10T03:03:55.038Z">
+<meta property="article:modified_time" content="2021-09-15T01:12:28.810Z">
 <meta property="article:author" content="IDRL">
 <meta property="article:tag" content="数据集">
 <meta property="article:tag" content="hide">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://shendu-sw.github.io/dataset/images/figure/case1.png">
+    
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata|Titillium+Web" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+  <link href='//cdn.bootcss.com/node-waves/0.7.5/waves.min.css' rel='stylesheet'>
   
-  <link rel="alternate" href="/atom.xml" title="Dataset" type="application/atom+xml">
-  
-  
-  <link rel="icon" href="/favicon.png">
-  
-  
-  <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  
-<link rel="stylesheet" href="/dataset/css/tocas.css">
+<link rel="stylesheet" href="/dataset/style.css">
 
-  
-<link rel="stylesheet" href="/dataset/css/animate.css">
-
-  
-<link rel="stylesheet" href="/dataset/css/style.css">
-
-  
-<link rel="stylesheet" href="/dataset/css/custom.css">
-
-  <style type="text/css">
-    a.title-link:hover {
-      color: #34b2db !important;
+  <script>
+    function setLoadingBarProgress(num) {
+      document.getElementById('loading-bar').style.width=num+"%";
     }
-
-    a.title-link:active {
-      color: #2075c1 !important;
-    }
-
-    #menu-color-id {
-      background: #f7f7f7;
-    }
-
-    #menu-color-id a {
-      color: #5a5a5a;
-    }
-  </style>
-  
-<script src="/dataset/js/tocas.js"></script>
-
-  
-
+  </script>
 <meta name="generator" content="Hexo 5.4.0"></head>
 
+
 <body>
+  <div id="loading-bar-wrapper">
+  <div id="loading-bar"></div>
+</div>
 
 
-    <!-- big bang title -->
-    <div class="ts padded horizontally fitted fluid slate"
-        style="background: #f7f7f7;background-size: 100% auto;background-position: center;background-repeat: no-repeat;">
-        <!-- ejs : align to post page or index page -->
-        
-            <div class="ts very narrow container pages_adjust">
-                
-                <!-- Title -->
-                <h1 class="ts eleven wide column header be-center-h1">
-                    <!-- 如果添加 id="big-title"， 会在标题后面附带 #-tag  -->
-                    
-                    <span style="color: #404040;" >Dataset</span>
-                    <div class="sub header" id="slogan-bar" style=" margin-top: 15px; color: #404040;">
-                        用Hexo框架搭建的文章阅读页</div>
-                </h1>
-                <!-- the end of title -->
-            </div>
-        </div>
-    </div>
-    <!-- the end of big bang title -->
+  <script>
+    setLoadingBarProgress(20)
+  </script>
+  <header class="l_header">
+	<div class='wrapper'>
+		<div class="nav-main container container--flex">
+			<a class="logo flat-box dataset-logo" href='/dataset/'>
+				<!-- <div class="dataset-img">
+					<img src="/dataset/images/IDRL logo.png" />
+				</div> -->
+				<div class="dataset-title">
+					<div class="big-title">TAB</div>
+					<div class="subtitle">Thermal analysis benchmarks</div>
+				</div>
+			</a>
+			<div class='menu'>
+				<ul class='h-list'>
+					
+					<li>
+						<a class='flat-box nav-home' href='/dataset/main'>
+							首页
+						</a>
+					</li>
+					
+					<li>
+						<a class='flat-box nav-benchmark' href='/dataset/#data'>
+							基准
+						</a>
+					</li>
+					
+					<li>
+						<a class='flat-box nav-challenge' href='/dataset/challenge'>
+							比赛
+						</a>
+					</li>
+					
+					<li>
+						<a class='flat-box nav-support' href='/dataset/support'>
+							文档
+						</a>
+					</li>
+					
+					<li>
+						<a class='flat-box nav-publish' href='/dataset/publish'>
+							相关成果
+						</a>
+					</li>
+					
+				</ul>
+				<div class='underline'></div>
+			</div>
+			
+			<div class="m_search">
+				<form name="searchform" class="form u-search-form">
+					<input type="text" class="input u-search-input" placeholder="搜索" />
+					<span class="icon icon-search"></span>
+				</form>
+			</div>
+			
+			<ul class='switcher h-list'>
+				
+				<li class='s-search'><a href='javascript:void(0)'><span class="icon icon-search flat-box"></span></a>
+				</li>
+				
+				<li class='s-menu'><a href='javascript:void(0)'><span class="icon icon-menu flat-box"></span></a></li>
+			</ul>
+		</div>
 
-    <!-- navigation -->
+		<div class='nav-sub container container--flex'>
+			<a class="logo" class="flat-box" href='javascript:void(0)'>
+				Word of Forks
+			</a>
 
-    <div class="ts fluid basic link big menu" id="menu-color-id">
+			<ul class='switcher h-list'>
+				<li class='s-comment'><a href='javascript:void(0)'><span
+							class="icon icon-chat_bubble_outline flat-box"></span></a></li>
+				<li class='s-top'><a href='javascript:void(0)'><span class="icon icon-arrow_upward flat-box"></span></a>
+				</li>
+				<li class='s-toc'><a href='javascript:void(0)'><span
+							class="icon icon-format_list_numbered flat-box"></span></a></li>
+			</ul>
+		</div>
+	</div>
+</header>
+<aside class="menu-phone">
+	<nav>
+		
+		<a href="/dataset/main" class="nav-home nav">
+			home
+		</a>
+		
+		<a href="/dataset/#data" class="nav-benchmark nav">
+			benchmark
+		</a>
+		
+		<a href="/dataset/challenge" class="nav-challenge nav">
+			challenge
+		</a>
+		
+		<a href="/dataset/support" class="nav-support nav">
+			support
+		</a>
+		
+		<a href="/dataset/publish" class="nav-publish nav">
+			publish
+		</a>
+		
+	</nav>
+</aside>
+  <script>
+    setLoadingBarProgress(40);
+  </script>
+  <div class="l_body">
+    <div class='container clearfix'>
+      <div class='l_main'>
+        <article id="post-dataset1/温度场预测数据集-数据集" class="post no-shandow white-box article-type-post"
+	itemscope itemprop="blogPost">
 
-        <!-- ejs : align to post page or index page -->
-        
-            <div class="ts very narrow container">
-                
 
-                
-                <a class="item" href="/dataset/">首页</a>
-                
-                <a class="item" href="/dataset/archives">数据集</a>
-                
-                <a class="item" href="/dataset/publish">出版物</a>
-                
-            </div>
-        </div>
-    </div>
-    <!-- the end of navigation -->
+	<section class='meta'>
 
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+		<div class="title-bar">
+			<div class="title post-title">
+				<a href="/dataset/p/dataset1-set.html">
+					温度场预测基准
+				</a>
+			</div>
+			<!-- 菜单 -->
+			
+			<div class="post-menus">
+				
+				<div class="post-menu-item">
+					<a class="" href="dataset1-index">主页 </a>
+				</div>
+				
+				<div class="post-menu-item">
+					<a class="" href="dataset1-set">数据集 </a>
+				</div>
+				
+				<div class="post-menu-item">
+					<a class="" href="dataset1-baseline-method">基准方法 </a>
+				</div>
+				
+				<div class="post-menu-item">
+					<a class="" href="dataset1-result">结果 </a>
+				</div>
+				
+				<div class="post-menu-item">
+					<a class="" href="dataset1-publication">相关成果 </a>
+				</div>
+				
+			</div>
+			
+		</div>
 
-
-
-<!-- main section -->
-<div class="ts text container">
-    <!-- left section -->
-    <div class="column" style=" padding: 35px; ">
-        
-
-
-        <!-- <div class="divider"></div> -->
-
-        <!-- Articles -->
-        
-        <h1 class="ts header">
-            <span style="color: #333;">温度场预测数据集</span>
-            <div class="sub header" style="color: #808080;">发布时间:
-                2021/9/8
-                 &nbsp;&nbsp;
-                <!-- filter tag 'hide' -->
-                
-                <ul class="unstyled radius-tag -list" itemprop="keywords"><li class="unstyled radius-tag -list-item"><a class="unstyled radius-tag -list-link" href="/dataset/tags/%E6%95%B0%E6%8D%AE%E9%9B%86/" rel="tag">数据集</a></li></ul>
-                
-            </div>
-        </h1>
-
-        <!-- Menus -->
-        
-            <div class="post-menu">
-                
-                
-                <div class="post-item">
-                    <a href="/dataset/p/dataset1-index ">主页</a>
-                </div>
-                
-                
-                <div class="post-item">
-                    <a href="/dataset/p/dataset1-set ">数据集</a>
-                </div>
-                
-                
-                <div class="post-item">
-                    <a href="/dataset/p/dataset1-result ">结果</a>
-                </div>
-                
-                
-                <div class="post-item">
-                    <a href="/dataset/p/dataset1-publication ">出版物</a>
-                </div>
-                
-            </div>
-            <hr />
-        
-        <!-- / the end of Menus -->
-        <p>数据集下载地址：</p>
+		<!-- 分类，暂时用不到 -->
+		<!--  -->
+	</section>
+	
+	<!-- <section class="toc-wrapper"></section> -->
+	
+	<section class="article typo">
+		<div class="article-entry" itemprop="articleBody">
+			<p>数据集下载地址：</p>
 <ul>
 <li><strong>任务</strong></li>
 </ul>
@@ -344,76 +389,18 @@
 \text{G-MAE} = \frac{1}{(N-1)^2} \sum \left (|\hat{G}_{x} - G_{x}| + |\hat{G}_{y} - G_{y}| \right)</script><p>（9）Laplace MAE (Lap-MAE)。对预测温度场的拉普拉斯算子间的 MAE。</p>
 <script type="math/tex; mode=display">
 \text{Lap-MAE} = \frac{1}{(N-1)^2} \sum |\Delta \hat{Y} - \Delta Y|</script>
-        <!-- / the end of articles -->
-    </div>
-    <!-- / left section -->
+		</div>
+	</section>
 
-    
-
-    <!-- Next Post and Prev Post -->
-    
-    <hr />
-    <div class="next-prev-post-section">
-        <script>
-            function goBack() {
-                window.history.go(-1)
-            }
-        </script>
-        <a href="javascript:void(0)" onclick="goBack()" class="styled-border">
-            ←返回
-        </a>
-        <a href="#"></a>
-        <!-- 
-        <a href="/dataset/p/dataset1-publication.html" class="styled-border">
-            
-            温度场预测数据集
-            
-        </a>
-        
-        
-        <a href="/dataset/p/dataset1-result.html" class="styled-border">
-            
-            温度场预测数据集
-            →
-        </a>
-         -->
-    </div>
-    
-</div>
-<script type="text/javascript">
-    let img = document.getElementsByTagName("img");
-    for (let i = 0; i < img.length; i++) {
-        img[i].className += " ts fluid image";
-    }
-</script>
-<!-- / main section -->
-
-<!-- copyright -->
-<!-- <div class="ts attached secondary segment">
-    <div class="ts narrow container">
-        <br>
-        <div class="ts large center aligned header">
-            Powered by Hexo, Theme designs by @hpcslag.
-            <div class="smaller sub header">
-                Style-Framework Tocas-UI designs by @yamioldmel
-            </div>
-        </div>
-        <br>
-    </div>
-</div> -->
-<!-- / copyright -->
-<script type="text/javascript">
-    
-    const slogans = ["用Hexo框架搭建的文章阅读页"];
+</article>
+<script>
+	window.subData = {
+		title: '温度场预测基准',
+		tools: true
+	}
 </script>
 
-<script src="/dataset/js/script.js"></script>
-
-</body>
-</html>
-
-
-    <!-- mathjax config similar to math.stackexchange -->
+<!-- mathjax config similar to math.stackexchange -->
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
       tex2jax: {
@@ -447,4 +434,115 @@
 <script type="text/javascript"
     src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
- 
+
+      </div>
+      <aside class='l_side'>
+        
+  <section class='m_widget about'>
+    
+    <div class='header'>IDRL</div>
+    <div class='content collapsed'>
+        <div class='desc'>国防科技创新研究院无人系统技术研究中心智能设计与鲁棒学习团队致力于人工智能与飞行器设计的基础前沿和交叉研究，面向飞行器多学科高效分析与优化，发展了系列数据和知识混合驱动的深度学习方法，形成了全自主知识产权的智能辅助飞行器设计优化云平台 IDaaS（Intelligent Design as a Service）原型系统，集成卫星组件热布局温度场近实时预测基准工具箱 STEP（Satellite Temperature fiEld Prediction of heat source layout）、内嵌物理知识神经网络算法框架 IDRLNet 等前沿研究成果。近 3 年团队发表相关学术论文 30 余篇，其中高影响因子 SCI 检索 20 篇，申请专利 30 余项。</div>
+        <div class="collapsed-block"></div>
+    </div>
+    <div id="expandbtn" onclick="expand()">
+        展开
+    </div>
+    <div id="collapsebtn" onclick="collapse()">
+        收起
+    </div>
+    <script>
+        function expand() {
+            document.querySelector('.m_widget.about .content').classList.remove('collapsed')
+            document.getElementById('expandbtn').style.display = 'none';
+            // document.getElementById('collapsebtn').style.display = 'block';
+        }
+
+        function collapse() {
+            document.querySelector('.m_widget.about .content').classList.add('collapsed')
+            document.getElementById('expandbtn').style.display = 'block';
+            document.getElementById('collapsebtn').style.display = 'none';
+        }
+    </script>
+</section>
+
+  <section class='m_widget links'>
+<div class='header'>相关链接</div>
+<div class='content'>
+    <ul class="entry">
+    
+        <li><a class="flat-box" target="_blank" href="https://smt.readthedocs.io/en/latest/index.html">
+            <div class='name'>Surrogate Modeling Toolbox</div>
+        </a></li>
+    
+    </ul>
+</div>
+</section>
+
+  
+<div class="m_widget tagcloud">
+    <div class="header">标签</div>
+    <div class='content'>
+        
+        <a href="/dataset/tags/%E6%95%B0%E6%8D%AE%E9%9B%86/" style="font-size: 14px; color: #808080">数据集</a>
+    </div>
+</div>
+
+
+      </aside>
+      <script>
+        setLoadingBarProgress(60);
+      </script>
+    </div>
+  </div>
+ <footer id="footer" class="clearfix">
+
+
+  
+ <div>@Copyright 2021, Zhiqiang Gong, Pengyu Wang. Contact: <a href="mailto:gongzhiqiang13@nudt.edu.cn" class="codename">gongzhiqiang13@nudt.edu.cn</a></div>
+  
+</footer>
+
+
+
+  <script>
+    setLoadingBarProgress(80);
+  </script>
+  
+
+<script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src='//cdn.bootcss.com/node-waves/0.7.5/waves.min.js'></script>
+<script src="//cdn.bootcss.com/scrollReveal.js/3.3.2/scrollreveal.min.js"></script>
+
+<script src="/dataset/js/jquery.fitvids.js"></script>
+
+<script>
+	var GOOGLE_CUSTOM_SEARCH_API_KEY = "";
+	var GOOGLE_CUSTOM_SEARCH_ENGINE_ID = "";
+	var ALGOLIA_API_KEY = "";
+	var ALGOLIA_APP_ID = "";
+	var ALGOLIA_INDEX_NAME = "";
+  var AZURE_SERVICE_NAME = "";
+  var AZURE_INDEX_NAME = "";
+  var AZURE_QUERY_KEY = "";
+  var BAIDU_API_ID = "";
+  var SEARCH_SERVICE = "hexo";
+  var ROOT = "/dataset/"||"/";
+  if(!ROOT.endsWith('/'))ROOT += '/';
+</script>
+
+<script src="/dataset/js/search.js"></script>
+
+
+<script src="/dataset/js/app.js"></script>
+
+
+<script src="/dataset/js/custom.js"></script>
+
+
+  <script>
+    setLoadingBarProgress(100);
+  </script>
+</body>
+
+</html>
