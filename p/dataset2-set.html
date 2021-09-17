@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  <title>温度场重建基准 | TAB</title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="shortcut icon" href="/dataset/">
+  <link rel="alternate" href="/dataset/atom.xml" title="TAB" type="application/atom+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="TFRD数据集TFRD数据集由基于FEniCS的数据生成器生成，已上传百度网盘（密码：tfrd）。 TFRD数据集描述热源系统区域为$0.1m \times 0.1m$的矩形，且离散化为$200 \times 200$的网格。数据集共提供HSink、ADlet和DSine三个子数据集。每个子数据集含有10000训练样本，20000测试样本（Test 0为随机测试样本，Test 1, 2, 3, 4">
+<meta property="og:type" content="article">
+<meta property="og:title" content="温度场重建基准">
+<meta property="og:url" content="https://shendu-sw.github.io/dataset/p/dataset2-set.html">
+<meta property="og:site_name" content="TAB">
+<meta property="og:description" content="TFRD数据集TFRD数据集由基于FEniCS的数据生成器生成，已上传百度网盘（密码：tfrd）。 TFRD数据集描述热源系统区域为$0.1m \times 0.1m$的矩形，且离散化为$200 \times 200$的网格。数据集共提供HSink、ADlet和DSine三个子数据集。每个子数据集含有10000训练样本，20000测试样本（Test 0为随机测试样本，Test 1, 2, 3, 4">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://shendu-sw.github.io/dataset/images/hsink.png">
+<meta property="og:image" content="https://shendu-sw.github.io/dataset/images/hsink1.png">
+<meta property="og:image" content="https://shendu-sw.github.io/dataset/images/figure/0.jpg">
+<meta property="og:image" content="https://shendu-sw.github.io/dataset/images/figure/1.jpg">
+<meta property="og:image" content="https://shendu-sw.github.io/dataset/images/figure/2.jpg">
+<meta property="og:image" content="https://shendu-sw.github.io/dataset/images/figure/3.jpg">
+<meta property="og:image" content="https://shendu-sw.github.io/dataset/images/figure/4.jpg">
+<meta property="og:image" content="https://shendu-sw.github.io/dataset/images/figure/5.jpg">
+<meta property="og:image" content="https://shendu-sw.github.io/dataset/images/adlet.png">
+<meta property="og:image" content="https://shendu-sw.github.io/dataset/images/adlet2.png">
+<meta property="og:image" content="https://shendu-sw.github.io/dataset/images/figure/0.jpg">
+<meta property="og:image" content="https://shendu-sw.github.io/dataset/images/figure/1.jpg">
+<meta property="og:image" content="https://shendu-sw.github.io/dataset/images/figure/2.jpg">
+<meta property="og:image" content="https://shendu-sw.github.io/dataset/images/figure/3.jpg">
+<meta property="og:image" content="https://shendu-sw.github.io/dataset/images/figure/4.jpg">
+<meta property="og:image" content="https://shendu-sw.github.io/dataset/images/figure/5.jpg">
+<meta property="og:image" content="https://shendu-sw.github.io/dataset/images/dsine.png">
+<meta property="og:image" content="https://shendu-sw.github.io/dataset/images/dsine2.png">
+<meta property="og:image" content="https://shendu-sw.github.io/dataset/images/figure/0.jpg">
+<meta property="og:image" content="https://shendu-sw.github.io/dataset/images/figure/1.jpg">
+<meta property="og:image" content="https://shendu-sw.github.io/dataset/images/figure/2.jpg">
+<meta property="og:image" content="https://shendu-sw.github.io/dataset/images/figure/3.jpg">
+<meta property="og:image" content="https://shendu-sw.github.io/dataset/images/figure/4.jpg">
+<meta property="og:image" content="https://shendu-sw.github.io/dataset/images/figure/5.jpg">
+<meta property="article:published_time" content="2021-09-10T03:08:00.000Z">
+<meta property="article:modified_time" content="2021-09-17T02:53:14.031Z">
+<meta property="article:author" content="IDRL">
+<meta property="article:tag" content="数据集">
+<meta property="article:tag" content="hide">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://shendu-sw.github.io/dataset/images/hsink.png">
+    
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata|Titillium+Web" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+  <link href='//cdn.bootcss.com/node-waves/0.7.5/waves.min.css' rel='stylesheet'>
+  
+<link rel="stylesheet" href="/dataset/style.css">
+
+  <script>
+    function setLoadingBarProgress(num) {
+      document.getElementById('loading-bar').style.width=num+"%";
+    }
+  </script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <div id="loading-bar-wrapper">
+  <div id="loading-bar"></div>
+</div>
+
+
+  <script>
+    setLoadingBarProgress(20)
+  </script>
+  <header class="l_header">
+	<div class='wrapper'>
+		<div class="nav-main container container--flex">
+			<a class="logo flat-box dataset-logo" href='/dataset/'>
+				<!-- <div class="dataset-img">
+					<img src="/dataset/images/IDRL logo.png" />
+				</div> -->
+				<div class="dataset-title">
+					<div class="big-title">TAB</div>
+					<div class="subtitle">Thermal analysis benchmarks</div>
+				</div>
+			</a>
+			<div class='menu'>
+				<ul class='h-list'>
+					
+					<li>
+						<a class='flat-box nav-home' href='/dataset/main'>
+							首页
+						</a>
+					</li>
+					
+					<li>
+						<a class='flat-box nav-benchmark' href='/dataset/#data'>
+							基准
+						</a>
+					</li>
+					
+					<li>
+						<a class='flat-box nav-challenge' href='/dataset/challenge'>
+							比赛
+						</a>
+					</li>
+					
+					<li>
+						<a class='flat-box nav-support' href='/dataset/support'>
+							文档
+						</a>
+					</li>
+					
+					<li>
+						<a class='flat-box nav-publish' href='/dataset/publish'>
+							相关成果
+						</a>
+					</li>
+					
+				</ul>
+				<div class='underline'></div>
+			</div>
+			
+			<div class="m_search">
+				<form name="searchform" class="form u-search-form">
+					<input type="text" class="input u-search-input" placeholder="搜索" />
+					<span class="icon icon-search"></span>
+				</form>
+			</div>
+			
+			<ul class='switcher h-list'>
+				
+				<li class='s-search'><a href='javascript:void(0)'><span class="icon icon-search flat-box"></span></a>
+				</li>
+				
+				<li class='s-menu'><a href='javascript:void(0)'><span class="icon icon-menu flat-box"></span></a></li>
+			</ul>
+		</div>
+
+		<div class='nav-sub container container--flex'>
+			<a class="logo" class="flat-box" href='javascript:void(0)'>
+				Word of Forks
+			</a>
+
+			<ul class='switcher h-list'>
+				<li class='s-comment'><a href='javascript:void(0)'><span
+							class="icon icon-chat_bubble_outline flat-box"></span></a></li>
+				<li class='s-top'><a href='javascript:void(0)'><span class="icon icon-arrow_upward flat-box"></span></a>
+				</li>
+				<li class='s-toc'><a href='javascript:void(0)'><span
+							class="icon icon-format_list_numbered flat-box"></span></a></li>
+			</ul>
+		</div>
+	</div>
+</header>
+<aside class="menu-phone">
+	<nav>
+		
+		<a href="/dataset/main" class="nav-home nav">
+			home
+		</a>
+		
+		<a href="/dataset/#data" class="nav-benchmark nav">
+			benchmark
+		</a>
+		
+		<a href="/dataset/challenge" class="nav-challenge nav">
+			challenge
+		</a>
+		
+		<a href="/dataset/support" class="nav-support nav">
+			support
+		</a>
+		
+		<a href="/dataset/publish" class="nav-publish nav">
+			publish
+		</a>
+		
+	</nav>
+</aside>
+  <script>
+    setLoadingBarProgress(40);
+  </script>
+  <div class="l_body">
+    <div class='container clearfix'>
+      <div class='l_main'>
+        <article id="post-dataset2/温度场重构数据集-数据集" class="post no-shandow white-box article-type-post"
+	itemscope itemprop="blogPost">
+
+
+	<section class='meta'>
+
+		<div class="title-bar">
+			<div class="title post-title">
+				<a href="/dataset/p/dataset2-set.html">
+					温度场重建基准
+				</a>
+			</div>
+			<!-- 菜单 -->
+			
+			<div class="post-menus">
+				
+				<div class="post-menu-item">
+					<a class="" href="dataset2-index">主页 </a>
+				</div>
+				
+				<div class="post-menu-item">
+					<a class="" href="dataset2-set">数据集 </a>
+				</div>
+				
+				<div class="post-menu-item">
+					<a class="" href="dataset2-baseline-method">基准方法 </a>
+				</div>
+				
+				<div class="post-menu-item">
+					<a class="" href="dataset2-result">结果 </a>
+				</div>
+				
+				<div class="post-menu-item">
+					<a class="" href="dataset2-publication">相关成果 </a>
+				</div>
+				
+			</div>
+			
+		</div>
+
+		<!-- 分类，暂时用不到 -->
+		<!--  -->
+	</section>
+	
+	<!-- <section class="toc-wrapper"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#TFRD%E6%95%B0%E6%8D%AE%E9%9B%86"><span class="toc-number">1.</span> <span class="toc-text">TFRD数据集</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#HSink%E5%AD%90%E6%95%B0%E6%8D%AE%E9%9B%86"><span class="toc-number">1.1.</span> <span class="toc-text">HSink子数据集</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#ADlet%E5%AD%90%E6%95%B0%E6%8D%AE%E9%9B%86"><span class="toc-number">1.2.</span> <span class="toc-text">ADlet子数据集</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#DSine%E5%AD%90%E6%95%B0%E6%8D%AE%E9%9B%86"><span class="toc-number">1.3.</span> <span class="toc-text">DSine子数据集</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E8%AF%B4%E6%98%8E"><span class="toc-number">1.4.</span> <span class="toc-text">数据说明</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AF%84%E4%BB%B7%E5%87%86%E5%88%99"><span class="toc-number">1.5.</span> <span class="toc-text">评价准则</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#%E5%B9%B3%E5%9D%87%E7%BB%9D%E5%AF%B9%E8%AF%AF%E5%B7%AE%EF%BC%88MAE%EF%BC%89"><span class="toc-number">1.5.0.0.0.1.</span> <span class="toc-text">平均绝对误差（MAE）</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E7%BB%9D%E5%AF%B9%E8%AF%AF%E5%B7%AE%E6%9C%80%E5%A4%A7%E5%80%BC%EF%BC%88MaxAE%EF%BC%89"><span class="toc-number">1.5.0.0.0.2.</span> <span class="toc-text">绝对误差最大值（MaxAE）</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E7%BB%84%E4%BB%B6%E5%8C%BA%E5%9F%9F%E5%B9%B3%E5%9D%87%E7%BB%9D%E5%AF%B9%E8%AF%AF%E5%B7%AE%EF%BC%88CMAE%EF%BC%89"><span class="toc-number">1.5.0.0.0.3.</span> <span class="toc-text">组件区域平均绝对误差（CMAE）</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E7%BB%84%E4%BB%B6%E5%8C%BA%E5%9F%9F%E7%BB%9D%E5%AF%B9%E8%AF%AF%E5%B7%AE%E6%9C%80%E5%A4%A7%E5%80%BC%EF%BC%88MCAE%EF%BC%89"><span class="toc-number">1.5.0.0.0.4.</span> <span class="toc-text">组件区域绝对误差最大值（MCAE）</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E8%BE%B9%E7%95%8C%E5%B9%B3%E5%9D%87%E7%BB%9D%E5%AF%B9%E8%AF%AF%E5%B7%AE%EF%BC%88BMAE%EF%BC%89"><span class="toc-number">1.5.0.0.0.5.</span> <span class="toc-text">边界平均绝对误差（BMAE）</span></a></li></ol></li></ol></li></ol></li></ol></li></ol></li></ol></section> -->
+	
+	<section class="article typo">
+		<div class="article-entry" itemprop="articleBody">
+			<h1 id="TFRD数据集"><a href="#TFRD数据集" class="headerlink" title="TFRD数据集"></a>TFRD数据集</h1><p>TFRD数据集由基于<a target="_blank" rel="noopener" href="https://fenicsproject.org/">FEniCS</a>的<a target="_blank" rel="noopener" href="https://github.com/shendu-sw/recon-data-generator">数据生成器</a>生成，已上传<a target="_blank" rel="noopener" href="https://pan.baidu.com/s/14BipTer1fkilbRjrQNbKiQ">百度网盘</a>（密码：tfrd）。</p>
+<p>TFRD数据集描述热源系统区域为$0.1m \times 0.1m$的矩形，且离散化为$200 \times 200$的网格。数据集共提供HSink、ADlet和DSine三个子数据集。每个子数据集含有10000训练样本，20000测试样本（Test 0为随机测试样本，Test 1, 2, 3, 4, 5为特殊测试样本）:</p>
+<ul>
+<li><p><strong>Generality</strong></p>
+<blockquote>
+<p>三种典型热源系统（HSink，ADlet，DSine）</p>
+</blockquote>
+</li>
+<li><p><strong>Reasonability</strong></p>
+<blockquote>
+<p>TFRD数据库设计合理（10000训练样本，20000包含6中不同情况的数据集）</p>
+</blockquote>
+</li>
+<li><strong>Diversity</strong> <blockquote>
+<p>边界条件和组件多样性且提供多样性评价准则</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="HSink子数据集"><a href="#HSink子数据集" class="headerlink" title="HSink子数据集"></a>HSink子数据集</h2><blockquote>
+<p>带有小孔散热片的热源系统，散热器的宽度设置为0.01m，恒温值为298K （Dirichlet边界），其他边界是绝热的（Neumann 边界）</p>
+</blockquote>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="/dataset/images/hsink.png" alt="upload successful"></th>
+<th style="text-align:center"><img src="/dataset/images/hsink1.png" alt="upload successful"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><strong>Training Sample</strong></td>
+<td style="text-align:center"><strong>Training Sample</strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="/dataset/images/figure/0.jpg" alt="0"></th>
+<th style="text-align:center"><img src="/dataset/images/figure/1.jpg" alt="1"></th>
+<th style="text-align:center"><img src="/dataset/images/figure/2.jpg" alt="2"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><strong>Test 0</strong></td>
+<td style="text-align:center"><strong>Test 1</strong></td>
+<td style="text-align:center"><strong>Test 2</strong></td>
+</tr>
+<tr>
+<td style="text-align:center"><img src="/dataset/images/figure/3.jpg" alt="3"></td>
+<td style="text-align:center"><img src="/dataset/images/figure/4.jpg" alt="4"></td>
+<td style="text-align:center"><img src="/dataset/images/figure/5.jpg" alt="5"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>Test 3</strong></td>
+<td style="text-align:center"><strong>Test 4</strong></td>
+<td style="text-align:center"><strong>Test 5</strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="ADlet子数据集"><a href="#ADlet子数据集" class="headerlink" title="ADlet子数据集"></a>ADlet子数据集</h2><blockquote>
+<p>四周散热的热源系统，三边恒温为298K，一边为正弦分布散热</p>
+</blockquote>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="/dataset/images/adlet.png" alt="upload successful"></th>
+<th style="text-align:center"><img src="/dataset/images/adlet2.png" alt="upload successful"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><strong>Training Sample</strong></td>
+<td style="text-align:center"><strong>Training Sample</strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="/dataset/images/figure/0.jpg" alt="0"></th>
+<th style="text-align:center"><img src="/dataset/images/figure/1.jpg" alt="1"></th>
+<th style="text-align:center"><img src="/dataset/images/figure/2.jpg" alt="2"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><strong>Test 0</strong></td>
+<td style="text-align:center"><strong>Test 1</strong></td>
+<td style="text-align:center"><strong>Test 2</strong></td>
+</tr>
+<tr>
+<td style="text-align:center"><img src="/dataset/images/figure/3.jpg" alt="3"></td>
+<td style="text-align:center"><img src="/dataset/images/figure/4.jpg" alt="4"></td>
+<td style="text-align:center"><img src="/dataset/images/figure/5.jpg" alt="5"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>Test 3</strong></td>
+<td style="text-align:center"><strong>Test 4</strong></td>
+<td style="text-align:center"><strong>Test 5</strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="DSine子数据集"><a href="#DSine子数据集" class="headerlink" title="DSine子数据集"></a>DSine子数据集</h2><blockquote>
+<p>单边散热的热源系统，散热边为正弦分布散热，其他边界是绝热的（Neumann 边界）</p>
+</blockquote>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="/dataset/images/dsine.png" alt="upload successful"></th>
+<th style="text-align:center"><img src="/dataset/images/dsine2.png" alt="upload successful"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><strong>Training Sample</strong></td>
+<td style="text-align:center"><strong>Training Sample</strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="/dataset/images/figure/0.jpg" alt="0"></th>
+<th style="text-align:center"><img src="/dataset/images/figure/1.jpg" alt="1"></th>
+<th style="text-align:center"><img src="/dataset/images/figure/2.jpg" alt="2"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><strong>Test 0</strong></td>
+<td style="text-align:center"><strong>Test 1</strong></td>
+<td style="text-align:center"><strong>Test 2</strong></td>
+</tr>
+<tr>
+<td style="text-align:center"><img src="/dataset/images/figure/3.jpg" alt="3"></td>
+<td style="text-align:center"><img src="/dataset/images/figure/4.jpg" alt="4"></td>
+<td style="text-align:center"><img src="/dataset/images/figure/5.jpg" alt="5"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>Test 3</strong></td>
+<td style="text-align:center"><strong>Test 4</strong></td>
+<td style="text-align:center"><strong>Test 5</strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="数据说明"><a href="#数据说明" class="headerlink" title="数据说明"></a>数据说明</h2><blockquote>
+<p>样本采用.mat 格式存储</p>
+</blockquote>
+<div class="card-wrapper">
+    <div class="card-title">Example*.mat</div>
+    <div class="card-content">
+      <ul>
+        <li>‘u'：{ndarray:(200,200)}，温度场数据，取值范围298-</li>
+        <li>‘F'：{ndarray:(200,200)}，热源系统组件布局信息，取值范围0-30000</li>
+        <li>‘u_obs'：{ndarray:(200,200)}，热源系统监测点温度数据，取值范围298-</li>
+        <li>‘u_pos'：{ndarray:(200,200)}，热源系统监测点位置信息，取值为0和1，1为监测点，0为非监测点</li>
+        <li>‘xs'，‘ys'，‘zs'：{ndarray:(200,200)}，温度点x轴、y轴和z轴坐标数据，取值范围0-0.1</li>
+      </ul>
+    </div>
+</div>
+
+<h2 id="评价准则"><a href="#评价准则" class="headerlink" title="评价准则"></a>评价准则</h2><h6 id="平均绝对误差（MAE）"><a href="#平均绝对误差（MAE）" class="headerlink" title="平均绝对误差（MAE）"></a>平均绝对误差（MAE）</h6><blockquote>
+<p>预测温度场绝对误差的平均值</p>
+</blockquote>
+<script type="math/tex; mode=display">
+{E_{MAE} } = \frac{1}{ {\left| \Omega  \right|} }\sum\limits_{({x_i},{y_j}) \in \Omega } {\left| {T({x_i},{y_j}) - T'({x_i},{y_j})} \right|}</script><h6 id="绝对误差最大值（MaxAE）"><a href="#绝对误差最大值（MaxAE）" class="headerlink" title="绝对误差最大值（MaxAE）"></a>绝对误差最大值（MaxAE）</h6><blockquote>
+<p>预测温度场的最大绝对误差</p>
+</blockquote>
+<script type="math/tex; mode=display">
+{E_{MaxAE} } = \mathop {\max }\limits_{({x_i},{y_j}) \in \Omega } \left| {T({x_i},{y_j}) - T'({x_i},{y_j})} \right|</script><h6 id="组件区域平均绝对误差（CMAE）"><a href="#组件区域平均绝对误差（CMAE）" class="headerlink" title="组件区域平均绝对误差（CMAE）"></a>组件区域平均绝对误差（CMAE）</h6><blockquote>
+<p>热源组件上温度绝对误差的平均值</p>
+</blockquote>
+<script type="math/tex; mode=display">
+{E_{CMAE} } = \frac{1}{ {\left| { {\Omega _c} } \right|} }\sum\limits_{({x_i},{y_j}) \in {\Omega _c} } {\left| {T({x_i},{y_j}) - T'({x_i},{y_j})} \right|}</script><h6 id="组件区域绝对误差最大值（MCAE）"><a href="#组件区域绝对误差最大值（MCAE）" class="headerlink" title="组件区域绝对误差最大值（MCAE）"></a>组件区域绝对误差最大值（MCAE）</h6><blockquote>
+<p>热源组件上温度绝对误差的最大值</p>
+</blockquote>
+<script type="math/tex; mode=display">
+{E_{CMAE} } = \mathop {\max }\limits_{({x_i},{y_j}) \in {\Omega _c} } \left| {T({x_i},{y_j}) - T'({x_i},{y_j})} \right|</script><h6 id="边界平均绝对误差（BMAE）"><a href="#边界平均绝对误差（BMAE）" class="headerlink" title="边界平均绝对误差（BMAE）"></a>边界平均绝对误差（BMAE）</h6><blockquote>
+<p>边界上温度绝对误差的平均值</p>
+</blockquote>
+<script type="math/tex; mode=display">
+{E_{BMAE} } = \frac{1}{ {\left| { {\Omega _b} } \right|} }\sum\limits_{({x_i},{y_j}) \in {\Omega _b} } {\left| {T({x_i},{y_j}) - T'({x_i},{y_j})} \right|}</script>
+		</div>
+	</section>
+
+</article>
+<script>
+	window.subData = {
+		title: '温度场重建基准',
+		tools: true
+	}
+</script>
+
+<!-- mathjax config similar to math.stackexchange -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ['$','$'], ["\(","\)"] ],
+        processEscapes: true
+      }
+    });
+  </script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+  </script>
+
+
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+          var all = MathJax.Hub.getAllJax(), i;
+          for(i=0; i < all.length; i += 1) {
+              all[i].SourceElement().parentNode.className += ' has-jax';
+          }
+      });
+  </script>
+
+
+
+<script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+      </div>
+      <aside class='l_side'>
+        
+  <section class='m_widget about'>
+    
+    <div class='header'>IDRL</div>
+    <div class='content collapsed'>
+        <div class='desc'>国防科技创新研究院无人系统技术研究中心智能设计与鲁棒学习团队致力于人工智能与飞行器设计的基础前沿和交叉研究，面向飞行器多学科高效分析与优化，发展了系列数据和知识混合驱动的深度学习方法，形成了全自主知识产权的智能辅助飞行器设计优化云平台 IDaaS（Intelligent Design as a Service）原型系统，集成卫星组件热布局温度场近实时预测基准工具箱 STEP（Satellite Temperature fiEld Prediction of heat source layout）、内嵌物理知识神经网络算法框架 IDRLNet 等前沿研究成果。近 3 年团队发表相关学术论文 30 余篇，其中高影响因子 SCI 检索 20 篇，申请专利 30 余项。</div>
+        <div class="collapsed-block"></div>
+    </div>
+    <div id="expandbtn" onclick="expand()">
+        展开
+    </div>
+    <div id="collapsebtn" onclick="collapse()">
+        收起
+    </div>
+    <script>
+        function expand() {
+            document.querySelector('.m_widget.about .content').classList.remove('collapsed')
+            document.getElementById('expandbtn').style.display = 'none';
+            // document.getElementById('collapsebtn').style.display = 'block';
+        }
+
+        function collapse() {
+            document.querySelector('.m_widget.about .content').classList.add('collapsed')
+            document.getElementById('expandbtn').style.display = 'block';
+            document.getElementById('collapsebtn').style.display = 'none';
+        }
+    </script>
+</section>
+
+  <section class='m_widget links'>
+<div class='header'>相关链接</div>
+<div class='content'>
+    <ul class="entry">
+    
+        <li><a class="flat-box" target="_blank" href="https://smt.readthedocs.io/en/latest/index.html">
+            <div class='name'>Surrogate Modeling Toolbox</div>
+        </a></li>
+    
+    </ul>
+</div>
+</section>
+
+  
+<div class="m_widget tagcloud">
+    <div class="header">标签</div>
+    <div class='content'>
+        
+        <a href="/dataset/tags/%E6%95%B0%E6%8D%AE%E9%9B%86/" style="font-size: 14px; color: #808080">数据集</a>
+    </div>
+</div>
+
+
+      </aside>
+      <script>
+        setLoadingBarProgress(60);
+      </script>
+    </div>
+  </div>
+ <footer id="footer" class="clearfix">
+
+
+  
+ <div>@Copyright 2021, Zhiqiang Gong, Pengyu Wang. Contact: <a href="mailto:gongzhiqiang13@nudt.edu.cn" class="codename">gongzhiqiang13@nudt.edu.cn</a></div>
+  
+</footer>
+
+
+
+  <script>
+    setLoadingBarProgress(80);
+  </script>
+  
+
+<script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src='//cdn.bootcss.com/node-waves/0.7.5/waves.min.js'></script>
+<script src="//cdn.bootcss.com/scrollReveal.js/3.3.2/scrollreveal.min.js"></script>
+
+<script src="/dataset/js/jquery.fitvids.js"></script>
+
+<script>
+	var GOOGLE_CUSTOM_SEARCH_API_KEY = "";
+	var GOOGLE_CUSTOM_SEARCH_ENGINE_ID = "";
+	var ALGOLIA_API_KEY = "";
+	var ALGOLIA_APP_ID = "";
+	var ALGOLIA_INDEX_NAME = "";
+  var AZURE_SERVICE_NAME = "";
+  var AZURE_INDEX_NAME = "";
+  var AZURE_QUERY_KEY = "";
+  var BAIDU_API_ID = "";
+  var SEARCH_SERVICE = "hexo";
+  var ROOT = "/dataset/"||"/";
+  if(!ROOT.endsWith('/'))ROOT += '/';
+</script>
+
+<script src="/dataset/js/search.js"></script>
+
+
+<script src="/dataset/js/app.js"></script>
+
+
+<script src="/dataset/js/custom.js"></script>
+
+
+  <script>
+    setLoadingBarProgress(100);
+  </script>
+</body>
+
+</html>

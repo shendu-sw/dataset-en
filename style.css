@@ -2262,25 +2262,28 @@ body {
   margin-top: 0px;
   font-size: 13px;
 }
-.main_page .card-wrapper {
+@media screen and (max-width: 500px) {
+  .main_page .menus .menus-item-wrapper {
+    width: 100%;
+  }
+}
+.card-wrapper {
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   overflow: hidden;
 }
-.main_page .card-wrapper .card-title {
+.card-wrapper:not(:first-of-type) {
+  margin-top: 20px;
+}
+.card-wrapper .card-title {
   font-size: 16px;
   background-color: #F5F5F5;
   padding: 8px 16px;
   box-sizing: border-box;
 }
-.main_page .card-wrapper .card-content {
+.card-wrapper .card-content {
   font-size: 14px;
   padding: 16px;
   box-sizing: border-box;
   border: 1px solid #F5F5F5;
-}
-@media screen and (max-width: 500px) {
-  .main_page .menus .menus-item-wrapper {
-    width: 100%;
-  }
 }
