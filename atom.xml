@@ -61,17 +61,17 @@
   
   <entry>
     <title>温度场重建基准</title>
-    <link href="https://shendu-sw.github.io/dataset/p/dataset2-publication.html"/>
-    <id>https://shendu-sw.github.io/dataset/p/dataset2-publication.html</id>
+    <link href="https://shendu-sw.github.io/dataset/p/dataset2-result.html"/>
+    <id>https://shendu-sw.github.io/dataset/p/dataset2-result.html</id>
     <published>2021-09-10T03:08:00.000Z</published>
-    <updated>2021-09-15T02:40:47.916Z</updated>
+    <updated>2021-09-16T07:19:21.514Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="论文"><a href="#论文" class="headerlink" title="论文"></a>论文</h1><p>[1] Gong Z, Zhou W, Zhang J, et al. <strong>Physics-Informed Deep Reversible Regression Model for Temperature Field Reconstruction of Heat-Source Systems</strong>[J]. arXiv preprint arXiv:2106.11929, 2021.</p><p>[2] Chen X, Gong Z, Zhao X, et al. <strong>A Machine Learning Modelling Benchmark for Temperature Field Reconstruction of Heat-Source Systems</strong>[J]. arXiv preprint arXiv:2108.08298, 2021.</p>]]></content>
+    <content type="html"><![CDATA[<h1 id="部分结果展示"><a href="#部分结果展示" class="headerlink" title="部分结果展示"></a>部分结果展示</h1><h4 id="不同基准方法的MAE结果"><a href="#不同基准方法的MAE结果" class="headerlink" title="不同基准方法的MAE结果"></a>不同基准方法的MAE结果</h4><p><img src="/dataset/images/result1.png" alt="upload successful"></p><p><img src="/dataset/images/result2.png" alt="upload successful"></p><h4 id="不同基准方法重建效果"><a href="#不同基准方法重建效果" class="headerlink" title="不同基准方法重建效果"></a>不同基准方法重建效果</h4><div class="table-container"><table><thead><tr><th style="text-align:center"><img src="/dataset/images/0.png" alt="upload successful"></th><th style="text-align:center"><img src="/dataset/images/1.png" alt="upload successful"></th><th style="text-align:center"><img src="/dataset/images/2.png" alt="upload successful"></th><th style="text-align:center"><img src="/dataset/images/3.png" alt="upload successful"></th></tr></thead><tbody><tr><td style="text-align:center"><strong>System</strong></td><td style="text-align:center"><strong>Groundtruth</strong></td><td style="text-align:center"><strong>KInterpolation （MAE=2.6400）</strong></td><td style="text-align:center"><strong>GInterpolation （MAE=2.4279）</strong></td></tr></tbody></table></div><div class="table-container"><table><thead><tr><th style="text-align:center"><img src="/dataset/images/8.png" alt="upload successful"></th><th style="text-align:center"><img src="/dataset/images/5.png" alt="upload successful"></th><th style="text-align:center"><img src="/dataset/images/6.png" alt="upload successful"></th></tr></thead><tbody><tr><td style="text-align:center"><strong>PR （MAE=3.1794）</strong></td><td style="text-align:center"><strong>RFR （MAE=2.0980）</strong></td><td style="text-align:center"><strong>GPR （MAE=2.4213）</strong></td></tr><tr><td style="text-align:center"><img src="/dataset/images/7.png" alt="upload successful"></td><td style="text-align:center"><img src="/dataset/images/9.png" alt="upload successful"></td><td style="text-align:center"><img src="/dataset/images/10.png" alt="upload successful"></td></tr><tr><td style="text-align:center"><strong>SVR （MAE=4.0458）</strong></td><td style="text-align:center"><strong>MLP-P （MAE=2.1286）</strong></td><td style="text-align:center"><strong>RBM （MAE=3.0837）</strong></td></tr><tr><td style="text-align:center"><img src="/dataset/images/11.png" alt="upload successful"></td><td style="text-align:center"><img src="/dataset/images/12.png" alt="upload successful"></td><td style="text-align:center"><img src="/dataset/images/13.png" alt="upload successful"></td></tr><tr><td style="text-align:center"><strong>DBN （MAE=3.0509）</strong></td><td style="text-align:center"><strong>MLP-V （MAE=0.2904）</strong></td><td style="text-align:center"><strong>CNP （MAE=0.5159）</strong></td></tr><tr><td style="text-align:center"><img src="/dataset/images/14.png" alt="upload successful"></td><td style="text-align:center"><img src="/dataset/images/15.png" alt="upload successful"></td><td style="text-align:center"><img src="/dataset/images/16.png" alt="upload successful"></td></tr><tr><td style="text-align:center"><strong>Transformer （MAE=0.3706）</strong></td><td style="text-align:center"><strong>FCN-1 （MAE=0.0589）</strong></td><td style="text-align:center"><strong>FCN-2 （MAE=0.0318）</strong></td></tr><tr><td style="text-align:center"><img src="/dataset/images/17.png" alt="upload successful"></td><td style="text-align:center"><img src="/dataset/images/18.png" alt="upload successful"></td><td style="text-align:center"><img src="/dataset/images/19.png" alt="upload successful"></td></tr><tr><td style="text-align:center"><strong>FCN-3 （MAE=0.2535）</strong></td><td style="text-align:center"><strong>UNet （MAE=0.0592）</strong></td><td style="text-align:center"><strong>FPN-ResNet18 （MAE=1.4762）</strong></td></tr><tr><td style="text-align:center"><img src="/dataset/images/20.png" alt="upload successful"></td><td style="text-align:center"><img src="/dataset/images/21.png" alt="upload successful"></td><td style="text-align:center"></td></tr><tr><td style="text-align:center"><strong>SegNet-AlexNet （MAE=0.5667）</strong></td><td style="text-align:center"><strong>GCN （MAE=0.9942）</strong></td><td style="text-align:center"></td></tr></tbody></table></div>]]></content>
     
     
       
       
-    <summary type="html">&lt;h1 id=&quot;论文&quot;&gt;&lt;a href=&quot;#论文&quot; class=&quot;headerlink&quot; title=&quot;论文&quot;&gt;&lt;/a&gt;论文&lt;/h1&gt;&lt;p&gt;[1] Gong Z, Zhou W, Zhang J, et al. &lt;strong&gt;Physics-Informed Deep Reve</summary>
+    <summary type="html">&lt;h1 id=&quot;部分结果展示&quot;&gt;&lt;a href=&quot;#部分结果展示&quot; class=&quot;headerlink&quot; title=&quot;部分结果展示&quot;&gt;&lt;/a&gt;部分结果展示&lt;/h1&gt;&lt;h4 id=&quot;不同基准方法的MAE结果&quot;&gt;&lt;a href=&quot;#不同基准方法的MAE结果&quot; class=&quot;head</summary>
       
     
     
@@ -85,17 +85,17 @@
   
   <entry>
     <title>温度场重建基准</title>
-    <link href="https://shendu-sw.github.io/dataset/p/dataset2-result.html"/>
-    <id>https://shendu-sw.github.io/dataset/p/dataset2-result.html</id>
+    <link href="https://shendu-sw.github.io/dataset/p/dataset2-publication.html"/>
+    <id>https://shendu-sw.github.io/dataset/p/dataset2-publication.html</id>
     <published>2021-09-10T03:08:00.000Z</published>
-    <updated>2021-09-16T07:19:21.514Z</updated>
+    <updated>2021-09-15T02:40:47.916Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="部分结果展示"><a href="#部分结果展示" class="headerlink" title="部分结果展示"></a>部分结果展示</h1><h4 id="不同基准方法的MAE结果"><a href="#不同基准方法的MAE结果" class="headerlink" title="不同基准方法的MAE结果"></a>不同基准方法的MAE结果</h4><p><img src="/dataset/images/result1.png" alt="upload successful"></p><p><img src="/dataset/images/result2.png" alt="upload successful"></p><h4 id="不同基准方法重建效果"><a href="#不同基准方法重建效果" class="headerlink" title="不同基准方法重建效果"></a>不同基准方法重建效果</h4><div class="table-container"><table><thead><tr><th style="text-align:center"><img src="/dataset/images/0.png" alt="upload successful"></th><th style="text-align:center"><img src="/dataset/images/1.png" alt="upload successful"></th><th style="text-align:center"><img src="/dataset/images/2.png" alt="upload successful"></th><th style="text-align:center"><img src="/dataset/images/3.png" alt="upload successful"></th></tr></thead><tbody><tr><td style="text-align:center"><strong>System</strong></td><td style="text-align:center"><strong>Groundtruth</strong></td><td style="text-align:center"><strong>KInterpolation （MAE=2.6400）</strong></td><td style="text-align:center"><strong>GInterpolation （MAE=2.4279）</strong></td></tr></tbody></table></div><div class="table-container"><table><thead><tr><th style="text-align:center"><img src="/dataset/images/8.png" alt="upload successful"></th><th style="text-align:center"><img src="/dataset/images/5.png" alt="upload successful"></th><th style="text-align:center"><img src="/dataset/images/6.png" alt="upload successful"></th></tr></thead><tbody><tr><td style="text-align:center"><strong>PR （MAE=3.1794）</strong></td><td style="text-align:center"><strong>RFR （MAE=2.0980）</strong></td><td style="text-align:center"><strong>GPR （MAE=2.4213）</strong></td></tr><tr><td style="text-align:center"><img src="/dataset/images/7.png" alt="upload successful"></td><td style="text-align:center"><img src="/dataset/images/9.png" alt="upload successful"></td><td style="text-align:center"><img src="/dataset/images/10.png" alt="upload successful"></td></tr><tr><td style="text-align:center"><strong>SVR （MAE=4.0458）</strong></td><td style="text-align:center"><strong>MLP-P （MAE=2.1286）</strong></td><td style="text-align:center"><strong>RBM （MAE=3.0837）</strong></td></tr><tr><td style="text-align:center"><img src="/dataset/images/11.png" alt="upload successful"></td><td style="text-align:center"><img src="/dataset/images/12.png" alt="upload successful"></td><td style="text-align:center"><img src="/dataset/images/13.png" alt="upload successful"></td></tr><tr><td style="text-align:center"><strong>DBN （MAE=3.0509）</strong></td><td style="text-align:center"><strong>MLP-V （MAE=0.2904）</strong></td><td style="text-align:center"><strong>CNP （MAE=0.5159）</strong></td></tr><tr><td style="text-align:center"><img src="/dataset/images/14.png" alt="upload successful"></td><td style="text-align:center"><img src="/dataset/images/15.png" alt="upload successful"></td><td style="text-align:center"><img src="/dataset/images/16.png" alt="upload successful"></td></tr><tr><td style="text-align:center"><strong>Transformer （MAE=0.3706）</strong></td><td style="text-align:center"><strong>FCN-1 （MAE=0.0589）</strong></td><td style="text-align:center"><strong>FCN-2 （MAE=0.0318）</strong></td></tr><tr><td style="text-align:center"><img src="/dataset/images/17.png" alt="upload successful"></td><td style="text-align:center"><img src="/dataset/images/18.png" alt="upload successful"></td><td style="text-align:center"><img src="/dataset/images/19.png" alt="upload successful"></td></tr><tr><td style="text-align:center"><strong>FCN-3 （MAE=0.2535）</strong></td><td style="text-align:center"><strong>UNet （MAE=0.0592）</strong></td><td style="text-align:center"><strong>FPN-ResNet18 （MAE=1.4762）</strong></td></tr><tr><td style="text-align:center"><img src="/dataset/images/20.png" alt="upload successful"></td><td style="text-align:center"><img src="/dataset/images/21.png" alt="upload successful"></td><td style="text-align:center"></td></tr><tr><td style="text-align:center"><strong>SegNet-AlexNet （MAE=0.5667）</strong></td><td style="text-align:center"><strong>GCN （MAE=0.9942）</strong></td><td style="text-align:center"></td></tr></tbody></table></div>]]></content>
+    <content type="html"><![CDATA[<h1 id="论文"><a href="#论文" class="headerlink" title="论文"></a>论文</h1><p>[1] Gong Z, Zhou W, Zhang J, et al. <strong>Physics-Informed Deep Reversible Regression Model for Temperature Field Reconstruction of Heat-Source Systems</strong>[J]. arXiv preprint arXiv:2106.11929, 2021.</p><p>[2] Chen X, Gong Z, Zhao X, et al. <strong>A Machine Learning Modelling Benchmark for Temperature Field Reconstruction of Heat-Source Systems</strong>[J]. arXiv preprint arXiv:2108.08298, 2021.</p>]]></content>
     
     
       
       
-    <summary type="html">&lt;h1 id=&quot;部分结果展示&quot;&gt;&lt;a href=&quot;#部分结果展示&quot; class=&quot;headerlink&quot; title=&quot;部分结果展示&quot;&gt;&lt;/a&gt;部分结果展示&lt;/h1&gt;&lt;h4 id=&quot;不同基准方法的MAE结果&quot;&gt;&lt;a href=&quot;#不同基准方法的MAE结果&quot; class=&quot;head</summary>
+    <summary type="html">&lt;h1 id=&quot;论文&quot;&gt;&lt;a href=&quot;#论文&quot; class=&quot;headerlink&quot; title=&quot;论文&quot;&gt;&lt;/a&gt;论文&lt;/h1&gt;&lt;p&gt;[1] Gong Z, Zhou W, Zhang J, et al. &lt;strong&gt;Physics-Informed Deep Reve</summary>
       
     
     
@@ -158,17 +158,17 @@
   
   <entry>
     <title>温度场预测基准</title>
-    <link href="https://shendu-sw.github.io/dataset/p/dataset1-publication.html"/>
-    <id>https://shendu-sw.github.io/dataset/p/dataset1-publication.html</id>
+    <link href="https://shendu-sw.github.io/dataset/p/dataset1-result.html"/>
+    <id>https://shendu-sw.github.io/dataset/p/dataset1-result.html</id>
     <published>2021-09-08T08:13:00.000Z</published>
-    <updated>2021-09-16T15:54:55.739Z</updated>
+    <updated>2021-09-16T11:06:17.853Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="论文"><a href="#论文" class="headerlink" title="论文"></a>论文</h1><p>[1] Chen, X., Zhao, X. Gong, Z., Zhang，J., Chen, X., Yao, W., (2021) <strong>A Deep Neural Network Surrogate Modeling Benchmark for Temperature Field Prediction of Heat Source Layout</strong>, Science China-Physics, Mechanics &amp; Astronomy.</p><p>[2] Chen X., Chen X., Zhou W., Zhang J., Yao W., (2020) <strong>The heat source layout optimization using deep learning surrogate modeling</strong>, Structural and Multidisciplinary Optimization, 62, 3127–3148</p><p>[3] Zhao., X, Gong, Z., Zhang, J., Yao, W., Chen, X., (2021). <strong>A surrogate model with data augmentation and deep transfer learning for temperature field prediction of heat source layout</strong>. Structural and Multidisciplinary Optimization.</p>]]></content>
+    <content type="html"><![CDATA[<h1 id="部分结果展示"><a href="#部分结果展示" class="headerlink" title="部分结果展示"></a>部分结果展示</h1><h4 id="Case-3-MAE指标对比"><a href="#Case-3-MAE指标对比" class="headerlink" title="Case 3 MAE指标对比"></a>Case 3 MAE指标对比</h4><p><img src="/dataset/images/figure/one_point_mae_global_10.png" alt="one_point_mae_global_10" style="zoom: 33%;" /></p><h4 id="Case-3-Max-AE指标对比"><a href="#Case-3-Max-AE指标对比" class="headerlink" title="Case 3 Max-AE指标对比"></a>Case 3 Max-AE指标对比</h4><p><img src="/dataset/images/figure/one_point_max_error_10.png" alt="one_point_max_error_10" style="zoom: 33%;" /></p><h4 id="Case-3-MT-AE指标对比"><a href="#Case-3-MT-AE指标对比" class="headerlink" title="Case 3 MT-AE指标对比"></a>Case 3 MT-AE指标对比</h4><p><img src="/dataset/images/figure/one_point_error_of_maximum_temperature.png" alt="one_point_error_of_maximum_temperature" style="zoom: 33%;" /></p>]]></content>
     
     
       
       
-    <summary type="html">&lt;h1 id=&quot;论文&quot;&gt;&lt;a href=&quot;#论文&quot; class=&quot;headerlink&quot; title=&quot;论文&quot;&gt;&lt;/a&gt;论文&lt;/h1&gt;&lt;p&gt;[1] Chen, X., Zhao, X. Gong, Z., Zhang，J., Chen, X., Yao, W., (2021) &lt;</summary>
+    <summary type="html">&lt;h1 id=&quot;部分结果展示&quot;&gt;&lt;a href=&quot;#部分结果展示&quot; class=&quot;headerlink&quot; title=&quot;部分结果展示&quot;&gt;&lt;/a&gt;部分结果展示&lt;/h1&gt;&lt;h4 id=&quot;Case-3-MAE指标对比&quot;&gt;&lt;a href=&quot;#Case-3-MAE指标对比&quot; class=&quot;</summary>
       
     
     
@@ -182,17 +182,17 @@
   
   <entry>
     <title>温度场预测基准</title>
-    <link href="https://shendu-sw.github.io/dataset/p/dataset1-result.html"/>
-    <id>https://shendu-sw.github.io/dataset/p/dataset1-result.html</id>
+    <link href="https://shendu-sw.github.io/dataset/p/dataset1-publication.html"/>
+    <id>https://shendu-sw.github.io/dataset/p/dataset1-publication.html</id>
     <published>2021-09-08T08:13:00.000Z</published>
-    <updated>2021-09-16T11:06:17.853Z</updated>
+    <updated>2021-09-16T15:54:55.739Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="部分结果展示"><a href="#部分结果展示" class="headerlink" title="部分结果展示"></a>部分结果展示</h1><h4 id="Case-3-MAE指标对比"><a href="#Case-3-MAE指标对比" class="headerlink" title="Case 3 MAE指标对比"></a>Case 3 MAE指标对比</h4><p><img src="/dataset/images/figure/one_point_mae_global_10.png" alt="one_point_mae_global_10" style="zoom: 33%;" /></p><h4 id="Case-3-Max-AE指标对比"><a href="#Case-3-Max-AE指标对比" class="headerlink" title="Case 3 Max-AE指标对比"></a>Case 3 Max-AE指标对比</h4><p><img src="/dataset/images/figure/one_point_max_error_10.png" alt="one_point_max_error_10" style="zoom: 33%;" /></p><h4 id="Case-3-MT-AE指标对比"><a href="#Case-3-MT-AE指标对比" class="headerlink" title="Case 3 MT-AE指标对比"></a>Case 3 MT-AE指标对比</h4><p><img src="/dataset/images/figure/one_point_error_of_maximum_temperature.png" alt="one_point_error_of_maximum_temperature" style="zoom: 33%;" /></p>]]></content>
+    <content type="html"><![CDATA[<h1 id="论文"><a href="#论文" class="headerlink" title="论文"></a>论文</h1><p>[1] Chen, X., Zhao, X. Gong, Z., Zhang，J., Chen, X., Yao, W., (2021) <strong>A Deep Neural Network Surrogate Modeling Benchmark for Temperature Field Prediction of Heat Source Layout</strong>, Science China-Physics, Mechanics &amp; Astronomy.</p><p>[2] Chen X., Chen X., Zhou W., Zhang J., Yao W., (2020) <strong>The heat source layout optimization using deep learning surrogate modeling</strong>, Structural and Multidisciplinary Optimization, 62, 3127–3148</p><p>[3] Zhao., X, Gong, Z., Zhang, J., Yao, W., Chen, X., (2021). <strong>A surrogate model with data augmentation and deep transfer learning for temperature field prediction of heat source layout</strong>. Structural and Multidisciplinary Optimization.</p>]]></content>
     
     
       
       
-    <summary type="html">&lt;h1 id=&quot;部分结果展示&quot;&gt;&lt;a href=&quot;#部分结果展示&quot; class=&quot;headerlink&quot; title=&quot;部分结果展示&quot;&gt;&lt;/a&gt;部分结果展示&lt;/h1&gt;&lt;h4 id=&quot;Case-3-MAE指标对比&quot;&gt;&lt;a href=&quot;#Case-3-MAE指标对比&quot; class=&quot;</summary>
+    <summary type="html">&lt;h1 id=&quot;论文&quot;&gt;&lt;a href=&quot;#论文&quot; class=&quot;headerlink&quot; title=&quot;论文&quot;&gt;&lt;/a&gt;论文&lt;/h1&gt;&lt;p&gt;[1] Chen, X., Zhao, X. Gong, Z., Zhang，J., Chen, X., Yao, W., (2021) &lt;</summary>
       
     
     
