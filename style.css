@@ -2259,6 +2259,11 @@ body {
     opacity: 1;
   }
 }
+@media (max-width: 820px) {
+  .l_main .post img {
+    margin-left: 0!important;
+  }
+}
 .line-hight-normal {
   line-height: normal;
 }
