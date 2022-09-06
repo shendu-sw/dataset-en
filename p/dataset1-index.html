@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  <title>HSLD benchmark | TAB</title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="shortcut icon" href="/dataset/">
+  <link rel="alternate" href="/dataset/atom.xml" title="TAB" type="application/atom+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Heat source layout benchmark services for the satellite design of heat sources and achieves the real-time temperature field prediction. It can reduce the computational complexity from common numerical">
+<meta property="og:type" content="article">
+<meta property="og:title" content="HSLD benchmark">
+<meta property="og:url" content="https://shendu-sw.github.io/dataset/p/dataset1-index.html">
+<meta property="og:site_name" content="TAB">
+<meta property="og:description" content="Heat source layout benchmark services for the satellite design of heat sources and achieves the real-time temperature field prediction. It can reduce the computational complexity from common numerical">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://shendu-sw.github.io/dataset/images/pasted/boundary.png">
+<meta property="og:image" content="https://shendu-sw.github.io/dataset/images/pasted/layout.png">
+<meta property="og:image" content="https://shendu-sw.github.io/dataset/images/pasted/field.png">
+<meta property="og:image" content="https://shendu-sw.github.io/dataset/images/pasted/image_mapping.png">
+<meta property="article:published_time" content="2021-09-08T08:06:00.000Z">
+<meta property="article:modified_time" content="2022-08-30T09:27:33.755Z">
+<meta property="article:author" content="IDRL">
+<meta property="article:tag" content="dataset">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://shendu-sw.github.io/dataset/images/pasted/boundary.png">
+    
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata|Titillium+Web" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+  <link href='//cdn.bootcss.com/node-waves/0.7.5/waves.min.css' rel='stylesheet'>
+  
+<link rel="stylesheet" href="/dataset/style.css">
+
+  <script>
+    function setLoadingBarProgress(num) {
+      document.getElementById('loading-bar').style.width=num+"%";
+    }
+  </script>
+
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <div id="loading-bar-wrapper">
+  <div id="loading-bar"></div>
+</div>
+
+
+  <script>
+    setLoadingBarProgress(20)
+  </script>
+  <header class="l_header">
+	<div class='wrapper'>
+		<div class="nav-main container container--flex">
+			<a class="logo flat-box dataset-logo" href='/dataset/'>
+				<!-- <div class="dataset-img">
+					<img src="/dataset/images/IDRL logo.png" />
+				</div> -->
+				<div class="dataset-title">
+					<div class="big-title">TAB</div>
+					<div class="subtitle">Thermal analysis benchmarks</div>
+				</div>
+			</a>
+			<div class='menu'>
+				<ul class='h-list'>
+					
+					<li>
+						<a class='flat-box nav-home' href='/dataset/main'>
+							Home
+						</a>
+					</li>
+					
+					<li>
+						<a class='flat-box nav-benchmark' href='/dataset/#data'>
+							Benchmark
+						</a>
+					</li>
+					
+					<li>
+						<a class='flat-box nav-challenge' href='/dataset/challenge'>
+							Challenges
+						</a>
+					</li>
+					
+					<li>
+						<a class='flat-box nav-support' href='/dataset/support'>
+							Supports
+						</a>
+					</li>
+					
+					<li>
+						<a class='flat-box nav-publish' href='/dataset/publish'>
+							Publications
+						</a>
+					</li>
+					
+				</ul>
+				<div class='underline'></div>
+			</div>
+			
+			<div class="m_search">
+				<form name="searchform" class="form u-search-form">
+					<input type="text" class="input u-search-input" placeholder="Search" />
+					<span class="icon icon-search"></span>
+				</form>
+			</div>
+			
+			<div class="languages">
+				<div class="lang-icon" onclick="setLang(this)">
+					<svg t="1631864636535" class="icon" viewBox="0 0 1024 1024" version="1.1"
+						xmlns="http://www.w3.org/2000/svg" p-id="3280" width="200" height="200">
+						<path
+							d="M531 703.2c0.8-1.2 1.8-2.6 2.4-3.8 0.8-1.4 1.4-2.6 2-4 0.6-1.4 1.2-2.8 1.6-4.2 0.4-1.4 1-2.8 1.2-4.4 0.4-1.4 0.6-3 0.8-4.4 0.2-1.6 0.4-3 0.4-4.6v-4.6c0-1.6-0.2-3-0.4-4.6-0.2-1.4-0.6-3-1-4.4-0.4-1.4-0.8-3-1.4-4.4l-1.8-4.2c-0.6-1.4-1.4-2.6-2.2-4-0.8-1.2-1.6-2.6-2.6-3.8-1-1.2-1.8-2.4-3-3.4-1-1.2-2.2-2.2-3.2-3.2-1.2-1-2.4-2-3.6-2.8-0.4-0.4-31.6-23.4-77-73.2 83.6-113.2 131-242 150.4-302.6h68c1.6 0 3 0 4.6-0.2 1.6-0.2 3-0.4 4.6-0.6 1.4-0.2 3-0.6 4.4-1.2 1.4-0.4 2.8-1 4.2-1.6 1.4-0.6 2.8-1.2 4.2-2 1.4-0.8 2.6-1.4 4-2.4 1.2-0.8 2.4-1.8 3.6-2.8 1.2-1 2.2-2 3.4-3 1-1 2-2.2 3-3.4 1-1.2 1.8-2.4 2.8-3.6 0.8-1.2 1.6-2.6 2.4-4 0.8-1.4 1.4-2.8 2-4.2 0.6-1.4 1-2.8 1.6-4.2 0.4-1.4 0.8-3 1.2-4.4s0.6-3 0.6-4.6c0.2-1.6 0.2-3 0.2-4.6s0-3-0.2-4.6c-0.2-1.6-0.4-3-0.6-4.6s-0.6-3-1.2-4.4c-0.4-1.4-1-2.8-1.6-4.2-0.6-1.4-1.2-2.8-2-4.2-0.8-1.4-1.4-2.6-2.4-4-0.8-1.2-1.8-2.4-2.8-3.6-1-1.2-2-2.2-3-3.4-1-1-2.2-2-3.4-3s-2.4-1.8-3.6-2.8c-1.2-0.8-2.6-1.6-4-2.4-1.4-0.8-2.8-1.4-4.2-2-1.4-0.6-2.8-1-4.2-1.6-1.4-0.4-3-0.8-4.4-1.2-1.4-0.2-3-0.6-4.6-0.6-1.6-0.2-3-0.2-4.6-0.2H417.4V127.6c0-1.6 0-3-0.2-4.6-0.2-1.6-0.4-3-0.6-4.6-0.2-1.4-0.6-3-1.2-4.4-0.4-1.4-1-2.8-1.6-4.2s-1.2-2.8-2-4.2c-0.8-1.4-1.4-2.6-2.4-4-0.8-1.2-1.8-2.4-2.8-3.6-1-1.2-2-2.2-3-3.4-1-1-2.2-2-3.4-3-1.2-1-2.4-1.8-3.6-2.8-1.2-0.8-2.6-1.6-4-2.4s-2.8-1.4-4.2-2c-1.4-0.6-2.8-1-4.2-1.6-1.4-0.4-3-0.8-4.4-1.2-1.4-0.2-3-0.6-4.6-0.6-1.6-0.2-3-0.2-4.6-0.2-1.6 0-3 0-4.6 0.2-1.6 0.2-3 0.4-4.6 0.6-1.4 0.2-3 0.6-4.4 1.2-1.4 0.4-2.8 1-4.2 1.6-1.4 0.6-2.8 1.2-4.2 2s-2.6 1.4-4 2.4c-1.2 0.8-2.4 1.8-3.6 2.8-1.2 1-2.2 2-3.4 3s-2 2.2-3 3.4c-1 1.2-1.8 2.4-2.8 3.6-0.8 1.2-1.6 2.6-2.4 4-0.8 1.4-1.4 2.8-2 4.2-0.6 1.4-1 2.8-1.6 4.2-0.4 1.4-0.8 3-1.2 4.4s-0.6 3-0.6 4.6c-0.2 1.6-0.2 3-0.2 4.6v42.2H80c-1.6 0-3 0-4.6 0.2-1.6 0.2-3 0.4-4.6 0.6-1.4 0.2-3 0.6-4.4 1.2-1.4 0.4-2.8 1-4.2 1.6-1.4 0.6-2.8 1.2-4.2 2-1.4 0.8-2.6 1.4-4 2.4-1.2 0.8-2.4 1.8-3.6 2.8-1.2 1-2.2 2-3.4 3-1 1-2 2.2-3 3.4-1 1.2-1.8 2.4-2.8 3.6-0.8 1.2-1.6 2.6-2.4 4-0.8 1.4-1.4 2.8-2 4.2s-1 2.8-1.6 4.2c-0.4 1.4-0.8 3-1.2 4.4-0.2 1.4-0.6 3-0.6 4.6-0.2 1.6-0.2 3-0.2 4.6 0 1.6 0 3 0.2 4.6s0.4 3 0.6 4.6c0.2 1.4 0.6 3 1.2 4.4 0.4 1.4 1 2.8 1.6 4.2 0.6 1.4 1.2 2.8 2 4.2 0.8 1.4 1.4 2.6 2.4 4 0.8 1.2 1.8 2.4 2.8 3.6s2 2.2 3 3.4c1 1 2.2 2 3.4 3 1.2 1 2.4 1.8 3.6 2.8s2.6 1.6 4 2.4c1.4 0.8 2.8 1.4 4.2 2 1.4 0.6 2.8 1 4.2 1.6s3 0.8 4.4 1.2c1.4 0.2 3 0.6 4.6 0.6 1.6 0.2 3 0.2 4.6 0.2h416c-20 56.8-57 146.6-113.4 228.6-66.2-88-90.8-144.8-91-145.2-0.6-1.4-1.2-2.8-2-4-0.8-1.4-1.6-2.6-2.4-3.8-0.8-1.2-1.8-2.4-2.8-3.6-1-1.2-2-2.2-3-3.4-1-1-2.2-2-3.4-3s-2.4-1.8-3.6-2.6-2.6-1.6-4-2.2c-1.4-0.6-2.8-1.4-4.2-1.8-1.4-0.6-2.8-1-4.2-1.4-1.4-0.4-3-0.8-4.4-1-1.4-0.2-3-0.4-4.4-0.6-1.6-0.2-3-0.2-4.6-0.2-1.6 0-3 0-4.6 0.2-1.6 0.2-3 0.4-4.4 0.6-1.4 0.4-3 0.6-4.4 1.2s-2.8 1-4.2 1.6-2.8 1.2-4 2c-1.4 0.8-2.6 1.4-3.8 2.4-1.2 0.8-2.4 1.8-3.6 2.8-1.2 1-2.2 2-3.4 3-1 1-2 2.2-3 3.4-1 1.2-1.8 2.4-2.6 3.6s-1.6 2.6-2.4 3.8c-0.8 1.4-1.4 2.6-2 4-0.6 1.4-1 2.8-1.6 4.2-0.4 1.4-0.8 3-1.2 4.4-0.2 1.4-0.6 3-0.6 4.4-0.2 1.6-0.2 3-0.2 4.6s0 3 0.2 4.6 0.4 3 0.6 4.4c0.2 1.4 0.6 3 1 4.4s1 2.8 1.4 4.2c1.2 3 30.6 72.2 111.6 177 2 2.6 3.8 5 5.8 7.4-82.8 93.6-164 151.6-198 170.4-1.4 0.8-2.6 1.6-3.8 2.4-1.2 0.8-2.4 1.8-3.6 2.8-1.2 1-2.2 2-3.4 3-1 1-2 2.2-3 3.4-1 1.2-1.8 2.4-2.6 3.6-0.8 1.2-1.6 2.6-2.4 4-0.8 1.4-1.4 2.8-2 4.2-0.6 1.4-1 2.8-1.6 4.4s-0.8 3-1 4.4c-0.2 1.4-0.4 3-0.6 4.6-0.2 1.6-0.2 3-0.2 4.6 0 1.6 0 3 0.2 4.6 0.2 1.6 0.4 3 0.8 4.6 0.4 1.4 0.6 3 1.2 4.4 0.4 1.4 1 2.8 1.6 4.2s1.2 2.8 2 4.2c0.8 1.4 1.6 2.6 2.4 3.8 0.8 1.2 1.8 2.4 2.8 3.6 1 1.2 2 2.2 3 3.4 1 1 2.2 2 3.4 3 1.2 1 2.4 1.8 3.6 2.6 1.2 0.8 2.6 1.6 4 2.4 1.4 0.8 2.8 1.4 4.2 2 1.4 0.6 2.8 1 4.4 1.4 1.4 0.4 3 0.8 4.4 1 1.4 0.2 3 0.4 4.6 0.6 1.6 0.2 3 0.2 4.6 0.2 1.6 0 3-0.2 4.6-0.2 1.6-0.2 3-0.4 4.6-0.8 1.4-0.4 3-0.6 4.4-1.2 1.4-0.4 2.8-1 4.2-1.6 1.4-0.6 2.8-1.2 4.2-2 4.6-2.4 102.6-56.8 214.4-180.6 47.6 50.8 80.2 74.8 82.2 76.2 1.2 0.8 2.6 1.8 3.8 2.4 1.4 0.8 2.6 1.4 4 2.2l4.2 1.8c1.4 0.4 2.8 1 4.4 1.2 1.4 0.4 3 0.6 4.4 0.8 1.6 0.2 3 0.4 4.6 0.4h4.6c1.6 0 3-0.2 4.6-0.4 1.6-0.2 3-0.6 4.4-1s3-0.8 4.4-1.4l4.2-1.8c1.4-0.6 2.8-1.4 4-2.2 1.2-0.8 2.6-1.6 3.8-2.6 1.2-1 2.4-1.8 3.4-3 1.2-1 2.2-2.2 3.2-3.2 0.4-2.6 1.2-3.8 2.2-5z m141.2 40.2l70-169.4 70 169.4h-140z m302.8 151.2l-189.8-459.8c-0.8-2.2-1.8-4.2-3-6.2s-2.4-3.8-4-5.6-3-3.4-4.8-5c-1.6-1.6-3.4-3-5.4-4.2-1.8-1.2-3.8-2.4-6-3.4-2-1-4.2-1.8-6.4-2.4-2.2-0.6-4.4-1.2-6.6-1.4-2.2-0.4-4.6-0.6-6.8-0.6s-4.6 0.2-6.8 0.6c-2.2 0.4-4.4 0.8-6.6 1.4-2.2 0.6-4.4 1.4-6.4 2.4s-4 2.2-6 3.4c-1.8 1.2-3.6 2.6-5.4 4.2-1.6 1.6-3.2 3.2-4.8 5-1.4 1.8-2.8 3.6-4 5.6-1.2 2-2.2 4-3 6.2l-189.8 459.8c-0.6 1.4-1.2 2.8-1.6 4.2-0.4 1.4-0.8 3-1.2 4.4s-0.6 3-0.6 4.6c-0.2 1.6-0.2 3-0.2 4.6 0 1.6 0 3 0.2 4.6 0.2 1.6 0.4 3 0.6 4.6 0.2 1.4 0.6 3 1.2 4.4 0.4 1.4 1 2.8 1.6 4.4s1.2 2.8 2 4.2c0.8 1.4 1.4 2.6 2.4 4 0.8 1.2 1.8 2.4 2.8 3.6 1 1.2 2 2.4 3 3.4s2.2 2.2 3.4 3c1.2 1 2.4 1.8 3.6 2.8 1.2 0.8 2.6 1.6 4 2.4 1.4 0.8 2.8 1.4 4.2 2 1.4 0.6 2.8 1 4.4 1.6 1.4 0.4 3 0.8 4.4 1.2 1.4 0.2 3 0.6 4.6 0.6 1.6 0.2 3 0.2 4.6 0.2s3 0 4.6-0.2c1.6-0.2 3-0.4 4.6-0.6 1.4-0.4 3-0.6 4.4-1.2 1.4-0.4 2.8-1 4.2-1.6 1.4-0.6 2.8-1.2 4.2-2 1.4-0.8 2.6-1.6 4-2.4s2.4-1.8 3.6-2.8c1.2-1 2.2-2 3.4-3 1-1 2-2.2 3-3.4 1-1.2 1.8-2.4 2.8-3.6 0.8-1.2 1.6-2.6 2.4-4 0.8-1.4 1.4-2.8 2-4.2l38.6-93.6h216.6l38.6 93.6c0.8 2.2 1.8 4.2 3 6.2s2.4 3.8 4 5.6c1.4 1.8 3 3.4 4.8 5 1.6 1.6 3.4 3 5.4 4.2 1.8 1.2 3.8 2.4 6 3.4 2 1 4.2 1.8 6.4 2.4 2.2 0.6 4.4 1.2 6.6 1.4 2.2 0.4 4.6 0.6 6.8 0.6h2.8c1 0 1.8-0.2 2.8-0.2 1-0.2 1.8-0.2 2.8-0.4 1-0.2 1.8-0.4 2.8-0.6 1-0.2 1.8-0.4 2.8-0.8 1-0.2 1.8-0.6 2.6-1s1.8-0.8 2.6-1.2c0.8-0.4 1.8-0.8 2.6-1.2 0.8-0.4 1.6-1 2.4-1.4s1.6-1 2.4-1.6c0.8-0.6 1.6-1.2 2.2-1.8 0.8-0.6 1.4-1.2 2.2-1.8 0.8-0.6 1.4-1.2 2-2l2-2c0.6-0.8 1.2-1.4 1.8-2.2 0.6-0.8 1.2-1.6 1.6-2.4 0.6-0.8 1-1.6 1.6-2.4 0.4-0.8 1-1.6 1.4-2.6 0.4-0.8 0.8-1.8 1.2-2.6 0.4-0.8 0.8-1.8 1-2.6 0.4-0.8 0.6-1.8 0.8-2.8 0.2-1 0.6-1.8 0.8-2.8 0.2-1 0.4-1.8 0.6-2.8 0.2-1 0.2-1.8 0.4-2.8 0-1 0.2-1.8 0.2-2.8v-2.8c0-1 0-1.8-0.2-2.8 0-1-0.2-1.8-0.4-2.8-0.2-1-0.4-1.8-0.6-2.8-0.2-1-0.4-1.8-0.6-2.8-0.2-1-0.6-1.8-0.8-2.8-1-1.4-1.2-2.2-1.6-3z"
+							p-id="3281" fill="#ffffff"></path>
+					</svg>
+				</div>
+				<script>
+					function setLang(icon) {
+						const selector = document.getElementById('lang-selector')
+						const rect = icon.getBoundingClientRect()
+						console.log(rect)
+						selector.classList.add('shown')
+						selector.style.top = rect.top + rect.height + 'px';
+						selector.style.left = rect.left + 'px';
+						window.addEventListener('click', hideLang, true)
+					}
+
+					function hideLang() {
+						const selector = document.getElementById('lang-selector')
+						if (selector && selector.classList.contains('shown')) {
+							selector.classList.remove('shown')
+						}
+						window.removeEventListener('click', hideLang, true)
+					}
+				</script>
+			</div>
+			<ul class='switcher h-list'>
+				
+				<li class='s-search'><a href='javascript:void(0)'><span class="icon icon-search flat-box"></span></a>
+				</li>
+				
+				<li class='s-menu'><a href='javascript:void(0)'><span class="icon icon-menu flat-box"></span></a></li>
+			</ul>
+		</div>
+
+		<div class='nav-sub container container--flex'>
+			<a class="logo" class="flat-box" href='javascript:void(0)'>
+				Word of Forks
+			</a>
+
+			<ul class='switcher h-list'>
+				<li class='s-comment'><a href='javascript:void(0)'><span
+							class="icon icon-chat_bubble_outline flat-box"></span></a></li>
+				<li class='s-top'><a href='javascript:void(0)'><span class="icon icon-arrow_upward flat-box"></span></a>
+				</li>
+				<li class='s-toc'><a href='javascript:void(0)'><span
+							class="icon icon-format_list_numbered flat-box"></span></a></li>
+			</ul>
+		</div>
+	</div>
+</header>
+
+<div id="lang-selector" class="">
+	
+	<div class="lang-option"><a href="https://shendu-sw.github.io/dataset/">简体中文</a></div>
+	
+	<div class="lang-option"><a href="https://shendu-sw.github.io/dataset-en/">English</a></div>
+	
+</div>
+
+
+
+<aside class="menu-phone">
+	<nav>
+		
+		<a href="/dataset/main" class="nav-home nav">
+			home
+		</a>
+		
+		<a href="/dataset/#data" class="nav-benchmark nav">
+			benchmark
+		</a>
+		
+		<a href="/dataset/challenge" class="nav-challenge nav">
+			challenge
+		</a>
+		
+		<a href="/dataset/support" class="nav-support nav">
+			support
+		</a>
+		
+		<a href="/dataset/publish" class="nav-publish nav">
+			publish
+		</a>
+		
+	</nav>
+</aside>
+  <script>
+    setLoadingBarProgress(40);
+  </script>
+  <div class="l_body">
+    <div class='container clearfix'>
+      <div class='l_main'>
+        <article id="post-dataset1/温度场预测数据集-主页" class="post no-shandow white-box article-type-post"
+	itemscope itemprop="blogPost">
+
+
+	<section class='meta'>
+
+		<div class="title-bar">
+			<div class="title post-title">
+				<a href="/dataset/p/dataset1-index.html">
+					HSLD benchmark
+				</a>
+			</div>
+			<!-- 菜单 -->
+			
+			<div class="post-menus">
+				
+				<div class="post-menu-item">
+					<a class="" href="dataset1-index">Home </a>
+				</div>
+				
+				<div class="post-menu-item">
+					<a class="" href="dataset1-set">Dataset </a>
+				</div>
+				
+				<div class="post-menu-item">
+					<a class="" href="dataset1-baseline-method">Baselines </a>
+				</div>
+				
+				<div class="post-menu-item">
+					<a class="" href="dataset1-result">Results </a>
+				</div>
+				
+				<div class="post-menu-item">
+					<a class="" href="dataset1-publication">Publications </a>
+				</div>
+				
+			</div>
+			
+		</div>
+
+		<!-- 分类，暂时用不到 -->
+		<!--  -->
+	</section>
+	
+	<!-- <section class="toc-wrapper"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Temperature-field-prediction-of-heat-source-layout"><span class="toc-number">1.</span> <span class="toc-text">Temperature field prediction of heat source layout</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Citing"><span class="toc-number">2.</span> <span class="toc-text">Citing</span></a></li></ol></section> -->
+	
+	<section class="article typo">
+		<div class="article-entry" itemprop="articleBody">
+			<p>Welcome to Heat-Source Layout Dataset (HSLD) benchmark.</p>
+<h1 id="Temperature-field-prediction-of-heat-source-layout"><a href="#Temperature-field-prediction-of-heat-source-layout" class="headerlink" title="Temperature field prediction of heat source layout"></a>Temperature field prediction of heat source layout</h1><blockquote>
+<p>Heat source layout benchmark services for the satellite design of heat sources and achieves the real-time temperature field prediction. It can reduce the computational complexity from common numerical simulation methods.</p>
+</blockquote>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="/dataset/images/pasted/boundary.png" alt="0"></th>
+<th style="text-align:center"><img src="/dataset/images/pasted/layout.png" alt="1"></th>
+<th style="text-align:center"><img src="/dataset/images/pasted/field.png" alt="2"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><strong>Boundary conditions</strong></td>
+<td style="text-align:center"><strong>Heat source layout scheme</strong></td>
+<td style="text-align:center"><strong>Temperature field</strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li>Image-based modelling</li>
+</ul>
+<blockquote>
+<p>learning maps from heat-source layout to temperature field</p>
+</blockquote>
+<p><img src="/dataset/images/pasted/image_mapping.png" alt="image_mapping"></p>
+<h1 id="Citing"><a href="#Citing" class="headerlink" title="Citing"></a>Citing</h1><div class="card-wrapper">
+    <div class="card-title"></div>
+    <div class="card-content">
+        <pre>
+@article{chen2021,
+    Author = {Xianqi Chen and Xiaoyu Zhao and Zhiqiang Gong and Jun Zhang and Weien Zhou and Xiaoqian Chen and Wen Yao},
+    Title = {A Deep Neural Network Surrogate Modeling Benchmark for Temperature Field Prediction of Heat Source Layout},
+    Journal = {Science China-Physics, Mechanics & Astronomy},
+    Year = {2021}
+}
+        </pre>
+        <pre>
+@article{zhao2021,
+    Author = {Xiaoyu Zhao and Zhiqiang Gong and Jun Zhang and Wen Yao and Xiaoqian Chen},
+    Title = {A surrogate model with data augmentation and deep transfer learning for temperature field prediction of heat source layout},
+    Journal = {Structural and Multidisciplinary Optimization},
+    Year = {2021}
+}
+        </pre>
+    </div>
+</div>
+
+		</div>
+	</section>
+
+</article>
+<script>
+	window.subData = {
+		title: 'HSLD benchmark',
+		tools: true
+	}
+</script>
+
+      </div>
+      <aside class='l_side'>
+        
+  <section class='m_widget about'>
+    
+    <div class='header'>IDRL</div>
+    <div class='content collapsed'>
+        <div class='desc'>The Intelligent Design and Robust Learning laboratory of Defense Innovation Institute of Academy of Military Sciences focuses on the basic frontier and cross-research of artificial intelligence and aircraft design. The team has developed a series of data and model driven deep learning methods for efficient multi-disciplinary analysis and optimization of aircraft, and tries to construct a intelligent auxiliary aircraft design optimization cloud platform, namely IDaaS (Intelligent Design as a Service). The team has already publicly released two thermal analysis benchmarks, namely the HSLD (Heat-source layout dataset) and TFRD (Temperature field reconstruction dataset). Besides, they developed a physical informed neural network framework IDRLNet. In the past three years, they have published more than 30 related papers, and more than 30 patent applications.</div>
+        <div class="collapsed-block"></div>
+    </div>
+    <div id="expandbtn" onclick="expand()">
+        展开
+    </div>
+    <div id="collapsebtn" onclick="collapse()">
+        收起
+    </div>
+    <script>
+        function expand() {
+            document.querySelector('.m_widget.about .content').classList.remove('collapsed')
+            document.getElementById('expandbtn').style.display = 'none';
+            // document.getElementById('collapsebtn').style.display = 'block';
+        }
+
+        function collapse() {
+            document.querySelector('.m_widget.about .content').classList.add('collapsed')
+            document.getElementById('expandbtn').style.display = 'block';
+            document.getElementById('collapsebtn').style.display = 'none';
+        }
+    </script>
+</section>
+
+  <section class='m_widget links'>
+<div class='header'>Links</div>
+<div class='content'>
+    <ul class="entry">
+    
+        <li><a class="flat-box" target="_blank" href="https://smt.readthedocs.io/en/latest/index.html">
+            <div class='name'>Surrogate Modeling Toolbox</div>
+        </a></li>
+    
+    </ul>
+</div>
+</section>
+
+  
+<div class="m_widget tagcloud">
+    <div class="header">Tags</div>
+    <div class='content'>
+        
+        <a href="/dataset/tags/dataset/" style="font-size: 14px; color: #808080">dataset</a>
+    </div>
+</div>
+
+
+      </aside>
+      <script>
+        setLoadingBarProgress(60);
+      </script>
+    </div>
+  </div>
+ <footer id="footer" class="clearfix">
+
+
+  
+ <div>@Copyright 2021, Zhiqiang Gong, Pengyu Wang. Contact: <a href="mailto:gongzhiqiang13@nudt.edu.cn" class="codename">gongzhiqiang13@nudt.edu.cn</a></div>
+  
+</footer>
+
+
+
+  <script>
+    setLoadingBarProgress(80);
+  </script>
+  
+
+<script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src='//cdn.bootcss.com/node-waves/0.7.5/waves.min.js'></script>
+<script src="//cdn.bootcss.com/scrollReveal.js/3.3.2/scrollreveal.min.js"></script>
+
+<script src="/dataset/js/jquery.fitvids.js"></script>
+
+<script>
+	var GOOGLE_CUSTOM_SEARCH_API_KEY = "";
+	var GOOGLE_CUSTOM_SEARCH_ENGINE_ID = "";
+	var ALGOLIA_API_KEY = "";
+	var ALGOLIA_APP_ID = "";
+	var ALGOLIA_INDEX_NAME = "";
+  var AZURE_SERVICE_NAME = "";
+  var AZURE_INDEX_NAME = "";
+  var AZURE_QUERY_KEY = "";
+  var BAIDU_API_ID = "";
+  var SEARCH_SERVICE = "hexo";
+  var ROOT = "/dataset/"||"/";
+  if(!ROOT.endsWith('/'))ROOT += '/';
+</script>
+
+<script src="/dataset/js/search.js"></script>
+
+
+<script src="/dataset/js/app.js"></script>
+
+
+<script src="/dataset/js/custom.js"></script>
+
+
+  <script>
+    setLoadingBarProgress(100);
+  </script>
+</body>
+
+</html>

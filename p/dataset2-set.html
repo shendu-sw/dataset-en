@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  <title>TFRD benchmark | TAB</title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="shortcut icon" href="/dataset/">
+  <link rel="alternate" href="/dataset/atom.xml" title="TAB" type="application/atom+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="TFRD DatasetTFRD dataset is generated using the data genereator based on FEniCS, and you can download at BaiduPan（Password: tfrd）。 TFRD dataset describes the heat source system with $0.1m \times 0.1m$">
+<meta property="og:type" content="article">
+<meta property="og:title" content="TFRD benchmark">
+<meta property="og:url" content="https://shendu-sw.github.io/dataset/p/dataset2-set.html">
+<meta property="og:site_name" content="TAB">
+<meta property="og:description" content="TFRD DatasetTFRD dataset is generated using the data genereator based on FEniCS, and you can download at BaiduPan（Password: tfrd）。 TFRD dataset describes the heat source system with $0.1m \times 0.1m$">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://shendu-sw.github.io/dataset/images/hsink.png">
+<meta property="og:image" content="https://shendu-sw.github.io/dataset/images/hsink1.png">
+<meta property="og:image" content="https://shendu-sw.github.io/dataset/images/figure/0.jpg">
+<meta property="og:image" content="https://shendu-sw.github.io/dataset/images/figure/1.jpg">
+<meta property="og:image" content="https://shendu-sw.github.io/dataset/images/figure/2.jpg">
+<meta property="og:image" content="https://shendu-sw.github.io/dataset/images/figure/3.jpg">
+<meta property="og:image" content="https://shendu-sw.github.io/dataset/images/figure/4.jpg">
+<meta property="og:image" content="https://shendu-sw.github.io/dataset/images/figure/5.jpg">
+<meta property="og:image" content="https://shendu-sw.github.io/dataset/images/adlet.png">
+<meta property="og:image" content="https://shendu-sw.github.io/dataset/images/adlet2.png">
+<meta property="og:image" content="https://shendu-sw.github.io/dataset/images/figure/0.jpg">
+<meta property="og:image" content="https://shendu-sw.github.io/dataset/images/figure/1.jpg">
+<meta property="og:image" content="https://shendu-sw.github.io/dataset/images/figure/2.jpg">
+<meta property="og:image" content="https://shendu-sw.github.io/dataset/images/figure/3.jpg">
+<meta property="og:image" content="https://shendu-sw.github.io/dataset/images/figure/4.jpg">
+<meta property="og:image" content="https://shendu-sw.github.io/dataset/images/figure/5.jpg">
+<meta property="og:image" content="https://shendu-sw.github.io/dataset/images/dsine.png">
+<meta property="og:image" content="https://shendu-sw.github.io/dataset/images/dsine2.png">
+<meta property="og:image" content="https://shendu-sw.github.io/dataset/images/figure/0.jpg">
+<meta property="og:image" content="https://shendu-sw.github.io/dataset/images/figure/1.jpg">
+<meta property="og:image" content="https://shendu-sw.github.io/dataset/images/figure/2.jpg">
+<meta property="og:image" content="https://shendu-sw.github.io/dataset/images/figure/3.jpg">
+<meta property="og:image" content="https://shendu-sw.github.io/dataset/images/figure/4.jpg">
+<meta property="og:image" content="https://shendu-sw.github.io/dataset/images/figure/5.jpg">
+<meta property="article:published_time" content="2021-09-10T03:08:00.000Z">
+<meta property="article:modified_time" content="2022-08-30T09:28:05.302Z">
+<meta property="article:author" content="IDRL">
+<meta property="article:tag" content="dataset">
+<meta property="article:tag" content="hide">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://shendu-sw.github.io/dataset/images/hsink.png">
+    
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata|Titillium+Web" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+  <link href='//cdn.bootcss.com/node-waves/0.7.5/waves.min.css' rel='stylesheet'>
+  
+<link rel="stylesheet" href="/dataset/style.css">
+
+  <script>
+    function setLoadingBarProgress(num) {
+      document.getElementById('loading-bar').style.width=num+"%";
+    }
+  </script>
+
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <div id="loading-bar-wrapper">
+  <div id="loading-bar"></div>
+</div>
+
+
+  <script>
+    setLoadingBarProgress(20)
+  </script>
+  <header class="l_header">
+	<div class='wrapper'>
+		<div class="nav-main container container--flex">
+			<a class="logo flat-box dataset-logo" href='/dataset/'>
+				<!-- <div class="dataset-img">
+					<img src="/dataset/images/IDRL logo.png" />
+				</div> -->
+				<div class="dataset-title">
+					<div class="big-title">TAB</div>
+					<div class="subtitle">Thermal analysis benchmarks</div>
+				</div>
+			</a>
+			<div class='menu'>
+				<ul class='h-list'>
+					
+					<li>
+						<a class='flat-box nav-home' href='/dataset/main'>
+							Home
+						</a>
+					</li>
+					
+					<li>
+						<a class='flat-box nav-benchmark' href='/dataset/#data'>
+							Benchmark
+						</a>
+					</li>
+					
+					<li>
+						<a class='flat-box nav-challenge' href='/dataset/challenge'>
+							Challenges
+						</a>
+					</li>
+					
+					<li>
+						<a class='flat-box nav-support' href='/dataset/support'>
+							Supports
+						</a>
+					</li>
+					
+					<li>
+						<a class='flat-box nav-publish' href='/dataset/publish'>
+							Publications
+						</a>
+					</li>
+					
+				</ul>
+				<div class='underline'></div>
+			</div>
+			
+			<div class="m_search">
+				<form name="searchform" class="form u-search-form">
+					<input type="text" class="input u-search-input" placeholder="Search" />
+					<span class="icon icon-search"></span>
+				</form>
+			</div>
+			
+			<div class="languages">
+				<div class="lang-icon" onclick="setLang(this)">
+					<svg t="1631864636535" class="icon" viewBox="0 0 1024 1024" version="1.1"
+						xmlns="http://www.w3.org/2000/svg" p-id="3280" width="200" height="200">
+						<path
+							d="M531 703.2c0.8-1.2 1.8-2.6 2.4-3.8 0.8-1.4 1.4-2.6 2-4 0.6-1.4 1.2-2.8 1.6-4.2 0.4-1.4 1-2.8 1.2-4.4 0.4-1.4 0.6-3 0.8-4.4 0.2-1.6 0.4-3 0.4-4.6v-4.6c0-1.6-0.2-3-0.4-4.6-0.2-1.4-0.6-3-1-4.4-0.4-1.4-0.8-3-1.4-4.4l-1.8-4.2c-0.6-1.4-1.4-2.6-2.2-4-0.8-1.2-1.6-2.6-2.6-3.8-1-1.2-1.8-2.4-3-3.4-1-1.2-2.2-2.2-3.2-3.2-1.2-1-2.4-2-3.6-2.8-0.4-0.4-31.6-23.4-77-73.2 83.6-113.2 131-242 150.4-302.6h68c1.6 0 3 0 4.6-0.2 1.6-0.2 3-0.4 4.6-0.6 1.4-0.2 3-0.6 4.4-1.2 1.4-0.4 2.8-1 4.2-1.6 1.4-0.6 2.8-1.2 4.2-2 1.4-0.8 2.6-1.4 4-2.4 1.2-0.8 2.4-1.8 3.6-2.8 1.2-1 2.2-2 3.4-3 1-1 2-2.2 3-3.4 1-1.2 1.8-2.4 2.8-3.6 0.8-1.2 1.6-2.6 2.4-4 0.8-1.4 1.4-2.8 2-4.2 0.6-1.4 1-2.8 1.6-4.2 0.4-1.4 0.8-3 1.2-4.4s0.6-3 0.6-4.6c0.2-1.6 0.2-3 0.2-4.6s0-3-0.2-4.6c-0.2-1.6-0.4-3-0.6-4.6s-0.6-3-1.2-4.4c-0.4-1.4-1-2.8-1.6-4.2-0.6-1.4-1.2-2.8-2-4.2-0.8-1.4-1.4-2.6-2.4-4-0.8-1.2-1.8-2.4-2.8-3.6-1-1.2-2-2.2-3-3.4-1-1-2.2-2-3.4-3s-2.4-1.8-3.6-2.8c-1.2-0.8-2.6-1.6-4-2.4-1.4-0.8-2.8-1.4-4.2-2-1.4-0.6-2.8-1-4.2-1.6-1.4-0.4-3-0.8-4.4-1.2-1.4-0.2-3-0.6-4.6-0.6-1.6-0.2-3-0.2-4.6-0.2H417.4V127.6c0-1.6 0-3-0.2-4.6-0.2-1.6-0.4-3-0.6-4.6-0.2-1.4-0.6-3-1.2-4.4-0.4-1.4-1-2.8-1.6-4.2s-1.2-2.8-2-4.2c-0.8-1.4-1.4-2.6-2.4-4-0.8-1.2-1.8-2.4-2.8-3.6-1-1.2-2-2.2-3-3.4-1-1-2.2-2-3.4-3-1.2-1-2.4-1.8-3.6-2.8-1.2-0.8-2.6-1.6-4-2.4s-2.8-1.4-4.2-2c-1.4-0.6-2.8-1-4.2-1.6-1.4-0.4-3-0.8-4.4-1.2-1.4-0.2-3-0.6-4.6-0.6-1.6-0.2-3-0.2-4.6-0.2-1.6 0-3 0-4.6 0.2-1.6 0.2-3 0.4-4.6 0.6-1.4 0.2-3 0.6-4.4 1.2-1.4 0.4-2.8 1-4.2 1.6-1.4 0.6-2.8 1.2-4.2 2s-2.6 1.4-4 2.4c-1.2 0.8-2.4 1.8-3.6 2.8-1.2 1-2.2 2-3.4 3s-2 2.2-3 3.4c-1 1.2-1.8 2.4-2.8 3.6-0.8 1.2-1.6 2.6-2.4 4-0.8 1.4-1.4 2.8-2 4.2-0.6 1.4-1 2.8-1.6 4.2-0.4 1.4-0.8 3-1.2 4.4s-0.6 3-0.6 4.6c-0.2 1.6-0.2 3-0.2 4.6v42.2H80c-1.6 0-3 0-4.6 0.2-1.6 0.2-3 0.4-4.6 0.6-1.4 0.2-3 0.6-4.4 1.2-1.4 0.4-2.8 1-4.2 1.6-1.4 0.6-2.8 1.2-4.2 2-1.4 0.8-2.6 1.4-4 2.4-1.2 0.8-2.4 1.8-3.6 2.8-1.2 1-2.2 2-3.4 3-1 1-2 2.2-3 3.4-1 1.2-1.8 2.4-2.8 3.6-0.8 1.2-1.6 2.6-2.4 4-0.8 1.4-1.4 2.8-2 4.2s-1 2.8-1.6 4.2c-0.4 1.4-0.8 3-1.2 4.4-0.2 1.4-0.6 3-0.6 4.6-0.2 1.6-0.2 3-0.2 4.6 0 1.6 0 3 0.2 4.6s0.4 3 0.6 4.6c0.2 1.4 0.6 3 1.2 4.4 0.4 1.4 1 2.8 1.6 4.2 0.6 1.4 1.2 2.8 2 4.2 0.8 1.4 1.4 2.6 2.4 4 0.8 1.2 1.8 2.4 2.8 3.6s2 2.2 3 3.4c1 1 2.2 2 3.4 3 1.2 1 2.4 1.8 3.6 2.8s2.6 1.6 4 2.4c1.4 0.8 2.8 1.4 4.2 2 1.4 0.6 2.8 1 4.2 1.6s3 0.8 4.4 1.2c1.4 0.2 3 0.6 4.6 0.6 1.6 0.2 3 0.2 4.6 0.2h416c-20 56.8-57 146.6-113.4 228.6-66.2-88-90.8-144.8-91-145.2-0.6-1.4-1.2-2.8-2-4-0.8-1.4-1.6-2.6-2.4-3.8-0.8-1.2-1.8-2.4-2.8-3.6-1-1.2-2-2.2-3-3.4-1-1-2.2-2-3.4-3s-2.4-1.8-3.6-2.6-2.6-1.6-4-2.2c-1.4-0.6-2.8-1.4-4.2-1.8-1.4-0.6-2.8-1-4.2-1.4-1.4-0.4-3-0.8-4.4-1-1.4-0.2-3-0.4-4.4-0.6-1.6-0.2-3-0.2-4.6-0.2-1.6 0-3 0-4.6 0.2-1.6 0.2-3 0.4-4.4 0.6-1.4 0.4-3 0.6-4.4 1.2s-2.8 1-4.2 1.6-2.8 1.2-4 2c-1.4 0.8-2.6 1.4-3.8 2.4-1.2 0.8-2.4 1.8-3.6 2.8-1.2 1-2.2 2-3.4 3-1 1-2 2.2-3 3.4-1 1.2-1.8 2.4-2.6 3.6s-1.6 2.6-2.4 3.8c-0.8 1.4-1.4 2.6-2 4-0.6 1.4-1 2.8-1.6 4.2-0.4 1.4-0.8 3-1.2 4.4-0.2 1.4-0.6 3-0.6 4.4-0.2 1.6-0.2 3-0.2 4.6s0 3 0.2 4.6 0.4 3 0.6 4.4c0.2 1.4 0.6 3 1 4.4s1 2.8 1.4 4.2c1.2 3 30.6 72.2 111.6 177 2 2.6 3.8 5 5.8 7.4-82.8 93.6-164 151.6-198 170.4-1.4 0.8-2.6 1.6-3.8 2.4-1.2 0.8-2.4 1.8-3.6 2.8-1.2 1-2.2 2-3.4 3-1 1-2 2.2-3 3.4-1 1.2-1.8 2.4-2.6 3.6-0.8 1.2-1.6 2.6-2.4 4-0.8 1.4-1.4 2.8-2 4.2-0.6 1.4-1 2.8-1.6 4.4s-0.8 3-1 4.4c-0.2 1.4-0.4 3-0.6 4.6-0.2 1.6-0.2 3-0.2 4.6 0 1.6 0 3 0.2 4.6 0.2 1.6 0.4 3 0.8 4.6 0.4 1.4 0.6 3 1.2 4.4 0.4 1.4 1 2.8 1.6 4.2s1.2 2.8 2 4.2c0.8 1.4 1.6 2.6 2.4 3.8 0.8 1.2 1.8 2.4 2.8 3.6 1 1.2 2 2.2 3 3.4 1 1 2.2 2 3.4 3 1.2 1 2.4 1.8 3.6 2.6 1.2 0.8 2.6 1.6 4 2.4 1.4 0.8 2.8 1.4 4.2 2 1.4 0.6 2.8 1 4.4 1.4 1.4 0.4 3 0.8 4.4 1 1.4 0.2 3 0.4 4.6 0.6 1.6 0.2 3 0.2 4.6 0.2 1.6 0 3-0.2 4.6-0.2 1.6-0.2 3-0.4 4.6-0.8 1.4-0.4 3-0.6 4.4-1.2 1.4-0.4 2.8-1 4.2-1.6 1.4-0.6 2.8-1.2 4.2-2 4.6-2.4 102.6-56.8 214.4-180.6 47.6 50.8 80.2 74.8 82.2 76.2 1.2 0.8 2.6 1.8 3.8 2.4 1.4 0.8 2.6 1.4 4 2.2l4.2 1.8c1.4 0.4 2.8 1 4.4 1.2 1.4 0.4 3 0.6 4.4 0.8 1.6 0.2 3 0.4 4.6 0.4h4.6c1.6 0 3-0.2 4.6-0.4 1.6-0.2 3-0.6 4.4-1s3-0.8 4.4-1.4l4.2-1.8c1.4-0.6 2.8-1.4 4-2.2 1.2-0.8 2.6-1.6 3.8-2.6 1.2-1 2.4-1.8 3.4-3 1.2-1 2.2-2.2 3.2-3.2 0.4-2.6 1.2-3.8 2.2-5z m141.2 40.2l70-169.4 70 169.4h-140z m302.8 151.2l-189.8-459.8c-0.8-2.2-1.8-4.2-3-6.2s-2.4-3.8-4-5.6-3-3.4-4.8-5c-1.6-1.6-3.4-3-5.4-4.2-1.8-1.2-3.8-2.4-6-3.4-2-1-4.2-1.8-6.4-2.4-2.2-0.6-4.4-1.2-6.6-1.4-2.2-0.4-4.6-0.6-6.8-0.6s-4.6 0.2-6.8 0.6c-2.2 0.4-4.4 0.8-6.6 1.4-2.2 0.6-4.4 1.4-6.4 2.4s-4 2.2-6 3.4c-1.8 1.2-3.6 2.6-5.4 4.2-1.6 1.6-3.2 3.2-4.8 5-1.4 1.8-2.8 3.6-4 5.6-1.2 2-2.2 4-3 6.2l-189.8 459.8c-0.6 1.4-1.2 2.8-1.6 4.2-0.4 1.4-0.8 3-1.2 4.4s-0.6 3-0.6 4.6c-0.2 1.6-0.2 3-0.2 4.6 0 1.6 0 3 0.2 4.6 0.2 1.6 0.4 3 0.6 4.6 0.2 1.4 0.6 3 1.2 4.4 0.4 1.4 1 2.8 1.6 4.4s1.2 2.8 2 4.2c0.8 1.4 1.4 2.6 2.4 4 0.8 1.2 1.8 2.4 2.8 3.6 1 1.2 2 2.4 3 3.4s2.2 2.2 3.4 3c1.2 1 2.4 1.8 3.6 2.8 1.2 0.8 2.6 1.6 4 2.4 1.4 0.8 2.8 1.4 4.2 2 1.4 0.6 2.8 1 4.4 1.6 1.4 0.4 3 0.8 4.4 1.2 1.4 0.2 3 0.6 4.6 0.6 1.6 0.2 3 0.2 4.6 0.2s3 0 4.6-0.2c1.6-0.2 3-0.4 4.6-0.6 1.4-0.4 3-0.6 4.4-1.2 1.4-0.4 2.8-1 4.2-1.6 1.4-0.6 2.8-1.2 4.2-2 1.4-0.8 2.6-1.6 4-2.4s2.4-1.8 3.6-2.8c1.2-1 2.2-2 3.4-3 1-1 2-2.2 3-3.4 1-1.2 1.8-2.4 2.8-3.6 0.8-1.2 1.6-2.6 2.4-4 0.8-1.4 1.4-2.8 2-4.2l38.6-93.6h216.6l38.6 93.6c0.8 2.2 1.8 4.2 3 6.2s2.4 3.8 4 5.6c1.4 1.8 3 3.4 4.8 5 1.6 1.6 3.4 3 5.4 4.2 1.8 1.2 3.8 2.4 6 3.4 2 1 4.2 1.8 6.4 2.4 2.2 0.6 4.4 1.2 6.6 1.4 2.2 0.4 4.6 0.6 6.8 0.6h2.8c1 0 1.8-0.2 2.8-0.2 1-0.2 1.8-0.2 2.8-0.4 1-0.2 1.8-0.4 2.8-0.6 1-0.2 1.8-0.4 2.8-0.8 1-0.2 1.8-0.6 2.6-1s1.8-0.8 2.6-1.2c0.8-0.4 1.8-0.8 2.6-1.2 0.8-0.4 1.6-1 2.4-1.4s1.6-1 2.4-1.6c0.8-0.6 1.6-1.2 2.2-1.8 0.8-0.6 1.4-1.2 2.2-1.8 0.8-0.6 1.4-1.2 2-2l2-2c0.6-0.8 1.2-1.4 1.8-2.2 0.6-0.8 1.2-1.6 1.6-2.4 0.6-0.8 1-1.6 1.6-2.4 0.4-0.8 1-1.6 1.4-2.6 0.4-0.8 0.8-1.8 1.2-2.6 0.4-0.8 0.8-1.8 1-2.6 0.4-0.8 0.6-1.8 0.8-2.8 0.2-1 0.6-1.8 0.8-2.8 0.2-1 0.4-1.8 0.6-2.8 0.2-1 0.2-1.8 0.4-2.8 0-1 0.2-1.8 0.2-2.8v-2.8c0-1 0-1.8-0.2-2.8 0-1-0.2-1.8-0.4-2.8-0.2-1-0.4-1.8-0.6-2.8-0.2-1-0.4-1.8-0.6-2.8-0.2-1-0.6-1.8-0.8-2.8-1-1.4-1.2-2.2-1.6-3z"
+							p-id="3281" fill="#ffffff"></path>
+					</svg>
+				</div>
+				<script>
+					function setLang(icon) {
+						const selector = document.getElementById('lang-selector')
+						const rect = icon.getBoundingClientRect()
+						console.log(rect)
+						selector.classList.add('shown')
+						selector.style.top = rect.top + rect.height + 'px';
+						selector.style.left = rect.left + 'px';
+						window.addEventListener('click', hideLang, true)
+					}
+
+					function hideLang() {
+						const selector = document.getElementById('lang-selector')
+						if (selector && selector.classList.contains('shown')) {
+							selector.classList.remove('shown')
+						}
+						window.removeEventListener('click', hideLang, true)
+					}
+				</script>
+			</div>
+			<ul class='switcher h-list'>
+				
+				<li class='s-search'><a href='javascript:void(0)'><span class="icon icon-search flat-box"></span></a>
+				</li>
+				
+				<li class='s-menu'><a href='javascript:void(0)'><span class="icon icon-menu flat-box"></span></a></li>
+			</ul>
+		</div>
+
+		<div class='nav-sub container container--flex'>
+			<a class="logo" class="flat-box" href='javascript:void(0)'>
+				Word of Forks
+			</a>
+
+			<ul class='switcher h-list'>
+				<li class='s-comment'><a href='javascript:void(0)'><span
+							class="icon icon-chat_bubble_outline flat-box"></span></a></li>
+				<li class='s-top'><a href='javascript:void(0)'><span class="icon icon-arrow_upward flat-box"></span></a>
+				</li>
+				<li class='s-toc'><a href='javascript:void(0)'><span
+							class="icon icon-format_list_numbered flat-box"></span></a></li>
+			</ul>
+		</div>
+	</div>
+</header>
+
+<div id="lang-selector" class="">
+	
+	<div class="lang-option"><a href="https://shendu-sw.github.io/dataset/">简体中文</a></div>
+	
+	<div class="lang-option"><a href="https://shendu-sw.github.io/dataset-en/">English</a></div>
+	
+</div>
+
+
+
+<aside class="menu-phone">
+	<nav>
+		
+		<a href="/dataset/main" class="nav-home nav">
+			home
+		</a>
+		
+		<a href="/dataset/#data" class="nav-benchmark nav">
+			benchmark
+		</a>
+		
+		<a href="/dataset/challenge" class="nav-challenge nav">
+			challenge
+		</a>
+		
+		<a href="/dataset/support" class="nav-support nav">
+			support
+		</a>
+		
+		<a href="/dataset/publish" class="nav-publish nav">
+			publish
+		</a>
+		
+	</nav>
+</aside>
+  <script>
+    setLoadingBarProgress(40);
+  </script>
+  <div class="l_body">
+    <div class='container clearfix'>
+      <div class='l_main'>
+        <article id="post-dataset2/温度场重构数据集-数据集" class="post no-shandow white-box article-type-post"
+	itemscope itemprop="blogPost">
+
+
+	<section class='meta'>
+
+		<div class="title-bar">
+			<div class="title post-title">
+				<a href="/dataset/p/dataset2-set.html">
+					TFRD benchmark
+				</a>
+			</div>
+			<!-- 菜单 -->
+			
+			<div class="post-menus">
+				
+				<div class="post-menu-item">
+					<a class="" href="dataset2-index">Home </a>
+				</div>
+				
+				<div class="post-menu-item">
+					<a class="" href="dataset2-set">Dataset </a>
+				</div>
+				
+				<div class="post-menu-item">
+					<a class="" href="dataset2-toy-example">Toy-example </a>
+				</div>
+				
+				<div class="post-menu-item">
+					<a class="" href="dataset2-baseline-method">Baselines </a>
+				</div>
+				
+				<div class="post-menu-item">
+					<a class="" href="dataset2-result">Results </a>
+				</div>
+				
+				<div class="post-menu-item">
+					<a class="" href="dataset2-publication">Publications </a>
+				</div>
+				
+			</div>
+			
+		</div>
+
+		<!-- 分类，暂时用不到 -->
+		<!--  -->
+	</section>
+	
+	<!-- <section class="toc-wrapper"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#TFRD-Dataset"><span class="toc-number">1.</span> <span class="toc-text">TFRD Dataset</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#HSink-Sub-data"><span class="toc-number">1.1.</span> <span class="toc-text">HSink Sub-data</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#ADlet-Sub-data"><span class="toc-number">1.2.</span> <span class="toc-text">ADlet Sub-data</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#DSine-Sub-data"><span class="toc-number">1.3.</span> <span class="toc-text">DSine Sub-data</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Data-Description"><span class="toc-number">1.4.</span> <span class="toc-text">Data Description</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Evaluation-Metrics"><span class="toc-number">1.5.</span> <span class="toc-text">Evaluation Metrics</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#mean-absolute-error%EF%BC%88MAE%EF%BC%89"><span class="toc-number">1.5.0.0.0.1.</span> <span class="toc-text">mean absolute error（MAE）</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#Maximum-of-absolute-error%EF%BC%88MaxAE%EF%BC%89"><span class="toc-number">1.5.0.0.0.2.</span> <span class="toc-text">Maximum of absolute error（MaxAE）</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#Component-constrained-mean-absolute-error%EF%BC%88CMAE%EF%BC%89"><span class="toc-number">1.5.0.0.0.3.</span> <span class="toc-text">Component-constrained mean absolute error（CMAE）</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#Maximum-of-component-constrained-absolute-error%EF%BC%88M-CAE%EF%BC%89"><span class="toc-number">1.5.0.0.0.4.</span> <span class="toc-text">Maximum of component-constrained absolute error（M-CAE）</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#Boundary-constrained-mean-absolute-error%EF%BC%88BMAE%EF%BC%89"><span class="toc-number">1.5.0.0.0.5.</span> <span class="toc-text">Boundary-constrained mean absolute error（BMAE）</span></a></li></ol></li></ol></li></ol></li></ol></li></ol></li></ol></section> -->
+	
+	<section class="article typo">
+		<div class="article-entry" itemprop="articleBody">
+			<h1 id="TFRD-Dataset"><a href="#TFRD-Dataset" class="headerlink" title="TFRD Dataset"></a>TFRD Dataset</h1><p>TFRD dataset is generated using the <a target="_blank" rel="noopener" href="https://github.com/shendu-sw/recon-data-generator">data genereator</a> based on <a target="_blank" rel="noopener" href="https://fenicsproject.org/">FEniCS</a>, and you can download at <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/14BipTer1fkilbRjrQNbKiQ">BaiduPan</a>（Password: tfrd）。</p>
+<p>TFRD dataset describes the heat source system with $0.1m \times 0.1m$ square board, where the heat source system is discreted as $200 \times 200$ grid. It consists of the HSink, the ADlet, and the DSine sub-data. Each sub-data includes 10000 training samples, 20000 testing samples （Test 0 represents the randomly generated samples, and Test 1, 2, 3, 4, 5 describes special samples）:</p>
+<ul>
+<li><p><strong>Generality</strong></p>
+<blockquote>
+<p>Three typical heat source systems（HSink，ADlet，DSine）</p>
+</blockquote>
+</li>
+<li><p><strong>Reasonability</strong></p>
+<blockquote>
+<p>The composition of TFRD is reasonable（includes 10000 training samples, 20000 testing samples divided into six different special samples）</p>
+</blockquote>
+</li>
+<li><strong>Diversity</strong><blockquote>
+<p>Provide diversified boundary conditions, components as well as evaluation metrics</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="HSink-Sub-data"><a href="#HSink-Sub-data" class="headerlink" title="HSink Sub-data"></a>HSink Sub-data</h2><blockquote>
+<p>Heat-source systems with heat sink for heat dissipation where the width is set to 0.01m with a constant temperature valued 298K （Dirichlet boundary）.</p>
+</blockquote>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="/dataset/images/hsink.png" alt="upload successful"></th>
+<th style="text-align:center"><img src="/dataset/images/hsink1.png" alt="upload successful"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><strong>Training Sample</strong></td>
+<td style="text-align:center"><strong>Training Sample</strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="/dataset/images/figure/0.jpg" alt="0"></th>
+<th style="text-align:center"><img src="/dataset/images/figure/1.jpg" alt="1"></th>
+<th style="text-align:center"><img src="/dataset/images/figure/2.jpg" alt="2"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><strong>Test 0</strong></td>
+<td style="text-align:center"><strong>Test 1</strong></td>
+<td style="text-align:center"><strong>Test 2</strong></td>
+</tr>
+<tr>
+<td style="text-align:center"><img src="/dataset/images/figure/3.jpg" alt="3"></td>
+<td style="text-align:center"><img src="/dataset/images/figure/4.jpg" alt="4"></td>
+<td style="text-align:center"><img src="/dataset/images/figure/5.jpg" alt="5"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>Test 3</strong></td>
+<td style="text-align:center"><strong>Test 4</strong></td>
+<td style="text-align:center"><strong>Test 5</strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="ADlet-Sub-data"><a href="#ADlet-Sub-data" class="headerlink" title="ADlet Sub-data"></a>ADlet Sub-data</h2><blockquote>
+<p>Heat-source systems with all different Dirichlet boundary conditions for heat dissipation where one boundary is set to sine-wave distribution and the others are set to constant temperature valued 298K.</p>
+</blockquote>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="/dataset/images/adlet.png" alt="upload successful"></th>
+<th style="text-align:center"><img src="/dataset/images/adlet2.png" alt="upload successful"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><strong>Training Sample</strong></td>
+<td style="text-align:center"><strong>Training Sample</strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="/dataset/images/figure/0.jpg" alt="0"></th>
+<th style="text-align:center"><img src="/dataset/images/figure/1.jpg" alt="1"></th>
+<th style="text-align:center"><img src="/dataset/images/figure/2.jpg" alt="2"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><strong>Test 0</strong></td>
+<td style="text-align:center"><strong>Test 1</strong></td>
+<td style="text-align:center"><strong>Test 2</strong></td>
+</tr>
+<tr>
+<td style="text-align:center"><img src="/dataset/images/figure/3.jpg" alt="3"></td>
+<td style="text-align:center"><img src="/dataset/images/figure/4.jpg" alt="4"></td>
+<td style="text-align:center"><img src="/dataset/images/figure/5.jpg" alt="5"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>Test 3</strong></td>
+<td style="text-align:center"><strong>Test 4</strong></td>
+<td style="text-align:center"><strong>Test 5</strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="DSine-Sub-data"><a href="#DSine-Sub-data" class="headerlink" title="DSine Sub-data"></a>DSine Sub-data</h2><blockquote>
+<p>Heat source systems with one sine-wave distributed boundaries for dissipation. All the other three boundaries are adiabatic （Neumann BC）.</p>
+</blockquote>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="/dataset/images/dsine.png" alt="upload successful"></th>
+<th style="text-align:center"><img src="/dataset/images/dsine2.png" alt="upload successful"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><strong>Training Sample</strong></td>
+<td style="text-align:center"><strong>Training Sample</strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="/dataset/images/figure/0.jpg" alt="0"></th>
+<th style="text-align:center"><img src="/dataset/images/figure/1.jpg" alt="1"></th>
+<th style="text-align:center"><img src="/dataset/images/figure/2.jpg" alt="2"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><strong>Test 0</strong></td>
+<td style="text-align:center"><strong>Test 1</strong></td>
+<td style="text-align:center"><strong>Test 2</strong></td>
+</tr>
+<tr>
+<td style="text-align:center"><img src="/dataset/images/figure/3.jpg" alt="3"></td>
+<td style="text-align:center"><img src="/dataset/images/figure/4.jpg" alt="4"></td>
+<td style="text-align:center"><img src="/dataset/images/figure/5.jpg" alt="5"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>Test 3</strong></td>
+<td style="text-align:center"><strong>Test 4</strong></td>
+<td style="text-align:center"><strong>Test 5</strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="Data-Description"><a href="#Data-Description" class="headerlink" title="Data Description"></a>Data Description</h2><blockquote>
+<p>The sample is saved as mat format.</p>
+</blockquote>
+<div class="card-wrapper">
+    <div class="card-title">Example*.mat</div>
+    <div class="card-content">
+      <ul>
+        <li>'u'：{ndarray:200,200}，temperature information，ranging from 298-</li>
+        <li>'F'：{ndarray:200,200}，component information of the system，ranging from 0 to 30000</li>
+        <li>'u_obs'：{ndarray: 200 , 200 }，temperature information of monitoring information，ranging from 298-</li>
+        <li>'u_pos'：{ndarray: 200 , 200 }，position information of monitoring inforation，selected from {0, 1}，1 describes the monitoring points and 0 represents other area without monitoring points</li>
+        <li>'xs'，'ys'，'zs'：{ndarray: 200 , 200 }，x, y, z coordinates information，ranging from 0 to 0.1</li>
+      </ul>
+    </div>
+  </div>
+
+<h2 id="Evaluation-Metrics"><a href="#Evaluation-Metrics" class="headerlink" title="Evaluation Metrics"></a>Evaluation Metrics</h2><h6 id="mean-absolute-error（MAE）"><a href="#mean-absolute-error（MAE）" class="headerlink" title="mean absolute error（MAE）"></a>mean absolute error（MAE）</h6><blockquote>
+<p>Mean absolute error（MAE）measures the mean value of absolute error of the predicted temperature field.</p>
+</blockquote>
+<script type="math/tex; mode=display">
+{E_{MAE} } = \frac{1}{ {\left| \Omega  \right|} }\sum\limits_{({x_i},{y_j}) \in \Omega } {\left| {T({x_i},{y_j}) - T'({x_i},{y_j})} \right|}</script><h6 id="Maximum-of-absolute-error（MaxAE）"><a href="#Maximum-of-absolute-error（MaxAE）" class="headerlink" title="Maximum of absolute error（MaxAE）"></a>Maximum of absolute error（MaxAE）</h6><blockquote>
+<p>Maximum of absolute error（MaxAE）measures the maximum of absolute error of the predicted temperature field.</p>
+</blockquote>
+<script type="math/tex; mode=display">
+{E_{MaxAE} } = \mathop {\max }\limits_{({x_i},{y_j}) \in \Omega } \left| {T({x_i},{y_j}) - T'({x_i},{y_j})} \right|</script><h6 id="Component-constrained-mean-absolute-error（CMAE）"><a href="#Component-constrained-mean-absolute-error（CMAE）" class="headerlink" title="Component-constrained mean absolute error（CMAE）"></a>Component-constrained mean absolute error（CMAE）</h6><blockquote>
+<p>Component-constrained mean absolute error（CMAE）computes the mean value of the absolute error over the heat-source component.</p>
+</blockquote>
+<script type="math/tex; mode=display">
+{E_{CMAE} } = \frac{1}{ {\left| { {\Omega _c} } \right|} }\sum\limits_{({x_i},{y_j}) \in {\Omega _c} } {\left| {T({x_i},{y_j}) - T'({x_i},{y_j})} \right|}</script><h6 id="Maximum-of-component-constrained-absolute-error（M-CAE）"><a href="#Maximum-of-component-constrained-absolute-error（M-CAE）" class="headerlink" title="Maximum of component-constrained absolute error（M-CAE）"></a>Maximum of component-constrained absolute error（M-CAE）</h6><blockquote>
+<p>Maximum of component-constrained absolute error（M-CAE）describes the maximum error of the predicted temperature field over the heat-source components.</p>
+</blockquote>
+<script type="math/tex; mode=display">
+{E_{CMAE} } = \mathop {\max }\limits_{({x_i},{y_j}) \in {\Omega _c} } \left| {T({x_i},{y_j}) - T'({x_i},{y_j})} \right|</script><h6 id="Boundary-constrained-mean-absolute-error（BMAE）"><a href="#Boundary-constrained-mean-absolute-error（BMAE）" class="headerlink" title="Boundary-constrained mean absolute error（BMAE）"></a>Boundary-constrained mean absolute error（BMAE）</h6><blockquote>
+<p>Boundary-constrained mean absolute error（BMAE）computes the mean value of the absolute error near the boundaries of the heat-source systems.</p>
+</blockquote>
+<script type="math/tex; mode=display">
+{E_{BMAE} } = \frac{1}{ {\left| { {\Omega _b} } \right|} }\sum\limits_{({x_i},{y_j}) \in {\Omega _b} } {\left| {T({x_i},{y_j}) - T'({x_i},{y_j})} \right|}</script>
+		</div>
+	</section>
+
+</article>
+<script>
+	window.subData = {
+		title: 'TFRD benchmark',
+		tools: true
+	}
+</script>
+
+<!-- mathjax config similar to math.stackexchange -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ['$','$'], ["\(","\)"] ],
+        processEscapes: true
+      }
+    });
+  </script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+  </script>
+
+
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+          var all = MathJax.Hub.getAllJax(), i;
+          for(i=0; i < all.length; i += 1) {
+              all[i].SourceElement().parentNode.className += ' has-jax';
+          }
+      });
+  </script>
+
+
+
+<script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+      </div>
+      <aside class='l_side'>
+        
+  <section class='m_widget about'>
+    
+    <div class='header'>IDRL</div>
+    <div class='content collapsed'>
+        <div class='desc'>The Intelligent Design and Robust Learning laboratory of Defense Innovation Institute of Academy of Military Sciences focuses on the basic frontier and cross-research of artificial intelligence and aircraft design. The team has developed a series of data and model driven deep learning methods for efficient multi-disciplinary analysis and optimization of aircraft, and tries to construct a intelligent auxiliary aircraft design optimization cloud platform, namely IDaaS (Intelligent Design as a Service). The team has already publicly released two thermal analysis benchmarks, namely the HSLD (Heat-source layout dataset) and TFRD (Temperature field reconstruction dataset). Besides, they developed a physical informed neural network framework IDRLNet. In the past three years, they have published more than 30 related papers, and more than 30 patent applications.</div>
+        <div class="collapsed-block"></div>
+    </div>
+    <div id="expandbtn" onclick="expand()">
+        展开
+    </div>
+    <div id="collapsebtn" onclick="collapse()">
+        收起
+    </div>
+    <script>
+        function expand() {
+            document.querySelector('.m_widget.about .content').classList.remove('collapsed')
+            document.getElementById('expandbtn').style.display = 'none';
+            // document.getElementById('collapsebtn').style.display = 'block';
+        }
+
+        function collapse() {
+            document.querySelector('.m_widget.about .content').classList.add('collapsed')
+            document.getElementById('expandbtn').style.display = 'block';
+            document.getElementById('collapsebtn').style.display = 'none';
+        }
+    </script>
+</section>
+
+  <section class='m_widget links'>
+<div class='header'>Links</div>
+<div class='content'>
+    <ul class="entry">
+    
+        <li><a class="flat-box" target="_blank" href="https://smt.readthedocs.io/en/latest/index.html">
+            <div class='name'>Surrogate Modeling Toolbox</div>
+        </a></li>
+    
+    </ul>
+</div>
+</section>
+
+  
+<div class="m_widget tagcloud">
+    <div class="header">Tags</div>
+    <div class='content'>
+        
+        <a href="/dataset/tags/dataset/" style="font-size: 14px; color: #808080">dataset</a>
+    </div>
+</div>
+
+
+      </aside>
+      <script>
+        setLoadingBarProgress(60);
+      </script>
+    </div>
+  </div>
+ <footer id="footer" class="clearfix">
+
+
+  
+ <div>@Copyright 2021, Zhiqiang Gong, Pengyu Wang. Contact: <a href="mailto:gongzhiqiang13@nudt.edu.cn" class="codename">gongzhiqiang13@nudt.edu.cn</a></div>
+  
+</footer>
+
+
+
+  <script>
+    setLoadingBarProgress(80);
+  </script>
+  
+
+<script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src='//cdn.bootcss.com/node-waves/0.7.5/waves.min.js'></script>
+<script src="//cdn.bootcss.com/scrollReveal.js/3.3.2/scrollreveal.min.js"></script>
+
+<script src="/dataset/js/jquery.fitvids.js"></script>
+
+<script>
+	var GOOGLE_CUSTOM_SEARCH_API_KEY = "";
+	var GOOGLE_CUSTOM_SEARCH_ENGINE_ID = "";
+	var ALGOLIA_API_KEY = "";
+	var ALGOLIA_APP_ID = "";
+	var ALGOLIA_INDEX_NAME = "";
+  var AZURE_SERVICE_NAME = "";
+  var AZURE_INDEX_NAME = "";
+  var AZURE_QUERY_KEY = "";
+  var BAIDU_API_ID = "";
+  var SEARCH_SERVICE = "hexo";
+  var ROOT = "/dataset/"||"/";
+  if(!ROOT.endsWith('/'))ROOT += '/';
+</script>
+
+<script src="/dataset/js/search.js"></script>
+
+
+<script src="/dataset/js/app.js"></script>
+
+
+<script src="/dataset/js/custom.js"></script>
+
+
+  <script>
+    setLoadingBarProgress(100);
+  </script>
+</body>
+
+</html>
