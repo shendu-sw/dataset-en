@@ -4,21 +4,21 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   
-  <title>温度场预测基准 | TAB</title>
+  <title>HSLD benchmark | TAB</title>
   <meta name="description" content="" />
   <meta name="keywords" content="" />
   <meta name="HandheldFriendly" content="True" />
   <meta name="apple-mobile-web-app-capable" content="yes">
-  <link rel="shortcut icon" href="/dataset/">
-  <link rel="alternate" href="/dataset/atom.xml" title="TAB" type="application/atom+xml">
+  <link rel="shortcut icon" href="/dataset-en/">
+  <link rel="alternate" href="/dataset-en/atom.xml" title="TAB" type="application/atom+xml">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="基准方法 基准方法基于 Fully convolutional networks (FCNs)、SegNet、U-Net 和 Feature pyramid networks (FPNs)实现。   骨干网络（Backbone networks） AlexNet    VGG    ResNet   深度回归网络（Deep regression frameworks） Fully convolut">
+  <meta name="description" content="Baseline Methods The baseline methods for HSLD benchmark is based on Fully convolutional networks (FCNs), SegNet, U-Net, and Feature pyramid networks (FPNs).   Backbone Networks AlexNet    VGG    ResN">
 <meta property="og:type" content="article">
-<meta property="og:title" content="温度场预测基准">
-<meta property="og:url" content="https://shendu-sw.github.io/dataset/p/dataset1-baseline-method.html">
+<meta property="og:title" content="HSLD benchmark">
+<meta property="og:url" content="https://shendu-sw.github.io/dataset-en/p/dataset1-baseline-method.html">
 <meta property="og:site_name" content="TAB">
-<meta property="og:description" content="基准方法 基准方法基于 Fully convolutional networks (FCNs)、SegNet、U-Net 和 Feature pyramid networks (FPNs)实现。   骨干网络（Backbone networks） AlexNet    VGG    ResNet   深度回归网络（Deep regression frameworks） Fully convolut">
-<meta property="og:locale" content="zh_CN">
+<meta property="og:description" content="Baseline Methods The baseline methods for HSLD benchmark is based on Fully convolutional networks (FCNs), SegNet, U-Net, and Feature pyramid networks (FPNs).   Backbone Networks AlexNet    VGG    ResN">
+<meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://shendu-sw.github.io/dataset/images/pasted/TaskBasemethod.png">
 <meta property="og:image" content="https://shendu-sw.github.io/dataset/images/pasted/alexnet.png">
 <meta property="og:image" content="https://shendu-sw.github.io/dataset/images/pasted/vgg16.png">
@@ -28,9 +28,9 @@
 <meta property="og:image" content="https://shendu-sw.github.io/dataset/images/pasted/unet.png">
 <meta property="og:image" content="https://shendu-sw.github.io/dataset/images/pasted/fpn.png">
 <meta property="article:published_time" content="2021-09-10T03:08:00.000Z">
-<meta property="article:modified_time" content="2022-08-23T02:13:04.825Z">
+<meta property="article:modified_time" content="2022-08-30T09:27:42.251Z">
 <meta property="article:author" content="IDRL">
-<meta property="article:tag" content="数据集">
+<meta property="article:tag" content="dataset">
 <meta property="article:tag" content="hide">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://shendu-sw.github.io/dataset/images/pasted/TaskBasemethod.png">
@@ -39,7 +39,7 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
   <link href='//cdn.bootcss.com/node-waves/0.7.5/waves.min.css' rel='stylesheet'>
   
-<link rel="stylesheet" href="/dataset/style.css">
+<link rel="stylesheet" href="/dataset-en/style.css">
 
   <script>
     function setLoadingBarProgress(num) {
@@ -66,7 +66,7 @@
   <header class="l_header">
 	<div class='wrapper'>
 		<div class="nav-main container container--flex">
-			<a class="logo flat-box dataset-logo" href='/dataset/'>
+			<a class="logo flat-box dataset-logo" href='/dataset-en/'>
 				<!-- <div class="dataset-img">
 					<img src="/dataset/images/IDRL logo.png" />
 				</div> -->
@@ -79,32 +79,32 @@
 				<ul class='h-list'>
 					
 					<li>
-						<a class='flat-box nav-home' href='/dataset/main'>
-							首页
+						<a class='flat-box nav-home' href='/dataset-en/main'>
+							Home
 						</a>
 					</li>
 					
 					<li>
-						<a class='flat-box nav-benchmark' href='/dataset/#data'>
-							基准
+						<a class='flat-box nav-benchmark' href='/dataset-en/#data'>
+							Benchmark
 						</a>
 					</li>
 					
 					<li>
-						<a class='flat-box nav-challenge' href='/dataset/challenge'>
-							比赛
+						<a class='flat-box nav-challenge' href='/dataset-en/challenge'>
+							Challenges
 						</a>
 					</li>
 					
 					<li>
-						<a class='flat-box nav-support' href='/dataset/support'>
-							文档
+						<a class='flat-box nav-support' href='/dataset-en/support'>
+							Supports
 						</a>
 					</li>
 					
 					<li>
-						<a class='flat-box nav-publish' href='/dataset/publish'>
-							相关成果
+						<a class='flat-box nav-publish' href='/dataset-en/publish'>
+							Publications
 						</a>
 					</li>
 					
@@ -114,7 +114,7 @@
 			
 			<div class="m_search">
 				<form name="searchform" class="form u-search-form">
-					<input type="text" class="input u-search-input" placeholder="搜索" />
+					<input type="text" class="input u-search-input" placeholder="Search" />
 					<span class="icon icon-search"></span>
 				</form>
 			</div>
@@ -187,23 +187,23 @@
 <aside class="menu-phone">
 	<nav>
 		
-		<a href="/dataset/main" class="nav-home nav">
+		<a href="/dataset-en/main" class="nav-home nav">
 			home
 		</a>
 		
-		<a href="/dataset/#data" class="nav-benchmark nav">
+		<a href="/dataset-en/#data" class="nav-benchmark nav">
 			benchmark
 		</a>
 		
-		<a href="/dataset/challenge" class="nav-challenge nav">
+		<a href="/dataset-en/challenge" class="nav-challenge nav">
 			challenge
 		</a>
 		
-		<a href="/dataset/support" class="nav-support nav">
+		<a href="/dataset-en/support" class="nav-support nav">
 			support
 		</a>
 		
-		<a href="/dataset/publish" class="nav-publish nav">
+		<a href="/dataset-en/publish" class="nav-publish nav">
 			publish
 		</a>
 		
@@ -223,8 +223,8 @@
 
 		<div class="title-bar">
 			<div class="title post-title">
-				<a href="/dataset/p/dataset1-baseline-method.html">
-					温度场预测基准
+				<a href="/dataset-en/p/dataset1-baseline-method.html">
+					HSLD benchmark
 				</a>
 			</div>
 			<!-- 菜单 -->
@@ -232,23 +232,23 @@
 			<div class="post-menus">
 				
 				<div class="post-menu-item">
-					<a class="" href="dataset1-index">主页 </a>
+					<a class="" href="dataset1-index">Home </a>
 				</div>
 				
 				<div class="post-menu-item">
-					<a class="" href="dataset1-set">数据集 </a>
+					<a class="" href="dataset1-set">Dataset </a>
 				</div>
 				
 				<div class="post-menu-item">
-					<a class="" href="dataset1-baseline-method">基准方法 </a>
+					<a class="" href="dataset1-baseline-method">Baselines </a>
 				</div>
 				
 				<div class="post-menu-item">
-					<a class="" href="dataset1-result">结果 </a>
+					<a class="" href="dataset1-result">Results </a>
 				</div>
 				
 				<div class="post-menu-item">
-					<a class="" href="dataset1-publication">相关成果 </a>
+					<a class="" href="dataset1-publication">Publications </a>
 				</div>
 				
 			</div>
@@ -259,15 +259,15 @@
 		<!--  -->
 	</section>
 	
-	<!-- <section class="toc-wrapper"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%9F%BA%E5%87%86%E6%96%B9%E6%B3%95"><span class="toc-number">1.</span> <span class="toc-text">基准方法</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%AA%A8%E5%B9%B2%E7%BD%91%E7%BB%9C%EF%BC%88Backbone-networks%EF%BC%89"><span class="toc-number">1.1.</span> <span class="toc-text">骨干网络（Backbone networks）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B7%B1%E5%BA%A6%E5%9B%9E%E5%BD%92%E7%BD%91%E7%BB%9C%EF%BC%88Deep-regression-frameworks%EF%BC%89"><span class="toc-number">1.2.</span> <span class="toc-text">深度回归网络（Deep regression frameworks）</span></a></li></ol></li></ol></section> -->
+	<!-- <section class="toc-wrapper"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Baseline-Methods"><span class="toc-number">1.</span> <span class="toc-text">Baseline Methods</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Backbone-Networks"><span class="toc-number">1.1.</span> <span class="toc-text">Backbone Networks</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Deep-Regression-Frameworks"><span class="toc-number">1.2.</span> <span class="toc-text">Deep Regression Frameworks</span></a></li></ol></li></ol></section> -->
 	
 	<section class="article typo">
 		<div class="article-entry" itemprop="articleBody">
-			<h1 id="基准方法"><a href="#基准方法" class="headerlink" title="基准方法"></a>基准方法</h1><blockquote>
-<p>基准方法基于 Fully convolutional networks (FCNs)、SegNet、U-Net 和 Feature pyramid networks (FPNs)实现。</p>
+			<h1 id="Baseline-Methods"><a href="#Baseline-Methods" class="headerlink" title="Baseline Methods"></a>Baseline Methods</h1><blockquote>
+<p>The baseline methods for HSLD benchmark is based on Fully convolutional networks (FCNs), SegNet, U-Net, and Feature pyramid networks (FPNs).</p>
 </blockquote>
 <p><img style="zoom:50%;" src="/dataset/images/pasted/TaskBasemethod.png" /></p>
-<h2 id="骨干网络（Backbone-networks）"><a href="#骨干网络（Backbone-networks）" class="headerlink" title="骨干网络（Backbone networks）"></a>骨干网络（Backbone networks）</h2><ul>
+<h2 id="Backbone-Networks"><a href="#Backbone-Networks" class="headerlink" title="Backbone Networks"></a>Backbone Networks</h2><ul>
 <li>AlexNet</li>
 </ul>
 <p><img style="zoom:50%;" src="/dataset/images/pasted/alexnet.png" /></p>
@@ -279,7 +279,7 @@
 <li>ResNet</li>
 </ul>
 <p><img style="zoom:90%;" src="/dataset/images/pasted/resnet.png" /></p>
-<h2 id="深度回归网络（Deep-regression-frameworks）"><a href="#深度回归网络（Deep-regression-frameworks）" class="headerlink" title="深度回归网络（Deep regression frameworks）"></a>深度回归网络（Deep regression frameworks）</h2><ul>
+<h2 id="Deep-Regression-Frameworks"><a href="#Deep-Regression-Frameworks" class="headerlink" title="Deep Regression Frameworks"></a>Deep Regression Frameworks</h2><ul>
 <li>Fully convolutional networks (FCN)</li>
 </ul>
 <p><img style="zoom:50%;" src="/dataset/images/pasted/fcn8.png" /></p>
@@ -302,7 +302,7 @@
 </article>
 <script>
 	window.subData = {
-		title: '温度场预测基准',
+		title: 'HSLD benchmark',
 		tools: true
 	}
 </script>
@@ -314,7 +314,7 @@
     
     <div class='header'>IDRL</div>
     <div class='content collapsed'>
-        <div class='desc'>国防科技创新研究院无人系统技术研究中心智能设计与鲁棒学习团队致力于人工智能与飞行器设计的基础前沿和交叉研究，面向飞行器多学科高效分析与优化，发展了系列数据和知识混合驱动的深度学习方法，形成了全自主知识产权的智能辅助飞行器设计优化云平台 IDaaS（Intelligent Design as a Service）原型系统，集成卫星组件热布局温度场近实时预测基准工具箱 STEP（Satellite Temperature fiEld Prediction of heat source layout）、内嵌物理知识神经网络算法框架 IDRLNet 等前沿研究成果。近 3 年团队发表相关学术论文 30 余篇，其中高影响因子 SCI 检索 20 篇，申请专利 30 余项。</div>
+        <div class='desc'>The Intelligent Design and Robust Learning laboratory of Defense Innovation Institute of Academy of Military Sciences focuses on the basic frontier and cross-research of artificial intelligence and aircraft design. The team has developed a series of data and model driven deep learning methods for efficient multi-disciplinary analysis and optimization of aircraft, and tries to construct a intelligent auxiliary aircraft design optimization cloud platform, namely IDaaS (Intelligent Design as a Service). The team has already publicly released two thermal analysis benchmarks, namely the HSLD (Heat-source layout dataset) and TFRD (Temperature field reconstruction dataset). Besides, they developed a physical informed neural network framework IDRLNet. In the past three years, they have published more than 30 related papers, and more than 30 patent applications.</div>
         <div class="collapsed-block"></div>
     </div>
     <div id="expandbtn" onclick="expand()">
@@ -339,7 +339,7 @@
 </section>
 
   <section class='m_widget links'>
-<div class='header'>相关链接</div>
+<div class='header'>Links</div>
 <div class='content'>
     <ul class="entry">
     
@@ -353,10 +353,10 @@
 
   
 <div class="m_widget tagcloud">
-    <div class="header">标签</div>
+    <div class="header">Tags</div>
     <div class='content'>
         
-        <a href="/dataset/tags/%E6%95%B0%E6%8D%AE%E9%9B%86/" style="font-size: 14px; color: #808080">数据集</a>
+        <a href="/dataset-en/tags/dataset/" style="font-size: 14px; color: #808080">dataset</a>
     </div>
 </div>
 
@@ -386,7 +386,7 @@
 <script src='//cdn.bootcss.com/node-waves/0.7.5/waves.min.js'></script>
 <script src="//cdn.bootcss.com/scrollReveal.js/3.3.2/scrollreveal.min.js"></script>
 
-<script src="/dataset/js/jquery.fitvids.js"></script>
+<script src="/dataset-en/js/jquery.fitvids.js"></script>
 
 <script>
 	var GOOGLE_CUSTOM_SEARCH_API_KEY = "";
@@ -399,17 +399,17 @@
   var AZURE_QUERY_KEY = "";
   var BAIDU_API_ID = "";
   var SEARCH_SERVICE = "hexo";
-  var ROOT = "/dataset/"||"/";
+  var ROOT = "/dataset-en/"||"/";
   if(!ROOT.endsWith('/'))ROOT += '/';
 </script>
 
-<script src="/dataset/js/search.js"></script>
+<script src="/dataset-en/js/search.js"></script>
 
 
-<script src="/dataset/js/app.js"></script>
+<script src="/dataset-en/js/app.js"></script>
 
 
-<script src="/dataset/js/custom.js"></script>
+<script src="/dataset-en/js/custom.js"></script>
 
 
   <script>

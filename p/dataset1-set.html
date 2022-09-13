@@ -4,21 +4,21 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   
-  <title>温度场预测数据集 | TAB</title>
+  <title>HSLD benchmark | TAB</title>
   <meta name="description" content="" />
   <meta name="keywords" content="" />
   <meta name="HandheldFriendly" content="True" />
   <meta name="apple-mobile-web-app-capable" content="yes">
-  <link rel="shortcut icon" href="/dataset/">
-  <link rel="alternate" href="/dataset/atom.xml" title="TAB" type="application/atom+xml">
+  <link rel="shortcut icon" href="/dataset-en/">
+  <link rel="alternate" href="/dataset-en/atom.xml" title="TAB" type="application/atom+xml">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="HSLD（Heat Source Layout Dataset）数据集 HSLD 数据集由基于 FEniCS 的数据生成器生成。  HSLD 数据集描述热源系统区域为 0.1m×0.1m 的矩形，且离散化为 200×200 的网格。数据集共提供 Case 1、Case 2 和 Case 3 三个子数据集。每个子数据集含有 2000 组训练样本（由 Sequence 采样生成），40000 组测试样">
+  <meta name="description" content="HSLD Dataset HSLD dataset is generated using data generator based on FEniCS.  TFRD dataset describes the heat source system with $0.1m\times 0.1m$ square board, where the heat source system is discret">
 <meta property="og:type" content="article">
-<meta property="og:title" content="温度场预测数据集">
-<meta property="og:url" content="https://shendu-sw.github.io/dataset/p/dataset1-set.html">
+<meta property="og:title" content="HSLD benchmark">
+<meta property="og:url" content="https://shendu-sw.github.io/dataset-en/p/dataset1-set.html">
 <meta property="og:site_name" content="TAB">
-<meta property="og:description" content="HSLD（Heat Source Layout Dataset）数据集 HSLD 数据集由基于 FEniCS 的数据生成器生成。  HSLD 数据集描述热源系统区域为 0.1m×0.1m 的矩形，且离散化为 200×200 的网格。数据集共提供 Case 1、Case 2 和 Case 3 三个子数据集。每个子数据集含有 2000 组训练样本（由 Sequence 采样生成），40000 组测试样">
-<meta property="og:locale" content="zh_CN">
+<meta property="og:description" content="HSLD Dataset HSLD dataset is generated using data generator based on FEniCS.  TFRD dataset describes the heat source system with $0.1m\times 0.1m$ square board, where the heat source system is discret">
+<meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://shendu-sw.github.io/dataset/images/pasted/12222.png">
 <meta property="og:image" content="https://shendu-sw.github.io/dataset/images/pasted/11111.png">
 <meta property="og:image" content="https://shendu-sw.github.io/dataset/images/pasted/11112.png">
@@ -30,9 +30,9 @@
 <meta property="og:image" content="https://shendu-sw.github.io/dataset/images/pasted/11114.png">
 <meta property="og:image" content="https://shendu-sw.github.io/dataset/images/pasted/SpecialSamples.png">
 <meta property="article:published_time" content="2021-09-08T08:13:00.000Z">
-<meta property="article:modified_time" content="2022-08-23T02:13:05.445Z">
+<meta property="article:modified_time" content="2022-08-30T09:27:36.807Z">
 <meta property="article:author" content="IDRL">
-<meta property="article:tag" content="数据集">
+<meta property="article:tag" content="dataset">
 <meta property="article:tag" content="hide">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://shendu-sw.github.io/dataset/images/pasted/12222.png">
@@ -41,7 +41,7 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
   <link href='//cdn.bootcss.com/node-waves/0.7.5/waves.min.css' rel='stylesheet'>
   
-<link rel="stylesheet" href="/dataset/style.css">
+<link rel="stylesheet" href="/dataset-en/style.css">
 
   <script>
     function setLoadingBarProgress(num) {
@@ -68,7 +68,7 @@
   <header class="l_header">
 	<div class='wrapper'>
 		<div class="nav-main container container--flex">
-			<a class="logo flat-box dataset-logo" href='/dataset/'>
+			<a class="logo flat-box dataset-logo" href='/dataset-en/'>
 				<!-- <div class="dataset-img">
 					<img src="/dataset/images/IDRL logo.png" />
 				</div> -->
@@ -81,32 +81,32 @@
 				<ul class='h-list'>
 					
 					<li>
-						<a class='flat-box nav-home' href='/dataset/main'>
-							首页
+						<a class='flat-box nav-home' href='/dataset-en/main'>
+							Home
 						</a>
 					</li>
 					
 					<li>
-						<a class='flat-box nav-benchmark' href='/dataset/#data'>
-							基准
+						<a class='flat-box nav-benchmark' href='/dataset-en/#data'>
+							Benchmark
 						</a>
 					</li>
 					
 					<li>
-						<a class='flat-box nav-challenge' href='/dataset/challenge'>
-							比赛
+						<a class='flat-box nav-challenge' href='/dataset-en/challenge'>
+							Challenges
 						</a>
 					</li>
 					
 					<li>
-						<a class='flat-box nav-support' href='/dataset/support'>
-							文档
+						<a class='flat-box nav-support' href='/dataset-en/support'>
+							Supports
 						</a>
 					</li>
 					
 					<li>
-						<a class='flat-box nav-publish' href='/dataset/publish'>
-							相关成果
+						<a class='flat-box nav-publish' href='/dataset-en/publish'>
+							Publications
 						</a>
 					</li>
 					
@@ -116,7 +116,7 @@
 			
 			<div class="m_search">
 				<form name="searchform" class="form u-search-form">
-					<input type="text" class="input u-search-input" placeholder="搜索" />
+					<input type="text" class="input u-search-input" placeholder="Search" />
 					<span class="icon icon-search"></span>
 				</form>
 			</div>
@@ -189,23 +189,23 @@
 <aside class="menu-phone">
 	<nav>
 		
-		<a href="/dataset/main" class="nav-home nav">
+		<a href="/dataset-en/main" class="nav-home nav">
 			home
 		</a>
 		
-		<a href="/dataset/#data" class="nav-benchmark nav">
+		<a href="/dataset-en/#data" class="nav-benchmark nav">
 			benchmark
 		</a>
 		
-		<a href="/dataset/challenge" class="nav-challenge nav">
+		<a href="/dataset-en/challenge" class="nav-challenge nav">
 			challenge
 		</a>
 		
-		<a href="/dataset/support" class="nav-support nav">
+		<a href="/dataset-en/support" class="nav-support nav">
 			support
 		</a>
 		
-		<a href="/dataset/publish" class="nav-publish nav">
+		<a href="/dataset-en/publish" class="nav-publish nav">
 			publish
 		</a>
 		
@@ -225,8 +225,8 @@
 
 		<div class="title-bar">
 			<div class="title post-title">
-				<a href="/dataset/p/dataset1-set.html">
-					温度场预测数据集
+				<a href="/dataset-en/p/dataset1-set.html">
+					HSLD benchmark
 				</a>
 			</div>
 			<!-- 菜单 -->
@@ -234,23 +234,23 @@
 			<div class="post-menus">
 				
 				<div class="post-menu-item">
-					<a class="" href="dataset1-index">主页 </a>
+					<a class="" href="dataset1-index">Home </a>
 				</div>
 				
 				<div class="post-menu-item">
-					<a class="" href="dataset1-set">数据集 </a>
+					<a class="" href="dataset1-set">Dataset </a>
 				</div>
 				
 				<div class="post-menu-item">
-					<a class="" href="dataset1-baseline-method">基准方法 </a>
+					<a class="" href="dataset1-baseline-method">Baselines </a>
 				</div>
 				
 				<div class="post-menu-item">
-					<a class="" href="dataset1-result">结果 </a>
+					<a class="" href="dataset1-result">Results </a>
 				</div>
 				
 				<div class="post-menu-item">
-					<a class="" href="dataset1-publication">相关成果 </a>
+					<a class="" href="dataset1-publication">Publications </a>
 				</div>
 				
 			</div>
@@ -261,39 +261,39 @@
 		<!--  -->
 	</section>
 	
-	<!-- <section class="toc-wrapper"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#HSLD%EF%BC%88Heat-Source-Layout-Dataset%EF%BC%89%E6%95%B0%E6%8D%AE%E9%9B%86"><span class="toc-number">1.</span> <span class="toc-text">HSLD（Heat Source Layout Dataset）数据集</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Case-1-%E5%AD%90%E6%95%B0%E6%8D%AE%E9%9B%86"><span class="toc-number">1.1.</span> <span class="toc-text">Case 1 子数据集</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Case-2-%E5%AD%90%E6%95%B0%E6%8D%AE%E9%9B%86"><span class="toc-number">1.2.</span> <span class="toc-text">Case 2 子数据集</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Case-3-%E5%AD%90%E6%95%B0%E6%8D%AE%E9%9B%86"><span class="toc-number">1.3.</span> <span class="toc-text">Case 3 子数据集</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%89%B9%E6%AE%8A%E5%B8%83%E5%B1%80%E6%A0%B7%E6%9C%AC"><span class="toc-number">1.4.</span> <span class="toc-text">特殊布局样本</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B5%8B%E8%AF%95%E9%9B%86%E8%AF%B4%E6%98%8E"><span class="toc-number">1.5.</span> <span class="toc-text">测试集说明</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E8%AF%B4%E6%98%8E"><span class="toc-number">1.6.</span> <span class="toc-text">数据说明</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AF%84%E4%BB%B7%E5%87%86%E5%88%99"><span class="toc-number">1.7.</span> <span class="toc-text">评价准则</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%83%8F%E7%B4%A0%E7%BA%A7%E8%AF%84%E4%BB%B7%E6%8C%87%E6%A0%87%EF%BC%88Pixel-level-metrics%EF%BC%89"><span class="toc-number">1.7.1.</span> <span class="toc-text">像素级评价指标（Pixel-level metrics）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9C%80%E9%AB%98%E6%B8%A9%E5%BA%A6%E7%BB%9D%E5%AF%B9%E8%AF%AF%E5%B7%AE%EF%BC%88MT-AE%EF%BC%89"><span class="toc-number">1.7.1.1.</span> <span class="toc-text">最高温度绝对误差（MT-AE）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9C%80%E9%AB%98%E6%B8%A9%E4%BD%8D%E7%BD%AE%E7%BB%9D%E5%AF%B9%E8%AF%AF%E5%B7%AE%EF%BC%88MT-PAE%EF%BC%89"><span class="toc-number">1.7.1.2.</span> <span class="toc-text">最高温位置绝对误差（MT-PAE）</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9B%BE%E5%83%8F%E7%BA%A7%E8%AF%84%E4%BB%B7%E6%8C%87%E6%A0%87%EF%BC%88Image-level-metrics%EF%BC%89"><span class="toc-number">1.7.2.</span> <span class="toc-text">图像级评价指标（Image-level metrics）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%B9%B3%E5%9D%87%E7%BB%9D%E5%AF%B9%E8%AF%AF%E5%B7%AE%EF%BC%88MAE%EF%BC%89"><span class="toc-number">1.7.2.1.</span> <span class="toc-text">平均绝对误差（MAE）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9C%80%E5%A4%A7%E7%BB%9D%E5%AF%B9%E8%AF%AF%E5%B7%AE%EF%BC%88Max-AE%EF%BC%89"><span class="toc-number">1.7.2.2.</span> <span class="toc-text">最大绝对误差（Max-AE）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Dirichlet-%E8%BE%B9%E7%95%8C%E5%B9%B3%E5%9D%87%E7%BB%9D%E5%AF%B9%E8%AF%AF%E5%B7%AE%EF%BC%88BMAE-D%EF%BC%89"><span class="toc-number">1.7.2.3.</span> <span class="toc-text">Dirichlet 边界平均绝对误差（BMAE_D）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Neumann-%E8%BE%B9%E7%95%8C%E5%B9%B3%E5%9D%87%E7%BB%9D%E5%AF%B9%E8%AF%AF%E5%B7%AE%EF%BC%88BMAE-N%EF%BC%89"><span class="toc-number">1.7.2.4.</span> <span class="toc-text">Neumann 边界平均绝对误差（BMAE_N）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%BB%84%E4%BB%B6%E5%B9%B3%E5%9D%87%E7%BB%9D%E5%AF%B9%E8%AF%AF%E5%B7%AE%EF%BC%88CMAE%EF%BC%89"><span class="toc-number">1.7.2.5.</span> <span class="toc-text">组件平均绝对误差（CMAE）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%A2%AF%E5%BA%A6%E5%B9%B3%E5%9D%87%E7%BB%9D%E5%AF%B9%E8%AF%AF%E5%B7%AE%EF%BC%88G-MAE%EF%BC%89"><span class="toc-number">1.7.2.6.</span> <span class="toc-text">梯度平均绝对误差（G-MAE）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Laplace-%E5%B9%B3%E5%9D%87%E7%BB%9D%E5%AF%B9%E8%AF%AF%E5%B7%AE%EF%BC%88Lap-MAE%EF%BC%89"><span class="toc-number">1.7.2.7.</span> <span class="toc-text">Laplace 平均绝对误差（Lap-MAE）</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%89%B9%E5%9D%97%E7%BA%A7%E8%AF%84%E4%BB%B7%E6%8C%87%E6%A0%87%EF%BC%88Batch-level-metrics%EF%BC%89"><span class="toc-number">1.7.3.</span> <span class="toc-text">批块级评价指标（Batch-level metrics）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%A2%84%E6%B5%8B%E6%9C%80%E9%AB%98%E6%B8%A9%E6%8E%92%E5%BA%8F%E7%9A%84%E6%96%AF%E7%9A%AE%E5%B0%94%E6%9B%BC%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0"><span class="toc-number">1.7.3.1.</span> <span class="toc-text">预测最高温排序的斯皮尔曼相关系数</span></a></li></ol></li></ol></li></ol></li></ol></section> -->
+	<!-- <section class="toc-wrapper"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#HSLD-Dataset"><span class="toc-number">1.</span> <span class="toc-text">HSLD Dataset</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Case-1-sub-data"><span class="toc-number">1.1.</span> <span class="toc-text">Case 1 sub-data</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Case-2-sub-data"><span class="toc-number">1.2.</span> <span class="toc-text">Case 2 sub-data</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Case-3-sub-data"><span class="toc-number">1.3.</span> <span class="toc-text">Case 3 sub-data</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Special-Samples"><span class="toc-number">1.4.</span> <span class="toc-text">Special Samples</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Testing-Set-Description"><span class="toc-number">1.5.</span> <span class="toc-text">Testing Set Description</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Data-Description"><span class="toc-number">1.6.</span> <span class="toc-text">Data Description</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Evaluation-Metrics"><span class="toc-number">1.7.</span> <span class="toc-text">Evaluation Metrics</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Pixel-level-metrics"><span class="toc-number">1.7.1.</span> <span class="toc-text">Pixel-level metrics</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Absolute-Error-of-the-Maximum-Temperature-%EF%BC%88MT-AE%EF%BC%89"><span class="toc-number">1.7.1.1.</span> <span class="toc-text">Absolute Error of the Maximum Temperature （MT-AE）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Position-Absolute-Error-of-the-Maximum-Temperature%EF%BC%88MT-PAE%EF%BC%89"><span class="toc-number">1.7.1.2.</span> <span class="toc-text">Position Absolute Error of the Maximum Temperature（MT-PAE）</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Image-level-metrics"><span class="toc-number">1.7.2.</span> <span class="toc-text">Image-level metrics</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Mean-absolute-error%EF%BC%88MAE%EF%BC%89"><span class="toc-number">1.7.2.1.</span> <span class="toc-text">Mean absolute error（MAE）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Maximum-of-absolute-error%EF%BC%88Max-AE%EF%BC%89"><span class="toc-number">1.7.2.2.</span> <span class="toc-text">Maximum of absolute error（Max-AE）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Mean-absolute-error-over-Dirichlet-boundary%EF%BC%88BMAE-D%EF%BC%89"><span class="toc-number">1.7.2.3.</span> <span class="toc-text">Mean absolute error over Dirichlet boundary（BMAE_D）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Mean-absolute-error-over-Neumann-boundary%EF%BC%88BMAE-N%EF%BC%89"><span class="toc-number">1.7.2.4.</span> <span class="toc-text">Mean absolute error over Neumann boundary（BMAE_N）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Component-constrained-mean-absolute-error%EF%BC%88CMAE%EF%BC%89"><span class="toc-number">1.7.2.5.</span> <span class="toc-text">Component-constrained mean absolute error（CMAE）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Gradient-based-mean-absolute-error%EF%BC%88G-MAE%EF%BC%89"><span class="toc-number">1.7.2.6.</span> <span class="toc-text">Gradient-based mean absolute error（G-MAE）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Laplace-based-mean-absolute-error%EF%BC%88Lap-MAE%EF%BC%89"><span class="toc-number">1.7.2.7.</span> <span class="toc-text">Laplace-based mean absolute error（Lap-MAE）</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Batch-level-metrics"><span class="toc-number">1.7.3.</span> <span class="toc-text">Batch-level metrics</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Spearman-rank-order-correlation-coefficient-of-the-maximum-temperature-value"><span class="toc-number">1.7.3.1.</span> <span class="toc-text">Spearman rank-order correlation coefficient of the maximum temperature value</span></a></li></ol></li></ol></li></ol></li></ol></section> -->
 	
 	<section class="article typo">
 		<div class="article-entry" itemprop="articleBody">
-			<h1 id="HSLD（Heat-Source-Layout-Dataset）数据集"><a href="#HSLD（Heat-Source-Layout-Dataset）数据集" class="headerlink" title="HSLD（Heat Source Layout Dataset）数据集"></a>HSLD（Heat Source Layout Dataset）数据集</h1><blockquote>
-<p>HSLD 数据集由基于 <a target="_blank" rel="noopener" href="https://fenicsproject.org/">FEniCS</a> 的<a target="_blank" rel="noopener" href="https://github.com/zweien/layout-generator">数据生成器</a>生成。</p>
+			<h1 id="HSLD-Dataset"><a href="#HSLD-Dataset" class="headerlink" title="HSLD Dataset"></a>HSLD Dataset</h1><blockquote>
+<p>HSLD dataset is generated using <a target="_blank" rel="noopener" href="https://github.com/zweien/layout-generator">data generator</a> based on <a target="_blank" rel="noopener" href="https://fenicsproject.org/">FEniCS</a>.</p>
 </blockquote>
-<p>HSLD 数据集描述热源系统区域为 0.1m×0.1m 的矩形，且离散化为 200×200 的网格。数据集共提供 Case 1、Case 2 和 Case 3 三个子数据集。每个子数据集含有 2000 组训练样本（由 Sequence 采样生成），40000 组测试样本（Test 1，2 分别为 Sequence 采样和 Gibbs 采样生成的测试样本，Test 3, 4, 5, 6, 7, 8, 9 为特殊测试样本）。</p>
+<p>TFRD dataset describes the heat source system with $0.1m\times 0.1m$ square board, where the heat source system is discreted as $200\times 200$ grid. It consists of Case 1, Case 2 and Case 3 sub-data. Each sub-data includes 2000 training samples generated by Sequence sampling, 40000 testing samples where Test 1 and 2 is generated by Sequence sampling and Gibbs sampling separately, and Test 3, 4, 5, 6, 7, 8, 9 are special testing samples.</p>
 <ul>
 <li>Generality</li>
 </ul>
 <blockquote>
-<p>三种典型热传导问题</p>
+<p>Three typical heat transfer problems</p>
 <ul>
-<li>Case 1: 狄利克雷边界条件下的体边散热问题</li>
-<li>Case 2：狄利克雷和纽曼混合边界下的体边散热问题</li>
-<li>Case 3：狄利克雷和纽曼混合边界下的体点散热问题</li>
+<li>Case 1: volume-to-boundary (VB) problem under Dirichlet boundary conditions</li>
+<li>Case 2：volume-to-boundary (VB) problem under boundary conditions joint the Dirichlet and Reumann boundary conditions</li>
+<li>Case 3：volume-to-point (VP) problem under boundary conditions joint the Dirichlet and Reumann boundary conditions</li>
 </ul>
 </blockquote>
 <ul>
 <li>Reasonability</li>
 </ul>
 <blockquote>
-<p>HSLD 数据库设计合理（2000 组训练样本，40000 组多样化测试样本的数据集）</p>
+<p>The composition of HSLD is reasonable（includes 2000 training samples, 40000 testing samples divided into 9 different special samples）</p>
 </blockquote>
 <ul>
 <li>Diversity</li>
 </ul>
 <blockquote>
-<p>边界条件和组件多样性且提供多样性评价准则</p>
+<p>Provide diversified boundary conditions, components as well as evaluation metrics</p>
 </blockquote>
-<h2 id="Case-1-子数据集"><a href="#Case-1-子数据集" class="headerlink" title="Case 1 子数据集"></a>Case 1 子数据集</h2><blockquote>
-<p>四周散热的热传导问题，四边均为狄利克雷边界条件（Dirichlet BC），恒温为 298K</p>
+<h2 id="Case-1-sub-data"><a href="#Case-1-sub-data" class="headerlink" title="Case 1 sub-data"></a>Case 1 sub-data</h2><blockquote>
+<p>Heat-source systems with all Dirichlet boundary conditions for heat dissipation where the temperature values of all the boundarys are set to constant temperature valued 298K.</p>
 </blockquote>
 <div class="table-container">
 <table>
@@ -306,15 +306,15 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center"><strong>边界条件</strong></td>
-<td style="text-align:center"><strong>组件布局信息</strong></td>
-<td style="text-align:center"><strong>温度场</strong></td>
+<td style="text-align:center"><strong>Boundary conditions</strong></td>
+<td style="text-align:center"><strong>Layout information</strong></td>
+<td style="text-align:center"><strong>Temperature field</strong></td>
 </tr>
 </tbody>
 </table>
 </div>
-<h2 id="Case-2-子数据集"><a href="#Case-2-子数据集" class="headerlink" title="Case 2 子数据集"></a>Case 2 子数据集</h2><blockquote>
-<p>单边散热的热传导问题，左边界恒温为 298K（Dirichlet BC），其他边界是绝热的（Neumann BC）</p>
+<h2 id="Case-2-sub-data"><a href="#Case-2-sub-data" class="headerlink" title="Case 2 sub-data"></a>Case 2 sub-data</h2><blockquote>
+<p>Heat source systems with one constant valued boundaries （298K） for dissipation. All the other three boundaries are adiabatic （Neumann BC）.</p>
 </blockquote>
 <div class="table-container">
 <table>
@@ -327,15 +327,15 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center"><strong>边界条件</strong></td>
-<td style="text-align:center"><strong>组件布局信息</strong></td>
-<td style="text-align:center"><strong>温度场</strong></td>
+<td style="text-align:center"><strong>Boundary conditions</strong></td>
+<td style="text-align:center"><strong>Layout information</strong></td>
+<td style="text-align:center"><strong>Temperature field</strong></td>
 </tr>
 </tbody>
 </table>
 </div>
-<h2 id="Case-3-子数据集"><a href="#Case-3-子数据集" class="headerlink" title="Case 3 子数据集"></a>Case 3 子数据集</h2><blockquote>
-<p>小孔散热的热传导问题，散热器的宽度设置为 0.001m，恒温值为 298K （Dirichlet BC），其他边界是绝热的（Neumann BC）</p>
+<h2 id="Case-3-sub-data"><a href="#Case-3-sub-data" class="headerlink" title="Case 3 sub-data"></a>Case 3 sub-data</h2><blockquote>
+<p>Heat-source systems with heat sink for heat dissipation where the width is set to 0.001m with a constant temperature valued 298K （Dirichlet boundary）.</p>
 </blockquote>
 <div class="table-container">
 <table>
@@ -348,27 +348,27 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center"><strong>边界条件</strong></td>
-<td style="text-align:center"><strong>组件布局信息</strong></td>
-<td style="text-align:center"><strong>温度场</strong></td>
+<td style="text-align:center"><strong>Boundary conditions</strong></td>
+<td style="text-align:center"><strong>Layout information</strong></td>
+<td style="text-align:center"><strong>Temperature field</strong></td>
 </tr>
 </tbody>
 </table>
 </div>
-<h2 id="特殊布局样本"><a href="#特殊布局样本" class="headerlink" title="特殊布局样本"></a>特殊布局样本</h2><blockquote>
-<p>分别从功耗影响最大组件位置、相同功率组件相对位置、受限组件布局区域等角度出发生成 7 种不同类型的特殊布局测试样本.</p>
+<h2 id="Special-Samples"><a href="#Special-Samples" class="headerlink" title="Special Samples"></a>Special Samples</h2><blockquote>
+<p>Special samples are divided into seven different types from the view of positions of the largest heat source, relative positions between sources with the same power, and limited layout area, and others.</p>
 </blockquote>
 <p><img src="/dataset/images/pasted/SpecialSamples.png" alt="SpecialSamples"></p>
-<h2 id="测试集说明"><a href="#测试集说明" class="headerlink" title="测试集说明"></a>测试集说明</h2><blockquote>
-<p>测试集中一共包含 9 个子测试集，一共 40000 组测试样本，旨在尽可能对代理模型的全局预测性能进行评价。</p>
+<h2 id="Testing-Set-Description"><a href="#Testing-Set-Description" class="headerlink" title="Testing Set Description"></a>Testing Set Description</h2><blockquote>
+<p>40000 testing samples are divided into nine testing sets, which tries to provide thorough evaluation of prediction performance of surrogate model.</p>
 </blockquote>
 <div class="table-container">
 <table>
 <thead>
 <tr>
-<th style="text-align:center">测试集</th>
-<th style="text-align:center">样本数量</th>
-<th style="text-align:center">类型</th>
+<th style="text-align:center">Testing Set</th>
+<th style="text-align:center">Number of samples</th>
+<th style="text-align:center">Type</th>
 </tr>
 </thead>
 <tbody>
@@ -425,59 +425,59 @@
 </tbody>
 </table>
 </div>
-<h2 id="数据说明"><a href="#数据说明" class="headerlink" title="数据说明"></a>数据说明</h2><blockquote>
-<p>样本采用.mat 格式存储</p>
+<h2 id="Data-Description"><a href="#Data-Description" class="headerlink" title="Data Description"></a>Data Description</h2><blockquote>
+<p>The sample is saved as mat format.</p>
 </blockquote>
 <div class="card-wrapper">
   <div class="card-title">Example*.mat</div>
   <div class="card-content">
     <ul>
-      <li>'u'：{ndarray:200,200}，温度场数据，取值范围298-</li>
-      <li>'F'：{ndarray:200,200}，布局数据，取值范围0-20000</li>
-      <li>'xs'：{ndarray: 200 , 200 }，温度点x轴坐标数据，取值范围0-0.1</li>
-      <li>'ys'：{ndarray: 200 , 200 }，温度点y轴坐标数据，取值范围0-0.1</li>
+      <li>'u'：{ndarray:200,200}，temperature information，ranging from 298-</li>
+      <li>'F'：{ndarray:200,200}，component information of the system，ranging from 0 to 20000</li>
+      <li>'xs'：{ndarray: 200 , 200 }，coordinate of X-axis, ranging from 0 to 0.1</li>
+      <li>'ys'：{ndarray: 200 , 200 }，coordinate of Y-axis, ranging from 0 to 0.1</li>
     </ul>
   </div>
 </div>
 
-<h2 id="评价准则"><a href="#评价准则" class="headerlink" title="评价准则"></a>评价准则</h2><h3 id="像素级评价指标（Pixel-level-metrics）"><a href="#像素级评价指标（Pixel-level-metrics）" class="headerlink" title="像素级评价指标（Pixel-level metrics）"></a>像素级评价指标（Pixel-level metrics）</h3><h4 id="最高温度绝对误差（MT-AE）"><a href="#最高温度绝对误差（MT-AE）" class="headerlink" title="最高温度绝对误差（MT-AE）"></a>最高温度绝对误差（MT-AE）</h4><blockquote>
-<p>预测温度场最高温度处绝对误差</p>
+<h2 id="Evaluation-Metrics"><a href="#Evaluation-Metrics" class="headerlink" title="Evaluation Metrics"></a>Evaluation Metrics</h2><h3 id="Pixel-level-metrics"><a href="#Pixel-level-metrics" class="headerlink" title="Pixel-level metrics"></a>Pixel-level metrics</h3><h4 id="Absolute-Error-of-the-Maximum-Temperature-（MT-AE）"><a href="#Absolute-Error-of-the-Maximum-Temperature-（MT-AE）" class="headerlink" title="Absolute Error of the Maximum Temperature （MT-AE）"></a>Absolute Error of the Maximum Temperature （MT-AE）</h4><blockquote>
+<p>MT-AE measures the absolute error of the maximum temperature between predicted temperature and real temperature</p>
 </blockquote>
 <script type="math/tex; mode=display">
-\text{MT-AE} = |\max(\hat{Y}) - \max(Y)|</script><h4 id="最高温位置绝对误差（MT-PAE）"><a href="#最高温位置绝对误差（MT-PAE）" class="headerlink" title="最高温位置绝对误差（MT-PAE）"></a>最高温位置绝对误差（MT-PAE）</h4><blockquote>
-<p>预测温度场最高温度处位置绝对误差</p>
+\text{MT-AE} = |\max(\hat{Y}) - \max(Y)|</script><h4 id="Position-Absolute-Error-of-the-Maximum-Temperature（MT-PAE）"><a href="#Position-Absolute-Error-of-the-Maximum-Temperature（MT-PAE）" class="headerlink" title="Position Absolute Error of the Maximum Temperature（MT-PAE）"></a>Position Absolute Error of the Maximum Temperature（MT-PAE）</h4><blockquote>
+<p>MT-PAE measures the deviation between the point where the maximum temperature happens in the predicted temperature field and that in the label temperature field.</p>
 </blockquote>
 <script type="math/tex; mode=display">
-\text{MT-PAE} = \sqrt{(\hat{x} - x)^2 + (\hat{y} - y)^2}</script><h3 id="图像级评价指标（Image-level-metrics）"><a href="#图像级评价指标（Image-level-metrics）" class="headerlink" title="图像级评价指标（Image-level metrics）"></a>图像级评价指标（Image-level metrics）</h3><h4 id="平均绝对误差（MAE）"><a href="#平均绝对误差（MAE）" class="headerlink" title="平均绝对误差（MAE）"></a>平均绝对误差（MAE）</h4><blockquote>
-<p>预测温度场绝对误差的平均值</p>
+\text{MT-PAE} = \sqrt{(\hat{x} - x)^2 + (\hat{y} - y)^2}</script><h3 id="Image-level-metrics"><a href="#Image-level-metrics" class="headerlink" title="Image-level metrics"></a>Image-level metrics</h3><h4 id="Mean-absolute-error（MAE）"><a href="#Mean-absolute-error（MAE）" class="headerlink" title="Mean absolute error（MAE）"></a>Mean absolute error（MAE）</h4><blockquote>
+<p>MAE is the mean absolute error of the prediction on the whole temperature field</p>
 </blockquote>
 <script type="math/tex; mode=display">
-\text{MAE} = \frac{1}{N^2} \sum_{i=1}^{N} \sum_{j=1}^{N} |\hat{Y}_{ij} - Y_{ij}|</script><h4 id="最大绝对误差（Max-AE）"><a href="#最大绝对误差（Max-AE）" class="headerlink" title="最大绝对误差（Max-AE）"></a>最大绝对误差（Max-AE）</h4><blockquote>
-<p>预测温度场绝对误差最大值</p>
+\text{MAE} = \frac{1}{N^2} \sum_{i=1}^{N} \sum_{j=1}^{N} |\hat{Y}_{ij} - Y_{ij}|</script><h4 id="Maximum-of-absolute-error（Max-AE）"><a href="#Maximum-of-absolute-error（Max-AE）" class="headerlink" title="Maximum of absolute error（Max-AE）"></a>Maximum of absolute error（Max-AE）</h4><blockquote>
+<p>Max AE is the maximum absolute error of the prediction on the temperature field</p>
 </blockquote>
 <script type="math/tex; mode=display">
-\text{Max AE} = \max_{i,j} |\hat{Y}_{ij} - Y_{ij}|</script><h4 id="Dirichlet-边界平均绝对误差（BMAE-D）"><a href="#Dirichlet-边界平均绝对误差（BMAE-D）" class="headerlink" title="Dirichlet 边界平均绝对误差（BMAE_D）"></a>Dirichlet 边界平均绝对误差（BMAE_D）</h4><blockquote>
-<p>Dirichlet 边界处预测温度场误差平均值</p>
+\text{Max AE} = \max_{i,j} |\hat{Y}_{ij} - Y_{ij}|</script><h4 id="Mean-absolute-error-over-Dirichlet-boundary（BMAE-D）"><a href="#Mean-absolute-error-over-Dirichlet-boundary（BMAE-D）" class="headerlink" title="Mean absolute error over Dirichlet boundary（BMAE_D）"></a>Mean absolute error over Dirichlet boundary（BMAE_D）</h4><blockquote>
+<p>BMAE_D computes the mean absolute error over area of Dirichlet boundary</p>
 </blockquote>
 <script type="math/tex; mode=display">
-\text{BMAE}_D = \frac{1}{sum(M_D)} \sum \left( M_D \otimes |\hat{Y} - Y| \right)</script><h4 id="Neumann-边界平均绝对误差（BMAE-N）"><a href="#Neumann-边界平均绝对误差（BMAE-N）" class="headerlink" title="Neumann 边界平均绝对误差（BMAE_N）"></a>Neumann 边界平均绝对误差（BMAE_N）</h4><blockquote>
-<p>Neumann 边界处预测温度场误差平均值</p>
+\text{BMAE}_D = \frac{1}{sum(M_D)} \sum \left( M_D \otimes |\hat{Y} - Y| \right)</script><h4 id="Mean-absolute-error-over-Neumann-boundary（BMAE-N）"><a href="#Mean-absolute-error-over-Neumann-boundary（BMAE-N）" class="headerlink" title="Mean absolute error over Neumann boundary（BMAE_N）"></a>Mean absolute error over Neumann boundary（BMAE_N）</h4><blockquote>
+<p>BMAE_N computes the mean absolute error over area of Neumann boundary</p>
 </blockquote>
 <script type="math/tex; mode=display">
-\text{BMAE}_N = \frac{1}{sum(M_N)} \sum \left( M_N \otimes |\hat{Y} - Y| \right)</script><h4 id="组件平均绝对误差（CMAE）"><a href="#组件平均绝对误差（CMAE）" class="headerlink" title="组件平均绝对误差（CMAE）"></a>组件平均绝对误差（CMAE）</h4><blockquote>
-<p>组件布局区域预测温度场误差平均值</p>
+\text{BMAE}_N = \frac{1}{sum(M_N)} \sum \left( M_N \otimes |\hat{Y} - Y| \right)</script><h4 id="Component-constrained-mean-absolute-error（CMAE）"><a href="#Component-constrained-mean-absolute-error（CMAE）" class="headerlink" title="Component-constrained mean absolute error（CMAE）"></a>Component-constrained mean absolute error（CMAE）</h4><blockquote>
+<p>CMAE computes the mean value of the absolute error over the heat-source component.</p>
 </blockquote>
 <script type="math/tex; mode=display">
-\text{CMAE}_i = \frac{1}{sum(M_i)} \sum \left( M_i \otimes |\hat{Y} - Y| \right)</script><h4 id="梯度平均绝对误差（G-MAE）"><a href="#梯度平均绝对误差（G-MAE）" class="headerlink" title="梯度平均绝对误差（G-MAE）"></a>梯度平均绝对误差（G-MAE）</h4><blockquote>
-<p>利用沿两个方向（横轴和纵轴）的中心差值计算温度分布梯度场平均误差值</p>
+\text{CMAE}_i = \frac{1}{sum(M_i)} \sum \left( M_i \otimes |\hat{Y} - Y| \right)</script><h4 id="Gradient-based-mean-absolute-error（G-MAE）"><a href="#Gradient-based-mean-absolute-error（G-MAE）" class="headerlink" title="Gradient-based mean absolute error（G-MAE）"></a>Gradient-based mean absolute error（G-MAE）</h4><blockquote>
+<p>G-MAE computes the mean absolute error of the gradient distribution based on the central difference.</p>
 </blockquote>
 <script type="math/tex; mode=display">
-\text{G-MAE} = \frac{1}{(N-1)^2} \sum \left (|\hat{G}_{x} - G_{x}| + |\hat{G}_{y} - G_{y}| \right)</script><h4 id="Laplace-平均绝对误差（Lap-MAE）"><a href="#Laplace-平均绝对误差（Lap-MAE）" class="headerlink" title="Laplace 平均绝对误差（Lap-MAE）"></a>Laplace 平均绝对误差（Lap-MAE）</h4><blockquote>
-<p>预测温度场的拉普拉斯算子平均绝对误差</p>
+\text{G-MAE} = \frac{1}{(N-1)^2} \sum \left (|\hat{G}_{x} - G_{x}| + |\hat{G}_{y} - G_{y}| \right)</script><h4 id="Laplace-based-mean-absolute-error（Lap-MAE）"><a href="#Laplace-based-mean-absolute-error（Lap-MAE）" class="headerlink" title="Laplace-based mean absolute error（Lap-MAE）"></a>Laplace-based mean absolute error（Lap-MAE）</h4><blockquote>
+<p>Lap-MAE computes the absolute error between the Laplace operator over the whole system.</p>
 </blockquote>
 <script type="math/tex; mode=display">
-\text{Lap-MAE} = \frac{1}{(N-1)^2} \sum |\Delta \hat{Y} - \Delta Y|</script><h3 id="批块级评价指标（Batch-level-metrics）"><a href="#批块级评价指标（Batch-level-metrics）" class="headerlink" title="批块级评价指标（Batch-level metrics）"></a>批块级评价指标（Batch-level metrics）</h3><h4 id="预测最高温排序的斯皮尔曼相关系数"><a href="#预测最高温排序的斯皮尔曼相关系数" class="headerlink" title="预测最高温排序的斯皮尔曼相关系数"></a>预测最高温排序的斯皮尔曼相关系数</h4><blockquote>
-<p>关于不同布局样本的预测温度场最高温的大小顺序相关性 <script type="math/tex">\rho{MT}（−1≤\rho{MT}≤1）</script></p>
+\text{Lap-MAE} = \frac{1}{(N-1)^2} \sum |\Delta \hat{Y} - \Delta Y|</script><h3 id="Batch-level-metrics"><a href="#Batch-level-metrics" class="headerlink" title="Batch-level metrics"></a>Batch-level metrics</h3><h4 id="Spearman-rank-order-correlation-coefficient-of-the-maximum-temperature-value"><a href="#Spearman-rank-order-correlation-coefficient-of-the-maximum-temperature-value" class="headerlink" title="Spearman rank-order correlation coefficient of the maximum temperature value"></a>Spearman rank-order correlation coefficient of the maximum temperature value</h4><blockquote>
+<p>Spearman rank-order correlation coefficient of the maximum temperature value computes the correlation （$ -1 \leq \rho_{MT} \leq 1 $） of the sorts of the maximum temperature value of different layout samples between predicted temperature fields and real ones.</p>
 </blockquote>
 
 		</div>
@@ -486,7 +486,7 @@
 </article>
 <script>
 	window.subData = {
-		title: '温度场预测数据集',
+		title: 'HSLD benchmark',
 		tools: true
 	}
 </script>
@@ -533,7 +533,7 @@
     
     <div class='header'>IDRL</div>
     <div class='content collapsed'>
-        <div class='desc'>国防科技创新研究院无人系统技术研究中心智能设计与鲁棒学习团队致力于人工智能与飞行器设计的基础前沿和交叉研究，面向飞行器多学科高效分析与优化，发展了系列数据和知识混合驱动的深度学习方法，形成了全自主知识产权的智能辅助飞行器设计优化云平台 IDaaS（Intelligent Design as a Service）原型系统，集成卫星组件热布局温度场近实时预测基准工具箱 STEP（Satellite Temperature fiEld Prediction of heat source layout）、内嵌物理知识神经网络算法框架 IDRLNet 等前沿研究成果。近 3 年团队发表相关学术论文 30 余篇，其中高影响因子 SCI 检索 20 篇，申请专利 30 余项。</div>
+        <div class='desc'>The Intelligent Design and Robust Learning laboratory of Defense Innovation Institute of Academy of Military Sciences focuses on the basic frontier and cross-research of artificial intelligence and aircraft design. The team has developed a series of data and model driven deep learning methods for efficient multi-disciplinary analysis and optimization of aircraft, and tries to construct a intelligent auxiliary aircraft design optimization cloud platform, namely IDaaS (Intelligent Design as a Service). The team has already publicly released two thermal analysis benchmarks, namely the HSLD (Heat-source layout dataset) and TFRD (Temperature field reconstruction dataset). Besides, they developed a physical informed neural network framework IDRLNet. In the past three years, they have published more than 30 related papers, and more than 30 patent applications.</div>
         <div class="collapsed-block"></div>
     </div>
     <div id="expandbtn" onclick="expand()">
@@ -558,7 +558,7 @@
 </section>
 
   <section class='m_widget links'>
-<div class='header'>相关链接</div>
+<div class='header'>Links</div>
 <div class='content'>
     <ul class="entry">
     
@@ -572,10 +572,10 @@
 
   
 <div class="m_widget tagcloud">
-    <div class="header">标签</div>
+    <div class="header">Tags</div>
     <div class='content'>
         
-        <a href="/dataset/tags/%E6%95%B0%E6%8D%AE%E9%9B%86/" style="font-size: 14px; color: #808080">数据集</a>
+        <a href="/dataset-en/tags/dataset/" style="font-size: 14px; color: #808080">dataset</a>
     </div>
 </div>
 
@@ -605,7 +605,7 @@
 <script src='//cdn.bootcss.com/node-waves/0.7.5/waves.min.js'></script>
 <script src="//cdn.bootcss.com/scrollReveal.js/3.3.2/scrollreveal.min.js"></script>
 
-<script src="/dataset/js/jquery.fitvids.js"></script>
+<script src="/dataset-en/js/jquery.fitvids.js"></script>
 
 <script>
 	var GOOGLE_CUSTOM_SEARCH_API_KEY = "";
@@ -618,17 +618,17 @@
   var AZURE_QUERY_KEY = "";
   var BAIDU_API_ID = "";
   var SEARCH_SERVICE = "hexo";
-  var ROOT = "/dataset/"||"/";
+  var ROOT = "/dataset-en/"||"/";
   if(!ROOT.endsWith('/'))ROOT += '/';
 </script>
 
-<script src="/dataset/js/search.js"></script>
+<script src="/dataset-en/js/search.js"></script>
 
 
-<script src="/dataset/js/app.js"></script>
+<script src="/dataset-en/js/app.js"></script>
 
 
-<script src="/dataset/js/custom.js"></script>
+<script src="/dataset-en/js/custom.js"></script>
 
 
   <script>
