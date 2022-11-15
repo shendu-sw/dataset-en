@@ -258,15 +258,14 @@
     <link href="https://shendu-sw.github.io/dataset/p/dataset3-set.html"/>
     <id>https://shendu-sw.github.io/dataset/p/dataset3-set.html</id>
     <published>2021-09-10T03:08:00.000Z</published>
-    <updated>2022-09-13T03:23:49.396Z</updated>
+    <updated>2022-11-15T01:55:06.048Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="数据集"><a href="#数据集" class="headerlink" title="数据集"></a>数据集</h1><p>OHTPD 数据集？</p><p>OHTPD主要考虑三种不同组件数量（10、15、20）的随机布局分布形式，如表第二行所示；对于每个布局样本，采用SIMP法获得对应的最佳传热结构拓扑方案，如表第三行所示，从而构成热组件布局-结构拓扑优化方案的输入输出数据对。对应每类组件数量，分别生成10000个样本用于训练和测试。</p><p><img src="/dataset/images/pasted-16.png" alt="upload successful"></p><h2 id="评价标准"><a href="#评价标准" class="headerlink" title="评价标准"></a>评价标准</h2><p>根据深度学习与传热设计任务特点，分别提出了面向图像性能和物理性能的评价指标，旨在衡量传热设计结果不同属性特点。图像性能主要包括像素级的平均误差和相似度，用以评价设计结果的精度和准确度。物理性能主要包括平均相对温度场误差和平均相对体积误差，用以评价设计结果的热传导性能和结构材料用量。</p><p><img src="/dataset/images/pasted-18.png" alt="upload successful"></p>]]></content>
+    <content type="html"><![CDATA[<h1 id="数据集"><a href="#数据集" class="headerlink" title="数据集"></a>数据集</h1><p>OHTPD 由<a href="https://www.topopt.mek.dtu.dk/apps-and-software/efficient-topology-optimization-in-matlab">经典拓扑优化88行代码</a>生成，已上传<a href="https://pan.baidu.com/s/11LAVPSVq9fBQouIz0Aonkg">百度网盘</a>（密码：u8fv）</p><p>OHTPD主要考虑三种不同组件数量（10、15、20）的随机布局分布形式，如表第二行所示；对于每个布局样本，采用SIMP法获得对应的最佳传热结构拓扑方案，如表第三行所示，从而构成热组件布局-结构拓扑优化方案的输入输出数据对。对应每类组件数量，分别生成10000个样本用于训练和测试。</p><p><img src="/dataset/images/pasted-16.png" alt="upload successful"></p><h2 id="评价标准"><a href="#评价标准" class="headerlink" title="评价标准"></a>评价标准</h2><p>根据深度学习与传热设计任务特点，分别提出了面向图像性能和物理性能的评价指标，旨在衡量传热设计结果不同属性特点。图像性能主要包括像素级的平均误差和相似度，用以评价设计结果的精度和准确度。物理性能主要包括平均相对温度场误差和平均相对体积误差，用以评价设计结果的热传导性能和结构材料用量。</p><p><img src="/dataset/images/pasted-18.png" alt="upload successful"></p>]]></content>
     
     
       
       
-    <summary type="html">&lt;h1 id=&quot;数据集&quot;&gt;&lt;a href=&quot;#数据集&quot; class=&quot;headerlink&quot; title=&quot;数据集&quot;&gt;&lt;/a&gt;数据集&lt;/h1&gt;&lt;p&gt;OHTPD 数据集？&lt;/p&gt;
-&lt;p&gt;OHTPD主要考虑三种不同组件数量（10、15、20）的随机布局分布形式，如表第二行所示；对于每</summary>
+    <summary type="html">&lt;h1 id=&quot;数据集&quot;&gt;&lt;a href=&quot;#数据集&quot; class=&quot;headerlink&quot; title=&quot;数据集&quot;&gt;&lt;/a&gt;数据集&lt;/h1&gt;&lt;p&gt;OHTPD 由&lt;a href=&quot;https://www.topopt.mek.dtu.dk/apps-and-software/ef</summary>
       
     
     
@@ -316,6 +315,31 @@
       
       
     <summary type="html">&lt;h1 id=&quot;部分结果展示&quot;&gt;&lt;a href=&quot;#部分结果展示&quot; class=&quot;headerlink&quot; title=&quot;部分结果展示&quot;&gt;&lt;/a&gt;部分结果展示&lt;/h1&gt;&lt;h4 id=&quot;模型预测准确度与性能&quot;&gt;&lt;a href=&quot;#模型预测准确度与性能&quot; class=&quot;headerli</summary>
+      
+    
+    
+    
+    
+    <category term="数据集" scheme="https://shendu-sw.github.io/dataset/tags/%E6%95%B0%E6%8D%AE%E9%9B%86/"/>
+    
+    <category term="hide" scheme="https://shendu-sw.github.io/dataset/tags/hide/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>这是比赛1</title>
+    <link href="https://shendu-sw.github.io/dataset/p/challenge1-baseline-method.html"/>
+    <id>https://shendu-sw.github.io/dataset/p/challenge1-baseline-method.html</id>
+    <published>2021-09-10T03:08:00.000Z</published>
+    <updated>2022-11-04T09:20:03.655Z</updated>
+    
+    <content type="html"><![CDATA[<p>页面</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;页面&lt;/p&gt;
+</summary>
       
     
     
@@ -400,38 +424,75 @@
   </entry>
   
   <entry>
-    <title>温度场预测基准</title>
-    <link href="https://shendu-sw.github.io/dataset/p/dataset1-index.html"/>
-    <id>https://shendu-sw.github.io/dataset/p/dataset1-index.html</id>
-    <published>2021-09-08T08:06:00.000Z</published>
-    <updated>2022-09-14T01:02:52.975Z</updated>
+    <title>这是比赛1</title>
+    <link href="https://shendu-sw.github.io/dataset/p/challenge1-publication.html"/>
+    <id>https://shendu-sw.github.io/dataset/p/challenge1-publication.html</id>
+    <published>2021-09-08T08:13:00.000Z</published>
+    <updated>2022-11-04T09:20:03.655Z</updated>
     
-    <content type="html"><![CDATA[<p>欢迎来到热源布局预测数据集(Heat-Source Layout Dataset, HSLD)主页。</p><h1 id="热源布局温度场预测任务"><a href="#热源布局温度场预测任务" class="headerlink" title="热源布局温度场预测任务"></a>热源布局温度场预测任务</h1><blockquote><p>热源布局温度场预测任务是在一个给定边界条件的传热问题中，针对任意变化的热源组件布局，实现整体温度场的快速准确预测，为热源组件布局优化设计提供高效代理模型工具。</p></blockquote><div class="table-container"><table><thead><tr><th style="text-align:center"><img src="/dataset/images/pasted/boundary.png" alt="0"></th><th style="text-align:center"><img src="/dataset/images/pasted/layout.png" alt="1"></th><th style="text-align:center"><img src="/dataset/images/pasted/field.png" alt="2"></th></tr></thead><tbody><tr><td style="text-align:center"><strong>给定边界条件的传热问题</strong></td><td style="text-align:center"><strong>热源组件布局方案</strong></td><td style="text-align:center"><strong>对应温度场分布</strong></td></tr></tbody></table></div><ul><li>基于图像的建模</li></ul><blockquote><p>学习热源布局到温度场的映射关系</p></blockquote><p><img src="/dataset/images/pasted/image_mapping.png" alt="image_mapping"></p><h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><div class="card-wrapper">    <div class="card-title">温度场重建基准</div>    <div class="card-content">        <pre>@article{chen2021,    Author = {Xianqi Chen and Xiaoyu Zhao and Zhiqiang Gong and Jun Zhang and Weien Zhou and Xiaoqian Chen and Wen Yao},    Title = {A Deep Neural Network Surrogate Modeling Benchmark for Temperature Field Prediction of Heat Source Layout},    Journal = {Science China-Physics, Mechanics & Astronomy},    Year = {2021}}        </pre>        <pre>@article{zhao2021,    Author = {Xiaoyu Zhao and Zhiqiang Gong and Jun Zhang and Wen Yao and Xiaoqian Chen},    Title = {A surrogate model with data augmentation and deep transfer learning for temperature field prediction of heat source layout},    Journal = {Structural and Multidisciplinary Optimization},    Year = {2021}}        </pre>    </div></div>]]></content>
+    <content type="html"><![CDATA[<p>页面</p>]]></content>
     
     
-    <summary type="html">在真空、高低温变化剧烈的太空环境中，卫星内部温度控制尤为重要。在卫星设计时，通过优化舱内热源组件布局是改善温度场分布是进行热控制的有效手段之一。</summary>
+      
+      
+    <summary type="html">&lt;p&gt;页面&lt;/p&gt;
+</summary>
+      
     
     
     
     
     <category term="数据集" scheme="https://shendu-sw.github.io/dataset/tags/%E6%95%B0%E6%8D%AE%E9%9B%86/"/>
     
+    <category term="hide" scheme="https://shendu-sw.github.io/dataset/tags/hide/"/>
+    
   </entry>
   
   <entry>
-    <title>post-one-index1</title>
-    <link href="https://shendu-sw.github.io/dataset/p/post-one-index.html"/>
-    <id>https://shendu-sw.github.io/dataset/p/post-one-index.html</id>
-    <published>2021-09-07T09:07:00.000Z</published>
-    <updated>2022-08-19T00:46:46.623Z</updated>
+    <title>这是比赛1</title>
+    <link href="https://shendu-sw.github.io/dataset/p/challenge1-result.html"/>
+    <id>https://shendu-sw.github.io/dataset/p/challenge1-result.html</id>
+    <published>2021-09-08T08:13:00.000Z</published>
+    <updated>2022-11-04T09:20:03.655Z</updated>
     
-    <content type="html"><![CDATA[<p>44556456</p>]]></content>
-    
-    
-    <summary type="html">这里写简介</summary>
+    <content type="html"><![CDATA[<p>页面</p>]]></content>
     
     
+      
+      
+    <summary type="html">&lt;p&gt;页面&lt;/p&gt;
+</summary>
+      
     
+    
+    
+    
+    <category term="数据集" scheme="https://shendu-sw.github.io/dataset/tags/%E6%95%B0%E6%8D%AE%E9%9B%86/"/>
+    
+    <category term="hide" scheme="https://shendu-sw.github.io/dataset/tags/hide/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>这是比赛1</title>
+    <link href="https://shendu-sw.github.io/dataset/p/challenge1-set.html"/>
+    <id>https://shendu-sw.github.io/dataset/p/challenge1-set.html</id>
+    <published>2021-09-08T08:13:00.000Z</published>
+    <updated>2022-11-04T09:20:03.655Z</updated>
+    
+    <content type="html"><![CDATA[<p>页面</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;页面&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    
+    <category term="数据集" scheme="https://shendu-sw.github.io/dataset/tags/%E6%95%B0%E6%8D%AE%E9%9B%86/"/>
     
     <category term="hide" scheme="https://shendu-sw.github.io/dataset/tags/hide/"/>
     
