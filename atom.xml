@@ -206,17 +206,17 @@
   
   <entry>
     <title>OHTP benchmark</title>
-    <link href="https://shendu-sw.github.io/dataset-en/p/dataset3-baseline-method.html"/>
-    <id>https://shendu-sw.github.io/dataset-en/p/dataset3-baseline-method.html</id>
+    <link href="https://shendu-sw.github.io/dataset-en/p/dataset3-publication.html"/>
+    <id>https://shendu-sw.github.io/dataset-en/p/dataset3-publication.html</id>
     <published>2021-09-10T03:08:00.000Z</published>
-    <updated>2022-09-13T03:29:13.472Z</updated>
+    <updated>2022-09-13T02:49:21.617Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="Baselines"><a href="#Baselines" class="headerlink" title="Baselines"></a>Baselines</h1><p>In terms of benchmark model, based on typical deep neural networks such as U-Net, a neural network model suitable for the design task of heat transfer topology optimization is constructed (as shown in Figure 3).</p><p><img src="/dataset-en/images/pasted-34.png" alt="upload successful"></p>]]></content>
+    <content type="html"><![CDATA[<h1 id="Papers"><a href="#Papers" class="headerlink" title="Papers"></a>Papers</h1><p>[1] Zhang Z, Li Y, Zhou W, et al. TONR: An exploration for a novel way combining neural network with topology optimization[J]. Computer Methods in Applied Mechanics and Engineering, 2021, 386: 114083.</p><p>[2] Luo J, Li Y, Zhou W, et al. An Improved Data-Driven Topology Optimization Method Using Feature Pyramid Networks with Physical Constraints[J]. CMES-COMPUTER MODELING IN ENGINEERING &amp; SCIENCES, 2021, 128(3): 823-848.</p>]]></content>
     
     
       
       
-    <summary type="html">&lt;h1 id=&quot;Baselines&quot;&gt;&lt;a href=&quot;#Baselines&quot; class=&quot;headerlink&quot; title=&quot;Baselines&quot;&gt;&lt;/a&gt;Baselines&lt;/h1&gt;&lt;p&gt;In terms of benchmark model, based on typi</summary>
+    <summary type="html">&lt;h1 id=&quot;Papers&quot;&gt;&lt;a href=&quot;#Papers&quot; class=&quot;headerlink&quot; title=&quot;Papers&quot;&gt;&lt;/a&gt;Papers&lt;/h1&gt;&lt;p&gt;[1] Zhang Z, Li Y, Zhou W, et al. TONR: An exploration</summary>
       
     
     
@@ -230,17 +230,17 @@
   
   <entry>
     <title>OHTP benchmark</title>
-    <link href="https://shendu-sw.github.io/dataset-en/p/dataset3-publication.html"/>
-    <id>https://shendu-sw.github.io/dataset-en/p/dataset3-publication.html</id>
+    <link href="https://shendu-sw.github.io/dataset-en/p/dataset3-baseline-method.html"/>
+    <id>https://shendu-sw.github.io/dataset-en/p/dataset3-baseline-method.html</id>
     <published>2021-09-10T03:08:00.000Z</published>
-    <updated>2022-09-13T02:49:21.617Z</updated>
+    <updated>2022-09-13T03:29:13.472Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="Papers"><a href="#Papers" class="headerlink" title="Papers"></a>Papers</h1><p>[1] Zhang Z, Li Y, Zhou W, et al. TONR: An exploration for a novel way combining neural network with topology optimization[J]. Computer Methods in Applied Mechanics and Engineering, 2021, 386: 114083.</p><p>[2] Luo J, Li Y, Zhou W, et al. An Improved Data-Driven Topology Optimization Method Using Feature Pyramid Networks with Physical Constraints[J]. CMES-COMPUTER MODELING IN ENGINEERING &amp; SCIENCES, 2021, 128(3): 823-848.</p>]]></content>
+    <content type="html"><![CDATA[<h1 id="Baselines"><a href="#Baselines" class="headerlink" title="Baselines"></a>Baselines</h1><p>In terms of benchmark model, based on typical deep neural networks such as U-Net, a neural network model suitable for the design task of heat transfer topology optimization is constructed (as shown in Figure 3).</p><p><img src="/dataset-en/images/pasted-34.png" alt="upload successful"></p>]]></content>
     
     
       
       
-    <summary type="html">&lt;h1 id=&quot;Papers&quot;&gt;&lt;a href=&quot;#Papers&quot; class=&quot;headerlink&quot; title=&quot;Papers&quot;&gt;&lt;/a&gt;Papers&lt;/h1&gt;&lt;p&gt;[1] Zhang Z, Li Y, Zhou W, et al. TONR: An exploration</summary>
+    <summary type="html">&lt;h1 id=&quot;Baselines&quot;&gt;&lt;a href=&quot;#Baselines&quot; class=&quot;headerlink&quot; title=&quot;Baselines&quot;&gt;&lt;/a&gt;Baselines&lt;/h1&gt;&lt;p&gt;In terms of benchmark model, based on typi</summary>
       
     
     

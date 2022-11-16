@@ -181,10 +181,10 @@
     
     <entry>
       <title>OHTP benchmark</title>
-      <link href="/dataset-en/p/dataset3-baseline-method.html"/>
-      <url>/dataset-en/p/dataset3-baseline-method.html</url>
+      <link href="/dataset-en/p/dataset3-publication.html"/>
+      <url>/dataset-en/p/dataset3-publication.html</url>
       
-        <content type="html"><![CDATA[<h1 id="Baselines"><a href="#Baselines" class="headerlink" title="Baselines"></a>Baselines</h1><p>In terms of benchmark model, based on typical deep neural networks such as U-Net, a neural network model suitable for the design task of heat transfer topology optimization is constructed (as shown in Figure 3).</p><p><img src="/dataset-en/images/pasted-34.png" alt="upload successful"></p>]]></content>
+        <content type="html"><![CDATA[<h1 id="Papers"><a href="#Papers" class="headerlink" title="Papers"></a>Papers</h1><p>[1] Zhang Z, Li Y, Zhou W, et al. TONR: An exploration for a novel way combining neural network with topology optimization[J]. Computer Methods in Applied Mechanics and Engineering, 2021, 386: 114083.</p><p>[2] Luo J, Li Y, Zhou W, et al. An Improved Data-Driven Topology Optimization Method Using Feature Pyramid Networks with Physical Constraints[J]. CMES-COMPUTER MODELING IN ENGINEERING &amp; SCIENCES, 2021, 128(3): 823-848.</p>]]></content>
       
       
       
@@ -202,10 +202,10 @@
     
     <entry>
       <title>OHTP benchmark</title>
-      <link href="/dataset-en/p/dataset3-publication.html"/>
-      <url>/dataset-en/p/dataset3-publication.html</url>
+      <link href="/dataset-en/p/dataset3-baseline-method.html"/>
+      <url>/dataset-en/p/dataset3-baseline-method.html</url>
       
-        <content type="html"><![CDATA[<h1 id="Papers"><a href="#Papers" class="headerlink" title="Papers"></a>Papers</h1><p>[1] Zhang Z, Li Y, Zhou W, et al. TONR: An exploration for a novel way combining neural network with topology optimization[J]. Computer Methods in Applied Mechanics and Engineering, 2021, 386: 114083.</p><p>[2] Luo J, Li Y, Zhou W, et al. An Improved Data-Driven Topology Optimization Method Using Feature Pyramid Networks with Physical Constraints[J]. CMES-COMPUTER MODELING IN ENGINEERING &amp; SCIENCES, 2021, 128(3): 823-848.</p>]]></content>
+        <content type="html"><![CDATA[<h1 id="Baselines"><a href="#Baselines" class="headerlink" title="Baselines"></a>Baselines</h1><p>In terms of benchmark model, based on typical deep neural networks such as U-Net, a neural network model suitable for the design task of heat transfer topology optimization is constructed (as shown in Figure 3).</p><p><img src="/dataset-en/images/pasted-34.png" alt="upload successful"></p>]]></content>
       
       
       
