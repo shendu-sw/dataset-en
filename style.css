@@ -2266,6 +2266,9 @@ body {
     margin-left: 0 !important;
   }
 }
+.desc_custom {
+  word-wrap: break-word;
+}
 .line-hight-normal {
   line-height: normal;
 }
