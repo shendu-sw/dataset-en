@@ -2116,7 +2116,7 @@ body {
   color: #4caf50;
 }
 .shown {
-  display: block!important;
+  display: block !important;
 }
 .column-span-all {
   -moz-column-span: all;
@@ -2131,18 +2131,20 @@ body {
   justify-content: stretch;
 }
 .post-content .post-preview-img {
+  display: flex;
+  align-items: flex-start;
   margin-right: 20px;
 }
 .post-content .post-preview-img .preview-img {
   max-height: 200px;
   min-width: 200px;
-  max-width: 200px!important;
-  margin: 0!important;
-  padding: 0!important;
-  width: auto!important;
-  height: 100%!important;
-  -o-object-fit: contain!important;
-     object-fit: contain!important;
+  max-width: 200px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: auto !important;
+  height: 100% !important;
+  -o-object-fit: contain !important;
+     object-fit: contain !important;
 }
 .post-index .tags {
   position: relative;
@@ -2177,7 +2179,7 @@ body {
 }
 .no-shandow {
   border: none;
-  box-shadow: none!important;
+  box-shadow: none !important;
 }
 .l_main .post {
   padding-top: 0px;
@@ -2216,10 +2218,10 @@ body {
   color: #2196f3;
 }
 .post img {
-  max-width: 95%!important;
+  max-width: 95% !important;
 }
 .post table img {
-  max-width: 95%!important;
+  max-width: 95% !important;
 }
 @media screen and (max-width: 750px) {
   .container {
@@ -2240,7 +2242,7 @@ body {
     width: 100vw;
   }
   .post img {
-    max-width: 100%!important;
+    max-width: 100% !important;
   }
 }
 @-webkit-keyframes fade-in {
@@ -2261,7 +2263,7 @@ body {
 }
 @media (max-width: 820px) {
   .l_main .post img {
-    margin-left: 0!important;
+    margin-left: 0 !important;
   }
 }
 .line-hight-normal {
