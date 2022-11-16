@@ -4,6 +4,27 @@
   
     
     <entry>
+      <title>温度场预测基准</title>
+      <link href="/dataset/p/dataset1-baseline-method.html"/>
+      <url>/dataset/p/dataset1-baseline-method.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="基准方法"><a href="#基准方法" class="headerlink" title="基准方法"></a>基准方法</h1><blockquote><p>基准方法基于 Fully convolutional networks (FCNs)、SegNet、U-Net 和 Feature pyramid networks (FPNs)实现。</p></blockquote><p><img style="zoom:50%;" src="/dataset/images/pasted/TaskBasemethod.png" /></p><h2 id="骨干网络（Backbone-networks）"><a href="#骨干网络（Backbone-networks）" class="headerlink" title="骨干网络（Backbone networks）"></a>骨干网络（Backbone networks）</h2><ul><li>AlexNet</li></ul><p><img style="zoom:50%;" src="/dataset/images/pasted/alexnet.png" /></p><ul><li>VGG</li></ul><p><img style="zoom:50%;" src="/dataset/images/pasted/vgg16.png" /></p><ul><li>ResNet</li></ul><p><img style="zoom:90%;" src="/dataset/images/pasted/resnet.png" /></p><h2 id="深度回归网络（Deep-regression-frameworks）"><a href="#深度回归网络（Deep-regression-frameworks）" class="headerlink" title="深度回归网络（Deep regression frameworks）"></a>深度回归网络（Deep regression frameworks）</h2><ul><li>Fully convolutional networks (FCN)</li></ul><p><img style="zoom:50%;" src="/dataset/images/pasted/fcn8.png" /></p><ul><li>SegNet</li></ul><p><img style="zoom:50%;" src="/dataset/images/pasted/segnet.png" /></p><ul><li>U-Net</li></ul><p><img style="zoom:50%;" src="/dataset/images/pasted/unet.png" /></p><ul><li>Feature pyramid networks (FPNs)</li></ul><p><img style="zoom:50%;" src="/dataset/images/pasted/fpn.png" /></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 数据集 </tag>
+            
+            <tag> hide </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>温度场重建基准</title>
       <link href="/dataset/p/dataset2-index.html"/>
       <url>/dataset/p/dataset2-index.html</url>
@@ -248,27 +269,6 @@
       <url>/dataset/p/dataset3-result.html</url>
       
         <content type="html"><![CDATA[<h1 id="部分结果展示"><a href="#部分结果展示" class="headerlink" title="部分结果展示"></a>部分结果展示</h1><h4 id="模型预测准确度与性能"><a href="#模型预测准确度与性能" class="headerlink" title="模型预测准确度与性能"></a>模型预测准确度与性能</h4><p>表2罗列了一部分测试数据集的预测结果，总体上与传统优化设计结果具有高度一致性，由评价准则像素误差（MAE）可知，模型预测结果的平均像素相对误差保持在3%左右。此外，实验发现一个有趣的现象，对于部分热布局问题，深度模型预测结构具有更优性能。<br><img src="/dataset/images/pasted-19.png" alt="upload successful"></p><p>如表3所示，预测结果与传统设计结果在一些局部区域的热传导分支路径处具有显著的差异（图中红圈所示，此处MAE较大）。进一步通过性能评价准则分析得到，相比传统设计结果，深度学习模型预测的设计结果所用HTCM材料（RE-V）较少，但是具有更优传热性能（RE-meanT）。综上，测试结果有效验证了深度代理模型具有较高的预测精度，同时通过大量方案学习，能够在个别设计问题中获得性能更优的方案，为传统设计优化提供新的启发。<br><img src="/dataset/images/pasted-20.png" alt="upload successful"></p><h4 id="模型鲁棒性与迁移性"><a href="#模型鲁棒性与迁移性" class="headerlink" title="模型鲁棒性与迁移性"></a>模型鲁棒性与迁移性</h4><p>为了进一步验证深度代理模型的鲁棒性和模型迁移性，对训练样本集外的组件数量（5，13，18）进行测试。如表4所示，测试结果仍然具有较高精度与准确度，平均像素误差在3%~5%左右。<br><img src="/dataset/images/pasted-21.png" alt="upload successful"></p>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> 数据集 </tag>
-            
-            <tag> hide </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>温度场预测基准</title>
-      <link href="/dataset/p/dataset1-baseline-method.html"/>
-      <url>/dataset/p/dataset1-baseline-method.html</url>
-      
-        <content type="html"><![CDATA[<h1 id="基准方法"><a href="#基准方法" class="headerlink" title="基准方法"></a>基准方法</h1><blockquote><p>基准方法基于 Fully convolutional networks (FCNs)、SegNet、U-Net 和 Feature pyramid networks (FPNs)实现。</p></blockquote><p><img style="zoom:50%;" src="/dataset/images/pasted/TaskBasemethod.png" /></p><h2 id="骨干网络（Backbone-networks）"><a href="#骨干网络（Backbone-networks）" class="headerlink" title="骨干网络（Backbone networks）"></a>骨干网络（Backbone networks）</h2><ul><li>AlexNet</li></ul><p><img style="zoom:50%;" src="/dataset/images/pasted/alexnet.png" /></p><ul><li>VGG</li></ul><p><img style="zoom:50%;" src="/dataset/images/pasted/vgg16.png" /></p><ul><li>ResNet</li></ul><p><img style="zoom:90%;" src="/dataset/images/pasted/resnet.png" /></p><h2 id="深度回归网络（Deep-regression-frameworks）"><a href="#深度回归网络（Deep-regression-frameworks）" class="headerlink" title="深度回归网络（Deep regression frameworks）"></a>深度回归网络（Deep regression frameworks）</h2><ul><li>Fully convolutional networks (FCN)</li></ul><p><img style="zoom:50%;" src="/dataset/images/pasted/fcn8.png" /></p><ul><li>SegNet</li></ul><p><img style="zoom:50%;" src="/dataset/images/pasted/segnet.png" /></p><ul><li>U-Net</li></ul><p><img style="zoom:50%;" src="/dataset/images/pasted/unet.png" /></p><ul><li>Feature pyramid networks (FPNs)</li></ul><p><img style="zoom:50%;" src="/dataset/images/pasted/fpn.png" /></p>]]></content>
       
       
       

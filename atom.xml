@@ -6,7 +6,7 @@
   <link href="https://shendu-sw.github.io/dataset/atom.xml" rel="self"/>
   
   <link href="https://shendu-sw.github.io/dataset/"/>
-  <updated>2022-08-30T03:15:25.015Z</updated>
+  <updated>2022-08-23T02:13:04.825Z</updated>
   <id>https://shendu-sw.github.io/dataset/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>温度场预测基准</title>
+    <link href="https://shendu-sw.github.io/dataset/p/dataset1-baseline-method.html"/>
+    <id>https://shendu-sw.github.io/dataset/p/dataset1-baseline-method.html</id>
+    <published>2021-09-10T03:08:00.000Z</published>
+    <updated>2022-08-23T02:13:04.825Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="基准方法"><a href="#基准方法" class="headerlink" title="基准方法"></a>基准方法</h1><blockquote><p>基准方法基于 Fully convolutional networks (FCNs)、SegNet、U-Net 和 Feature pyramid networks (FPNs)实现。</p></blockquote><p><img style="zoom:50%;" src="/dataset/images/pasted/TaskBasemethod.png" /></p><h2 id="骨干网络（Backbone-networks）"><a href="#骨干网络（Backbone-networks）" class="headerlink" title="骨干网络（Backbone networks）"></a>骨干网络（Backbone networks）</h2><ul><li>AlexNet</li></ul><p><img style="zoom:50%;" src="/dataset/images/pasted/alexnet.png" /></p><ul><li>VGG</li></ul><p><img style="zoom:50%;" src="/dataset/images/pasted/vgg16.png" /></p><ul><li>ResNet</li></ul><p><img style="zoom:90%;" src="/dataset/images/pasted/resnet.png" /></p><h2 id="深度回归网络（Deep-regression-frameworks）"><a href="#深度回归网络（Deep-regression-frameworks）" class="headerlink" title="深度回归网络（Deep regression frameworks）"></a>深度回归网络（Deep regression frameworks）</h2><ul><li>Fully convolutional networks (FCN)</li></ul><p><img style="zoom:50%;" src="/dataset/images/pasted/fcn8.png" /></p><ul><li>SegNet</li></ul><p><img style="zoom:50%;" src="/dataset/images/pasted/segnet.png" /></p><ul><li>U-Net</li></ul><p><img style="zoom:50%;" src="/dataset/images/pasted/unet.png" /></p><ul><li>Feature pyramid networks (FPNs)</li></ul><p><img style="zoom:50%;" src="/dataset/images/pasted/fpn.png" /></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;基准方法&quot;&gt;&lt;a href=&quot;#基准方法&quot; class=&quot;headerlink&quot; title=&quot;基准方法&quot;&gt;&lt;/a&gt;基准方法&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;基准方法基于 Fully convolutional networks (FCNs)、SegNet</summary>
+      
+    
+    
+    
+    
+    <category term="数据集" scheme="https://shendu-sw.github.io/dataset/tags/%E6%95%B0%E6%8D%AE%E9%9B%86/"/>
+    
+    <category term="hide" scheme="https://shendu-sw.github.io/dataset/tags/hide/"/>
+    
+  </entry>
   
   <entry>
     <title>温度场重建基准</title>
@@ -290,31 +315,6 @@
       
       
     <summary type="html">&lt;h1 id=&quot;部分结果展示&quot;&gt;&lt;a href=&quot;#部分结果展示&quot; class=&quot;headerlink&quot; title=&quot;部分结果展示&quot;&gt;&lt;/a&gt;部分结果展示&lt;/h1&gt;&lt;h4 id=&quot;模型预测准确度与性能&quot;&gt;&lt;a href=&quot;#模型预测准确度与性能&quot; class=&quot;headerli</summary>
-      
-    
-    
-    
-    
-    <category term="数据集" scheme="https://shendu-sw.github.io/dataset/tags/%E6%95%B0%E6%8D%AE%E9%9B%86/"/>
-    
-    <category term="hide" scheme="https://shendu-sw.github.io/dataset/tags/hide/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>温度场预测基准</title>
-    <link href="https://shendu-sw.github.io/dataset/p/dataset1-baseline-method.html"/>
-    <id>https://shendu-sw.github.io/dataset/p/dataset1-baseline-method.html</id>
-    <published>2021-09-10T03:08:00.000Z</published>
-    <updated>2022-08-23T02:13:04.825Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="基准方法"><a href="#基准方法" class="headerlink" title="基准方法"></a>基准方法</h1><blockquote><p>基准方法基于 Fully convolutional networks (FCNs)、SegNet、U-Net 和 Feature pyramid networks (FPNs)实现。</p></blockquote><p><img style="zoom:50%;" src="/dataset/images/pasted/TaskBasemethod.png" /></p><h2 id="骨干网络（Backbone-networks）"><a href="#骨干网络（Backbone-networks）" class="headerlink" title="骨干网络（Backbone networks）"></a>骨干网络（Backbone networks）</h2><ul><li>AlexNet</li></ul><p><img style="zoom:50%;" src="/dataset/images/pasted/alexnet.png" /></p><ul><li>VGG</li></ul><p><img style="zoom:50%;" src="/dataset/images/pasted/vgg16.png" /></p><ul><li>ResNet</li></ul><p><img style="zoom:90%;" src="/dataset/images/pasted/resnet.png" /></p><h2 id="深度回归网络（Deep-regression-frameworks）"><a href="#深度回归网络（Deep-regression-frameworks）" class="headerlink" title="深度回归网络（Deep regression frameworks）"></a>深度回归网络（Deep regression frameworks）</h2><ul><li>Fully convolutional networks (FCN)</li></ul><p><img style="zoom:50%;" src="/dataset/images/pasted/fcn8.png" /></p><ul><li>SegNet</li></ul><p><img style="zoom:50%;" src="/dataset/images/pasted/segnet.png" /></p><ul><li>U-Net</li></ul><p><img style="zoom:50%;" src="/dataset/images/pasted/unet.png" /></p><ul><li>Feature pyramid networks (FPNs)</li></ul><p><img style="zoom:50%;" src="/dataset/images/pasted/fpn.png" /></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;基准方法&quot;&gt;&lt;a href=&quot;#基准方法&quot; class=&quot;headerlink&quot; title=&quot;基准方法&quot;&gt;&lt;/a&gt;基准方法&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;基准方法基于 Fully convolutional networks (FCNs)、SegNet</summary>
       
     
     
